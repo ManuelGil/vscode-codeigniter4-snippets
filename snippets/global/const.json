@@ -1,0 +1,77 @@
+{
+  "CI_VERSION": {
+    "prefix": "CI_VERSION",
+    "body": "CodeIgniter\\CodeIgniter::CI_VERSION",
+    "description": "The current version of CodeIgniter Framework."
+  },
+  "ENVIRONMENT": {
+    "prefix": "ENVIRONMENT",
+    "body": "ENVIRONMENT",
+    "description": "This can be set to anything, but default usage is: development, testing, production."
+  },
+  "APPPATH": {
+    "prefix": "APPPATH",
+    "body": "APPPATH",
+    "description": "The path to the app directory."
+  },
+  "ROOTPATH": {
+    "prefix": "ROOTPATH",
+    "body": "ROOTPATH",
+    "description": "The path to the project root directory. Just above APPPATH."
+  },
+  "SYSTEMPATH": {
+    "prefix": "SYSTEMPATH",
+    "body": "SYSTEMPATH",
+    "description": "The path to the system directory."
+  },
+  "FCPATH": {
+    "prefix": "FCPATH",
+    "body": "FCPATH",
+    "description": "The path to the directory that holds the front controller."
+  },
+  "WRITEPATH": {
+    "prefix": "WRITEPATH",
+    "body": "WRITEPATH",
+    "description": "The path to the writable directory."
+  },
+  "SECOND": {
+    "prefix": "SECOND",
+    "body": "SECOND",
+    "description": "Equals 1."
+  },
+  "MINUTE": {
+    "prefix": "MINUTE",
+    "body": "MINUTE",
+    "description": "Equals 60."
+  },
+  "HOUR": {
+    "prefix": "HOUR",
+    "body": "HOUR",
+    "description": "Equals 3600."
+  },
+  "DAY": {
+    "prefix": "DAY",
+    "body": "DAY",
+    "description": "Equals 86400."
+  },
+  "WEEK": {
+    "prefix": "WEEK",
+    "body": "WEEK",
+    "description": "Equals 604800."
+  },
+  "MONTH": {
+    "prefix": "MONTH",
+    "body": "MONTH",
+    "description": "Equals 2592000."
+  },
+  "YEAR": {
+    "prefix": "YEAR",
+    "body": "YEAR",
+    "description": "Equals 31536000."
+  },
+  "DECADE": {
+    "prefix": "DECADE",
+    "body": "DECADE",
+    "description": "Equals 315360000."
+  }
+}

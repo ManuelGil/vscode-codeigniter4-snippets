@@ -1,0 +1,434 @@
+{
+  "query builder db": {
+    "prefix": [
+      "$builder->db",
+      "query builder db"
+    ],
+    "body": "\\$builder->db()",
+    "description": "Returns the current database connection."
+  },
+  "query builder testMode": {
+    "prefix": [
+      "$builder->testMode",
+      "query builder testMode"
+    ],
+    "body": "\\$builder->testMode(${1:boolean})",
+    "description": "Sets a test mode status."
+  },
+  "query builder getTable": {
+    "prefix": [
+      "$builder->getTable",
+      "query builder getTable"
+    ],
+    "body": "\\$builder->getTable()",
+    "description": "Gets the name of the primary table."
+  },
+  "query builder getBinds": {
+    "prefix": [
+      "$builder->getBinds",
+      "query builder getBinds"
+    ],
+    "body": "\\$builder->getBinds()",
+    "description": "Returns an array of bind values and their named parameters for binding in the Query object later."
+  },
+  "query builder ignore": {
+    "prefix": "ignore",
+    "body": "ignore(${1:boolean})",
+    "description": "Set ignore Flag for next insert, update or delete query."
+  },
+  "query builder select": {
+    "prefix": "select",
+    "body": "select('${1:select}', ${2:boolean})",
+    "description": "Generates the SELECT portion of the query."
+  },
+  "query builder selectMax": {
+    "prefix": "selectMax",
+    "body": "selectMax('${1:select}', ${2:alias})",
+    "description": "Generates a SELECT MAX(field) portion of a query."
+  },
+  "query builder selectMin": {
+    "prefix": "selectMin",
+    "body": "selectMin('${1:select}', ${2:alias})",
+    "description": "Generates a SELECT MIN(field) portion of a query."
+  },
+  "query builder selectAvg": {
+    "prefix": "selectAvg",
+    "body": "selectAvg('${1:select}', ${2:alias})",
+    "description": "Generates a SELECT AVG(field) portion of a query."
+  },
+  "query builder selectSum": {
+    "prefix": "selectSum",
+    "body": "selectSum('${1:select}', ${2:alias})",
+    "description": "Generates a SELECT SUM(field) portion of a query."
+  },
+  "query builder selectCount": {
+    "prefix": "selectCount",
+    "body": "selectCount('${1:select}', ${2:alias})",
+    "description": "Generates a SELECT COUNT(field) portion of a query."
+  },
+  "query builder selectSubquery": {
+    "prefix": "selectSubquery",
+    "body": "selectSubquery(${1:subquery}, ${2:as})",
+    "description": "Adds a subquery to the selection."
+  },
+  "query builder distinct": {
+    "prefix": "distinct",
+    "body": "distinct(${1:boolean})",
+    "description": "Sets a flag which tells the query string compiler to add DISTINCT."
+  },
+  "query builder from": {
+    "prefix": "from",
+    "body": "from(${1:from}, ${2:boolean})",
+    "description": "Generates the FROM portion of the query."
+  },
+  "query builder fromSubquery": {
+    "prefix": "fromSubquery",
+    "body": "fromSubquery(${1:from}, ${2:alias})",
+    "description": ""
+  },
+  "query builder join": {
+    "prefix": "join",
+    "body": "join('${1:table}', '${2:cond}', ${3:type}, ${4:boolean})",
+    "description": "Generates the JOIN portion of the query"
+  },
+  "query builder where": {
+    "prefix": "where",
+    "body": "where('${1:key}', ${2:value}, ${3:boolean})",
+    "description": "Generates the WHERE portion of the query. Separates multiple calls with 'AND'."
+  },
+  "query builder orWhere": {
+    "prefix": "orWhere",
+    "body": "orWhere('${1:key}', ${2:value}, ${3:boolean})",
+    "description": "Generates the WHERE portion of the query. Separates multiple calls with 'OR'."
+  },
+  "query builder whereIn": {
+    "prefix": "whereIn",
+    "body": "whereIn('${1:key}', ${2:values}, ${3:boolean})",
+    "description": "Generates a WHERE field IN('item', 'item') SQL query, joined with 'AND' if appropriate."
+  },
+  "query builder orWhereIn": {
+    "prefix": "orWhereIn",
+    "body": "orWhereIn('${1:key}', ${2:values}, ${3:boolean})",
+    "description": "Generates a WHERE field IN('item', 'item') SQL query, joined with 'AND' if appropriate."
+  },
+  "query builder whereNotIn": {
+    "prefix": "whereNotIn",
+    "body": "whereNotIn('${1:key}', ${2:values}, ${3:boolean})",
+    "description": "Generates a WHERE field NOT IN('item', 'item') SQL query, joined with 'AND' if appropriate."
+  },
+  "query builder orWhereNotIn": {
+    "prefix": "orWhereNotIn",
+    "body": "orWhereNotIn('${1:key}', ${2:values}, ${3:boolean})",
+    "description": "Generates a WHERE field NOT IN('item', 'item') SQL query, joined with 'OR' if appropriate."
+  },
+  "query builder havingIn": {
+    "prefix": "havingIn",
+    "body": "havingIn('${1:key}', ${2:values}, ${3:boolean})",
+    "description": "Generates a HAVING field IN('item', 'item') SQL query, joined with 'AND' if appropriate."
+  },
+  "query builder orHavingIn": {
+    "prefix": "orHavingIn",
+    "body": "orHavingIn('${1:key}', ${2:values}, ${3:boolean})",
+    "description": "Generates a HAVING field IN('item', 'item') SQL query, joined with 'OR' if appropriate."
+  },
+  "query builder havingNotIn": {
+    "prefix": "havingNotIn",
+    "body": "havingNotIn('${1:key}', ${2:values}, ${3:boolean})",
+    "description": "Generates a HAVING field NOT IN('item', 'item') SQL query, joined with 'AND' if appropriate."
+  },
+  "query builder orHavingNotIn": {
+    "prefix": "orHavingNotIn",
+    "body": "orHavingNotIn('${1:key}', ${2:values}, ${3:boolean})",
+    "description": "Generates a HAVING field NOT IN('item', 'item') SQL query, joined with 'OR' if appropriate."
+  },
+  "query builder like": {
+    "prefix": "like",
+    "body": "like('${1:field}', ${2:match}, ${3:side}, ${4:boolean}, ${5:insensitiveSearch})",
+    "description": "Generates a %LIKE% portion of the query. Separates multiple calls with 'AND'."
+  },
+  "query builder notLike": {
+    "prefix": "notLike",
+    "body": "notLike('${1:field}', ${2:match}, ${3:side}, ${4:boolean}, ${5:insensitiveSearch})",
+    "description": "Generates a NOT LIKE portion of the query. Separates multiple calls with 'AND'."
+  },
+  "query builder orLike": {
+    "prefix": "orLike",
+    "body": "orLike('${1:field}', ${2:match}, ${3:side}, ${4:boolean}, ${5:insensitiveSearch})",
+    "description": "Generates a %LIKE% portion of the query. Separates multiple calls with 'OR'."
+  },
+  "query builder orNotLike": {
+    "prefix": "orNotLike",
+    "body": "orNotLike('${1:field}', ${2:match}, ${3:side}, ${4:boolean}, ${5:insensitiveSearch})",
+    "description": "Generates a NOT LIKE portion of the query. Separates multiple calls with 'OR'."
+  },
+  "query builder havingLike": {
+    "prefix": "havingLike",
+    "body": "havingLike('${1:field}', ${2:match}, ${3:side}, ${4:boolean}, ${5:insensitiveSearch})",
+    "description": "Generates a %LIKE% portion of the query. Separates multiple calls with 'AND'."
+  },
+  "query builder notHavingLike": {
+    "prefix": "notHavingLike",
+    "body": "notHavingLike('${1:field}', ${2:match}, ${3:side}, ${4:boolean}, ${5:insensitiveSearch})",
+    "description": "Generates a NOT LIKE portion of the query. Separates multiple calls with 'AND'."
+  },
+  "query builder orHavingLike": {
+    "prefix": "orHavingLike",
+    "body": "orHavingLike('${1:field}', ${2:match}, ${3:side}, ${4:boolean}, ${5:insensitiveSearch})",
+    "description": "Generates a %LIKE% portion of the query. Separates multiple calls with 'OR'."
+  },
+  "query builder orNotHavingLike": {
+    "prefix": "orNotHavingLike",
+    "body": "orNotHavingLike('${1:field}', ${2:match}, ${3:side}, ${4:boolean}, ${5:insensitiveSearch})",
+    "description": "Generates a NOT LIKE portion of the query. Separates multiple calls with 'AND'."
+  },
+  "query builder union": {
+    "prefix": "union",
+    "body": "union(${1:union})",
+    "description": "Add UNION statement."
+  },
+  "query builder unionAll": {
+    "prefix": "unionAll",
+    "body": "unionAll(${1:union})",
+    "description": "Add UNION ALL statement."
+  },
+  "query builder groupStart": {
+    "prefix": "groupStart",
+    "body": "groupStart()",
+    "description": "Starts a query group."
+  },
+  "query builder orGroupStart": {
+    "prefix": "orGroupStart",
+    "body": "orGroupStart()",
+    "description": "Starts a query group, but ORs the group."
+  },
+  "query builder notGroupStart": {
+    "prefix": "notGroupStart",
+    "body": "notGroupStart()",
+    "description": "Starts a query group, but NOTs the group."
+  },
+  "query builder orNotGroupStart": {
+    "prefix": "orNotGroupStart",
+    "body": "orNotGroupStart()",
+    "description": "Starts a query group, but OR NOTs the group"
+  },
+  "query builder groupEnd": {
+    "prefix": "groupEnd",
+    "body": "groupEnd()",
+    "description": "Ends a query group."
+  },
+  "query builder havingGroupStart": {
+    "prefix": "havingGroupStart",
+    "body": "havingGroupStart()",
+    "description": "Starts a query group for HAVING clause."
+  },
+  "query builder orHavingGroupStart": {
+    "prefix": "orHavingGroupStart",
+    "body": "orHavingGroupStart()",
+    "description": "Starts a query group for HAVING clause, but ORs the group."
+  },
+  "query builder notHavingGroupStart": {
+    "prefix": "notHavingGroupStart",
+    "body": "notHavingGroupStart()",
+    "description": "Starts a query group for HAVING clause, but NOTs the group."
+  },
+  "query builder orNotHavingGroupStart": {
+    "prefix": "orNotHavingGroupStart",
+    "body": "orNotHavingGroupStart()",
+    "description": "Starts a query group for HAVING clause, but OR NOTs the group."
+  },
+  "query builder havingGroupEnd": {
+    "prefix": "havingGroupEnd",
+    "body": "havingGroupEnd()",
+    "description": "Ends a query group for HAVING clause."
+  },
+  "query builder groupBy": {
+    "prefix": "groupBy",
+    "body": "groupBy('${1:by}', ${2:boolean})",
+    "description": ""
+  },
+  "query builder having": {
+    "prefix": "having",
+    "body": "having('${1:key}', ${2:value}, ${3:boolean})",
+    "description": "Separates multiple calls with 'AND'."
+  },
+  "query builder orHaving": {
+    "prefix": "orHaving",
+    "body": "orHaving('${1:key}', ${2:value}, ${3:boolean})",
+    "description": "Separates multiple calls with 'OR'."
+  },
+  "query builder orderBy": {
+    "prefix": "orderBy",
+    "body": "orderBy('${1:orderBy}', ${2:direction}, ${3:boolean})",
+    "description": ""
+  },
+  "query builder limit": {
+    "prefix": "limit",
+    "body": "limit(${1:value}, ${2:offset})",
+    "description": ""
+  },
+  "query builder offset": {
+    "prefix": "offset",
+    "body": "offset(${1:offset})",
+    "description": "Sets the OFFSET value."
+  },
+  "query builder set": {
+    "prefix": "set",
+    "body": "set('${1:key}', ${2:value}, ${3:boolean})",
+    "description": "Allows key/value pairs to be set for insert(), update() or replace()."
+  },
+  "query builder getSetData": {
+    "prefix": "getSetData",
+    "body": "getSetData(${1:clean})",
+    "description": "Returns the previously set() data, alternatively resetting it if needed."
+  },
+  "query builder getCompiledSelect": {
+    "prefix": "getCompiledSelect",
+    "body": "getCompiledSelect(${1:reset})",
+    "description": "Compiles a SELECT query string and returns the sql."
+  },
+  "query builder get": {
+    "prefix": "get",
+    "body": "get(${1:limit}, ${2:offset}, ${3:reset})",
+    "description": "Compiles the select statement based on the other functions called and runs the query."
+  },
+  "query builder countAll": {
+    "prefix": "countAll",
+    "body": "countAll(${1:reset})",
+    "description": "Generates a platform-specific query string that counts all records in the particular table."
+  },
+  "query builder countAllResults": {
+    "prefix": "countAllResults",
+    "body": "countAllResults(${1:reset})",
+    "description": "Generates a platform-specific query string that counts all records returned by an Query Builder query."
+  },
+  "query builder getCompiledQBWhere": {
+    "prefix": "getCompiledQBWhere",
+    "body": "getCompiledQBWhere()",
+    "description": "Compiles the set conditions and returns the sql statement."
+  },
+  "query builder getWhere": {
+    "prefix": "getWhere",
+    "body": "getWhere('${1:where}', ${2:limit}, ${3:offset}, ${4:reset})",
+    "description": "Allows the where clause, limit and offset to be added directly"
+  },
+  "query builder setData": {
+    "prefix": "setData",
+    "body": "setData(${1:set}, ${2:boolean}, ${3:alias})",
+    "description": "Allows a row or multiple rows to be set for batch inserts/upserts/updates."
+  },
+  "query builder getCompiledUpsert": {
+    "prefix": "getCompiledUpsert",
+    "body": "getCompiledUpsert()",
+    "description": "Compiles an upsert query and returns the sql."
+  },
+  "query builder upsert": {
+    "prefix": "upsert",
+    "body": "upsert(${1:set}, ${2:boolean})",
+    "description": "Converts call to batchUpsert."
+  },
+  "query builder upsertBatch": {
+    "prefix": "upsertBatch",
+    "body": "upsertBatch(${1:set}, ${2:boolean}, ${3:batchSize})",
+    "description": "Compiles batch upsert strings and runs the queries."
+  },
+  "query builder updateFields": {
+    "prefix": "updateFields",
+    "body": "updateFields(${1:set}, ${2:addToDefault}, [${3:ignore}])",
+    "description": "Sets update fields for upsert, update."
+  },
+  "query builder onConstraint": {
+    "prefix": "onConstraint",
+    "body": "onConstraint(${1:set})",
+    "description": "Sets constraints for batch upsert, update."
+  },
+  "query builder setQueryAsData": {
+    "prefix": "setQueryAsData",
+    "body": "setQueryAsData(${1:query}, ${2:alias}, ${3:columns})",
+    "description": "Sets data source as a query for insertBatch()/updateBatch()/upsertBatch()/deleteBatch()"
+  },
+  "query builder insertBatch": {
+    "prefix": "insertBatch",
+    "body": "insertBatch(${1:set}, ${2:boolean}, ${3:batchSize})",
+    "description": "Compiles batch insert strings and runs the queries."
+  },
+  "query builder setInsertBatch": {
+    "prefix": "setInsertBatch",
+    "body": "setInsertBatch('${1:key}', ${2:value}, ${3:boolean})",
+    "description": "Allows key/value pairs to be set for batch inserts."
+  },
+  "query builder getCompiledInsert": {
+    "prefix": "getCompiledInsert",
+    "body": "getCompiledInsert(${1:reset})",
+    "description": "Compiles an insert query and returns the sql."
+  },
+  "query builder insert": {
+    "prefix": "insert",
+    "body": "insert(${1:set}, ${2:boolean})",
+    "description": "Compiles an insert string and runs the query"
+  },
+  "query builder replace": {
+    "prefix": "replace",
+    "body": "replace([${1:set}])",
+    "description": "Compiles a replace into string and runs the query."
+  },
+  "query builder getCompiledUpdate": {
+    "prefix": "getCompiledUpdate",
+    "body": "getCompiledUpdate(${1:reset})",
+    "description": "Compiles an update query and returns the sql."
+  },
+  "query builder update": {
+    "prefix": "update",
+    "body": "update(${1:set}, '${2:where}', ${3:limit})",
+    "description": "Compiles an update string and runs the query."
+  },
+  "query builder updateBatch": {
+    "prefix": "updateBatch",
+    "body": "updateBatch(${1:set}, ${2:constraints}, ${3:batchSize})",
+    "description": "Sets data and calls batchExecute to run queries."
+  },
+  "query builder setUpdateBatch": {
+    "prefix": "setUpdateBatch",
+    "body": "setUpdateBatch('${1:key}', ${2:index}, ${3:boolean})",
+    "description": "Allows key/value pairs to be set for batch updating."
+  },
+  "query builder emptyTable": {
+    "prefix": "emptyTable",
+    "body": "emptyTable()",
+    "description": "Compiles a delete string and runs \"DELETE FROM table\"."
+  },
+  "query builder truncate": {
+    "prefix": "truncate",
+    "body": "truncate()",
+    "description": "ompiles a truncate string and runs the query If the database does not support the truncate() command This function maps to \"DELETE FROM table\"."
+  },
+  "query builder getCompiledDelete": {
+    "prefix": "getCompiledDelete",
+    "body": "getCompiledDelete(${1:reset})",
+    "description": "Compiles a delete query string and returns the sql."
+  },
+  "query builder delete": {
+    "prefix": "delete",
+    "body": "delete('${1:where}', ${2:limit}, ${3:resetData})",
+    "description": "Compiles a delete string and runs the query."
+  },
+  "query builder deleteBatch": {
+    "prefix": "deleteBatch",
+    "body": "deleteBatch(${1:set}, ${2:constraints}, ${3:batchSize})",
+    "description": "Sets data and calls batchExecute to run queries."
+  },
+  "query builder increment": {
+    "prefix": "increment",
+    "body": "increment('${1:column}', ${2:value})",
+    "description": "Increments a numeric column by the specified value."
+  },
+  "query builder decrement": {
+    "prefix": "decrement",
+    "body": "decrement('${1:column}', ${2:value})",
+    "description": "Decrements a numeric column by the specified value."
+  },
+  "query builder resetQuery": {
+    "prefix": "resetQuery",
+    "body": "resetQuery()",
+    "description": "Publicly-visible method to reset the QB values."
+  }
+}

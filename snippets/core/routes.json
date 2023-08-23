@@ -1,0 +1,204 @@
+{
+  "get": {
+    "prefix": [
+      "$routes->get",
+      "routes get"
+    ],
+    "body": "\\$routes->get('${1:url}', '${2:control}::${3:function}', ['as' => '${4:alias}', 'filter' => '${5:filter}']);",
+    "description": "Specifies a route that is only available to GET requests."
+  },
+  "post": {
+    "prefix": [
+      "$routes->post",
+      "routes post"
+    ],
+    "body": "\\$routes->post('${1:url}', '${2:control}::${3:function}', ['as' => '${4:alias}', 'filter' => '${5:filter}']);",
+    "description": "Specifies a route that is only available to POST requests."
+  },
+  "put": {
+    "prefix": [
+      "$routes->put",
+      "routes put"
+    ],
+    "body": "\\$routes->put('${1:url}', '${2:control}::${3:function}', ['as' => '${4:alias}', 'filter' => '${5:filter}']);",
+    "description": "Specifies a route that is only available to PUT requests."
+  },
+  "delete": {
+    "prefix": [
+      "$routes->delete",
+      "routes delete"
+    ],
+    "body": "\\$routes->delete('${1:url}', '${2:control}::${3:function}', ['as' => '${4:alias}', 'filter' => '${5:filter}']);",
+    "description": "Specifies a route that is only available to DELETE requests."
+  },
+  "head": {
+    "prefix": [
+      "$routes->head",
+      "routes head"
+    ],
+    "body": "\\$routes->head('${1:url}', '${2:control}::${3:function}', ['as' => '${4:alias}', 'filter' => '${5:filter}']);",
+    "description": "Specifies a route that is only available to HEAD requests."
+  },
+  "patch": {
+    "prefix": [
+      "$routes->patch",
+      "routes patch"
+    ],
+    "body": "\\$routes->patch('${1:url}', '${2:control}::${3:function}', ['as' => '${4:alias}', 'filter' => '${5:filter}']);",
+    "description": "Specifies a route that is only available to PATCH requests."
+  },
+  "options": {
+    "prefix": [
+      "$routes->options",
+      "routes options"
+    ],
+    "body": "\\$routes->options('${1:url}', '${2:control}::${3:function}', ['as' => '${4:alias}', 'filter' => '${5:filter}']);",
+    "description": "Specifies a route that is only available to OPTIONS requests."
+  },
+  "cli": {
+    "prefix": [
+      "$routes->cli",
+      "routes cli"
+    ],
+    "body": "\\$routes->cli('${1:url}', '${2:control}::${3:function}', ['as' => '${4:alias}', 'filter' => '${5:filter}']);",
+    "description": "Specifies a route that is only available to command-line requests."
+  },
+  "add": {
+    "prefix": [
+      "$routes->add",
+      "routes add"
+    ],
+    "body": "\\$routes->add('${1:url}', '${2:control}::${3:function}', ['as' => '${4:alias}', 'filter' => '${5:filter}']);",
+    "description": "Adds a single route to the collection."
+  },
+  "view": {
+    "prefix": [
+      "$routes->view",
+      "routes view"
+    ],
+    "body": "\\$routes->view('${1:url}', '${2:view}', ['as' => '${3:alias}', 'filter' => '${4:filter}']);",
+    "description": "Specifies a route that will only display a view."
+  },
+  "addPlaceholder": {
+    "prefix": [
+      "$routes->addPlaceholder",
+      "routes addPlaceholder"
+    ],
+    "body": "\\$routes->addPlaceholder('${1:uuid}', '${2:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}}');",
+    "description": "Registers a new constraint with the system."
+  },
+  "presenter": {
+    "prefix": [
+      "$routes->presenter",
+      "routes presenter"
+    ],
+    "body": "\\$routes->presenter('${1:ulr}');",
+    "description": "Creates a collections of HTTP-verb based routes for a presenter controller."
+  },
+  "resource": {
+    "prefix": [
+      "$routes->resource",
+      "routes resource"
+    ],
+    "body": "\\$routes->resource('${1:ulr}');",
+    "description": "Creates a collections of HTTP-verb based routes for a controller."
+  },
+  "match": {
+    "prefix": [
+      "$routes->match",
+      "routes match"
+    ],
+    "body": "\\$routes->match([${1:verb}], '${2:url}', '${3:control}::${4:function}', ['as' => '${5:alias}', 'filter' => '${6:filter}']);",
+    "description": "Specifies a single route to match for multiple HTTP Verbs."
+  },
+  "addRedirect": {
+    "prefix": [
+      "$routes->addRedirect",
+      "routes addRedirect"
+    ],
+    "body": "\\$routes->addRedirect('${1:url}', '${2:route}');",
+    "description": "Adds a temporary redirect from one route to another."
+  },
+  "map": {
+    "prefix": [
+      "$routes->map",
+      "routes map"
+    ],
+    "body": "\\$routes->map(['${1:routes}'], ['as' => '${2:alias}', 'filter' => '${3:filter}']);",
+    "description": "A shortcut method to add a number of routes at a single time."
+  },
+  "setPrioritize": {
+    "prefix": [
+      "$routes->setPrioritize",
+      "routes setPrioritize"
+    ],
+    "body": "\\$routes->setPrioritize('${1:boolean}');",
+    "description": "Enable or Disable sorting routes by priority."
+  },
+  "setTranslateURIDashes": {
+    "prefix": [
+      "$routes->setTranslateURIDashes",
+      "routes setTranslateURIDashes"
+    ],
+    "body": "\\$routes->setTranslateURIDashes('${1:boolean}');",
+    "description": "Tells the system whether to convert dashes in URI strings into underscores."
+  },
+  "setAutoRoute": {
+    "prefix": [
+      "$routes->setAutoRoute",
+      "routes setAutoRoute"
+    ],
+    "body": "\\$routes->setAutoRoute('${1:boolean}');",
+    "description": "If TRUE, the system will attempt to match the URI against Controllers by matching each segment against folders/files in APPPATH/Controllers, when a match wasn't found against defined routes."
+  },
+  "setDefaultNamespace": {
+    "prefix": [
+      "$routes->setDefaultNamespace",
+      "routes setDefaultNamespace"
+    ],
+    "body": "\\$routes->setDefaultNamespace('${1:namespace}');",
+    "description": "Sets the default namespace to use for Controllers when no other namespace has been specified."
+  },
+  "setDefaultController": {
+    "prefix": [
+      "$routes->setDefaultController",
+      "routes setDefaultController"
+    ],
+    "body": "\\$routes->setDefaultController('${1:controller}');",
+    "description": "Sets the default controller to use when no other controller has been specified."
+  },
+  "setDefaultMethod": {
+    "prefix": [
+      "$routes->setDefaultMethod",
+      "routes setDefaultMethod"
+    ],
+    "body": "\\$routes->setDefaultMethod('${1:method}');",
+    "description": "Sets the default method to call on the controller when no other method has been set in the route."
+  },
+  "environment": {
+    "prefix": [
+      "$routes->environment",
+      "routes environment"
+    ],
+    "body": [
+      "\\$routes->environment('${1:development}',  static function (\\$routes)",
+      "{",
+      "\t\\$routes->add('${2:builder}', '${3:Tools\\\\Builder}::${4:function}');",
+      "});"
+    ],
+    "description": "Limits the routes to a specified ENVIRONMENT or they won't run."
+  },
+  "group": {
+    "prefix": [
+      "$routes->group",
+      "routes group"
+    ],
+    "body": [
+      "\\$routes->group('${1:url}', ['namespace' => '${2:namespace}', 'filter' => '${2:filter}'],  static function (\\$routes)",
+      "{",
+      "\t//",
+      "});"
+    ],
+    "description": "Group a series of routes under a single URL segment."
+  }
+}

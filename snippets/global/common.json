@@ -1,0 +1,222 @@
+{
+  "function app_timezone": {
+    "prefix": "app_timezone",
+    "body": "app_timezone()",
+    "description": "Returns the timezone the application has been set to display dates in. This might be different than the timezone set at the server level, as you often want to stores dates in UTC and convert them on the fly for the user."
+  },
+  "function cache": {
+    "prefix": "cache",
+    "body": "cache(${1:cache})",
+    "description": "A convenience method that provides access to the Cache object. If no parameter is provided, will return the object, otherwise, will attempt to return the cached value."
+  },
+  "function clean_path": {
+    "prefix": "clean_path",
+    "body": "clean_path(${1:path})",
+    "description": "A convenience method to clean paths for a nicer looking output. Useful for exception handling, error logging, etc."
+  },
+  "function command": {
+    "prefix": "command",
+    "body": "command(${1:command})",
+    "description": "Runs a single command."
+  },
+  "function config": {
+    "prefix": "config",
+    "body": "config(${1:name}, ${2:getShared})",
+    "description": "More simple way of getting config instances from Factories."
+  },
+  "function cookie": {
+    "prefix": "cookie",
+    "body": "cookie(${1:name}, ${2:value}, ${3:options})",
+    "description": "Simpler way to create a new Cookie instance."
+  },
+  "function cookies": {
+    "prefix": "cookies",
+    "body": "cookies(${1:cookies}, ${2:getGlobal})",
+    "description": "Fetches the global `CookieStore` instance held by `Response`."
+  },
+  "function csrf_token": {
+    "prefix": "csrf_token",
+    "body": "csrf_token()",
+    "description": "Returns the CSRF token name."
+  },
+  "function csrf_header": {
+    "prefix": "csrf_header",
+    "body": "csrf_header()",
+    "description": "Returns the CSRF header name."
+  },
+  "function csrf_hash": {
+    "prefix": "csrf_hash",
+    "body": "csrf_hash()",
+    "description": "Returns the CSRF header name."
+  },
+  "function csrf_field": {
+    "prefix": "csrf_field",
+    "body": "csrf_field(${1:id})",
+    "description": "Generates a hidden input field for use within manually generated forms."
+  },
+  "function csrf_meta": {
+    "prefix": "csrf_meta",
+    "body": "csrf_meta(${1:id})",
+    "description": "Generates a meta tag for use within javascript calls."
+  },
+  "function csp_style_nonce": {
+    "prefix": "csp_style_nonce",
+    "body": "csp_style_nonce(${1:id})",
+    "description": "Generates a nonce attribute for style tag."
+  },
+  "function csp_script_nonce": {
+    "prefix": "csp_script_nonce",
+    "body": "csp_script_nonce()",
+    "description": "Generates a nonce attribute for script tag."
+  },
+  "function db_connect": {
+    "prefix": "db_connect",
+    "body": "db_connect(${1:db}, ${2:getShared})",
+    "description": "Grabs a database connection and returns it to the user."
+  },
+  "function env": {
+    "prefix": "env",
+    "body": "env(${1:key}, ${2:default})",
+    "description": "Allows user to retrieve values from the environment variables that have been set. Especially useful for retrieving values set from the .env file for use in config files."
+  },
+  "function esc": {
+    "prefix": "esc",
+    "body": "esc([${1:data}], ${2:context}, ${3:encoding})",
+    "description": "Performs simple auto-escaping of data for security reasons. Might consider making this more complex at a later date."
+  },
+  "function force_https": {
+    "prefix": "force_https",
+    "body": "force_https(${1:duration}, ${2:request}, ${3:request})",
+    "description": "Used to force a page to be accessed in via HTTPS. Uses a standard redirect, plus will set the HSTS header for modern browsers that support, which gives best protection against man-in-the-middle attacks."
+  },
+  "function function_usable": {
+    "prefix": "function_usable",
+    "body": "function_usable(${1:functionName})",
+    "description": "Function usable."
+  },
+  "function helper": {
+    "prefix": "helper",
+    "body": "helper(${1:filenames})",
+    "description": "Loads a helper file into memory. Supports namespaced helpers, both in and out of the 'helpers' directory of a namespaced directory."
+  },
+  "function is_cli": {
+    "prefix": "is_cli",
+    "body": "is_cli()",
+    "description": "Check if PHP was invoked from the command line."
+  },
+  "function is_really_writable": {
+    "prefix": "is_really_writable",
+    "body": "is_really_writable(${1:file)",
+    "description": "Tests for file writability is_writable() returns TRUE on Windows servers when you really can't write to the file, based on the read-only attribute. is_writable() is also unreliable on Unix servers if safe_mode is on."
+  },
+  "function is_windows": {
+    "prefix": "is_windows",
+    "body": "is_windows(${1:boolean})",
+    "description": "Detect if platform is running in Windows."
+  },
+  "function lang": {
+    "prefix": "lang",
+    "body": "lang(${1:line}, ${2:args}, ${3:locale})",
+    "description": "A convenience method to translate a string or array of them and format the result with the intl extension's MessageFormatter."
+  },
+  "function log_message": {
+    "prefix": "log_message",
+    "body": "log_message(${1:level}, ${2:message}, ${3:context})",
+    "description": "A convenience/compatibility method for logging events through the Log system."
+  },
+  "function model": {
+    "prefix": "model",
+    "body": "model(${1:name}, ${2:getShared}, ${3:conn})",
+    "description": "More simple way of getting model instances from Factories."
+  },
+  "function old": {
+    "prefix": "old",
+    "body": "old(${1:key}, ${2:default}, ${3:escape})",
+    "description": "Provides access to \"old input\" that was set in the session during a redirect()->withInput()."
+  },
+  "function redirect": {
+    "prefix": "redirect",
+    "body": "redirect(${1:route})",
+    "description": "Convenience method that works with the current global $request and $router instances to redirect using named/reverse-routed routes to determine the URL to go to."
+  },
+  "function _solidus": {
+    "prefix": "_solidus",
+    "body": "_solidus()",
+    "description": "Generates the solidus character (`/`) depending on the HTML5 compatibility flag in `Config\\DocTypes`."
+  },
+  "function remove_invisible_characters": {
+    "prefix": "remove_invisible_characters",
+    "body": "remove_invisible_characters(${1:string}, ${2:urlEncoded})",
+    "description": "Remove Invisible Characters. This prevents sandwiching null characters between ascii characters, like Java\\0script."
+  },
+  "function request": {
+    "prefix": "request",
+    "body": "request()",
+    "description": "Returns the shared Request."
+  },
+  "function response": {
+    "prefix": "response",
+    "body": "response()",
+    "description": "Returns the shared Response."
+  },
+  "function route_to": {
+    "prefix": "route_to",
+    "body": "route_to(${1:method}, ${2:params})",
+    "description": "Given a route name or controller/method string and any params, will attempt to build the relative URL to the matching route."
+  },
+  "function session": {
+    "prefix": "session",
+    "body": "session(${1:val})",
+    "description": "A convenience method for accessing the session instance, or an item that has been set in the session."
+  },
+  "function service": {
+    "prefix": "service",
+    "body": "service(${1:name}, ${2:params})",
+    "description": "Allows cleaner access to the Services Config file. Always returns a SHARED instance of the class, so calling the function multiple times should always return the same instance."
+  },
+  "function single_service": {
+    "prefix": "single_service",
+    "body": "single_service(${1:name}, ${2:params})",
+    "description": "Always returns a new instance of the class."
+  },
+  "function slash_item": {
+    "prefix": "slash_item",
+    "body": "slash_item(${1:item})",
+    "description": "Fetch a config file item with slash appended (if not empty)."
+  },
+  "function stringify_attributes": {
+    "prefix": "stringify_attributes",
+    "body": "stringify_attributes(${1:attributes}, ${2:js})",
+    "description": "Stringify attributes for use in HTML tags."
+  },
+  "function timer": {
+    "prefix": "timer",
+    "body": "timer(${1:name}, ${2:callable})",
+    "description": "A convenience method for working with the timer."
+  },
+  "function view": {
+    "prefix": "view",
+    "body": "view(${1:name}, [${2:data}], ${3:options})",
+    "description": "Grabs the current RendererInterface-compatible class and tells it to render the specified view. Simply provides a convenience method that can be used in Controllers, libraries, and routed closures."
+  },
+  "function view_cell": {
+    "prefix": "view_cell",
+    "body": "view_cell(${1:library}, ${2:params}, ${3:seconds}, ${4:cacheName})",
+    "description": "View cells are used within views to insert HTML chunks that are managed by other classes."
+  },
+  "function class_basename": {
+    "prefix": "class_basename",
+    "body": "class_basename(${1:class})",
+    "description": "Get the class \"basename\" of the given object / class."
+  },
+  "function class_uses_recursive": {
+    "prefix": "class_uses_recursive",
+    "body": "class_uses_recursive(${1:class})",
+    "description": "Returns all traits used by a class, its parent classes and trait of their traits."
+  },
+  "function trait_uses_recursive": {
+    "prefix": "trait_uses_recursive",
+    "body": "trait_uses_recursive(${1:trait})",
+    "description": "Returns all traits used by a trait and its traits."
+  }
+}

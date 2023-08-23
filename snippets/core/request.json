@@ -1,0 +1,338 @@
+{
+  "getIPAddress": {
+    "prefix": [
+      "request->getIPAddress",
+      "request getIPAddress"
+    ],
+    "body": "request->getIPAddress();",
+    "description": "The user's IP Address, if it can be detected. If the IP address is not a valid IP address, then will return 0.0.0.0."
+  },
+  "isValidIP": {
+    "prefix": [
+      "request->isValidIP",
+      "request isValidIP"
+    ],
+    "body": "request->isValidIP(${1:ip}, ${2:which});",
+    "description": "Validate an IP address."
+  },
+  "getMethod": {
+    "prefix": [
+      "request->getMethod",
+      "request getMethod"
+    ],
+    "body": "request->getMethod(${1:boolean});",
+    "description": "Get the request method."
+  },
+  "setMethod": {
+    "prefix": [
+      "request->setMethod",
+      "request setMethod"
+    ],
+    "body": "request->setMethod(${1:method});",
+    "description": "Sets the request method. Used when spoofing the request."
+  },
+  "withMethod": {
+    "prefix": [
+      "request->withMethod",
+      "request withMethod"
+    ],
+    "body": "request->withMethod(${1:method});",
+    "description": "Returns an instance with the specified method."
+  },
+  "getUri": {
+    "prefix": [
+      "request->getUri",
+      "request getUri"
+    ],
+    "body": "request->getUri();",
+    "description": "Retrieves the URI instance."
+  },
+  "getServer": {
+    "prefix": [
+      "request->getServer",
+      "request getServer"
+    ],
+    "body": "request->getServer(${1:index}, ${2:filter});",
+    "description": "Fetch an item from the $_SERVER array."
+  },
+  "detectLocale": {
+    "prefix": [
+      "request->detectLocale",
+      "request detectLocale"
+    ],
+    "body": "request->detectLocale(${1:config});",
+    "description": "Handles setting up the locale, perhaps auto-detecting through content negotiation."
+  },
+  "detectPath": {
+    "prefix": [
+      "request->detectPath",
+      "request detectPath"
+    ],
+    "body": "request->detectPath(${1:protocol});",
+    "description": "Detects the relative path based on the URIProtocol Config setting."
+  },
+  "parseRequestURI": {
+    "prefix": [
+      "request->parseRequestURI",
+      "request parseRequestURI"
+    ],
+    "body": "request->parseRequestURI();",
+    "description": "Will parse the REQUEST_URI and automatically detect the URI from it, fixing the query string if necessary."
+  },
+  "parseQueryString": {
+    "prefix": [
+      "request->parseQueryString",
+      "request parseQueryString"
+    ],
+    "body": "request->parseQueryString();",
+    "description": "Parse QUERY_STRING."
+  },
+  "negotiate": {
+    "prefix": [
+      "request->negotiate",
+      "request negotiate"
+    ],
+    "body": "request->negotiate(${1:type}, ${2:supported}, ${3:strictMatch});",
+    "description": "Provides a convenient way to work with the Negotiate class for content negotiation."
+  },
+  "is": {
+    "prefix": [
+      "request->is",
+      "request is"
+    ],
+    "body": "request->is(${1:type});",
+    "description": "Checks this request type."
+  },
+  "isCLI": {
+    "prefix": [
+      "request->isCLI",
+      "request isCLI"
+    ],
+    "body": "request->isCLI();",
+    "description": "Determines if this request was made from the command line (CLI)."
+  },
+  "isAJAX": {
+    "prefix": [
+      "request->isAJAX",
+      "request isAJAX"
+    ],
+    "body": "request->isAJAX();",
+    "description": "Test to see if a request contains the HTTP_X_REQUESTED_WITH header."
+  },
+  "isSecure": {
+    "prefix": [
+      "request->isSecure",
+      "request isSecure"
+    ],
+    "body": "request->isSecure();",
+    "description": "Attempts to detect if the current connection is secure through a few different methods."
+  },
+  "setPath": {
+    "prefix": [
+      "request->setPath",
+      "request setPath"
+    ],
+    "body": "request->setPath(${1:path}, ${2:config});",
+    "description": "Sets the relative path and updates the URI object."
+  },
+  "getPath": {
+    "prefix": [
+      "request->getPath",
+      "request getPath"
+    ],
+    "body": "request->getPath(${1:path}, ${2:config});",
+    "description": "Returns the URI path relative to baseURL, running detection as necessary."
+  },
+  "setLocale": {
+    "prefix": [
+      "request->setLocale",
+      "request setLocale"
+    ],
+    "body": "request->setLocale(${1:locale});",
+    "description": "Sets the locale string for this request."
+  },
+  "getLocale": {
+    "prefix": [
+      "request->getLocale",
+      "request getLocale"
+    ],
+    "body": "request->getLocale();",
+    "description": "Gets the current locale, with a fallback to the default locale if none is set."
+  },
+  "getDefaultLocale": {
+    "prefix": [
+      "request->getDefaultLocale",
+      "request getDefaultLocale"
+    ],
+    "body": "request->getDefaultLocale();",
+    "description": "Returns the default locale as set in Config\\App.php"
+  },
+  "getVar": {
+    "prefix": [
+      "request->getVar",
+      "request getVar"
+    ],
+    "body": "request->getVar(${1:index}, ${2:filter}, ${3:flags});",
+    "description": "Fetch an item from JSON input stream with fallback to $_REQUEST object."
+  },
+  "getJSON": {
+    "prefix": [
+      "request->getJSON",
+      "request getJSON"
+    ],
+    "body": "request->getJSON(${1:assoc}, ${2:depth}, ${3:options});",
+    "description": "A convenience method that grabs the raw input stream and decodes the JSON into an array."
+  },
+  "getJsonVar": {
+    "prefix": [
+      "request->getJsonVar",
+      "request getJsonVar"
+    ],
+    "body": "request->getJsonVar(${1:index}, ${2:assoc}, ${3:filter}, ${4:flags});",
+    "description": "Get a specific variable from a JSON input stream."
+  },
+  "getRawInput": {
+    "prefix": [
+      "request->getRawInput",
+      "request getRawInput"
+    ],
+    "body": "request->getRawInput();",
+    "description": "A convenience method that grabs the raw input stream(send method in PUT, PATCH, DELETE) and decodes the String into an array."
+  },
+  "getRawInputVar": {
+    "prefix": [
+      "request->getRawInputVar",
+      "request getRawInputVar"
+    ],
+    "body": "request->getRawInputVar(${1:index}, ${2:filter}, ${3:flags});",
+    "description": "Gets a specific variable from raw input stream (send method in PUT, PATCH, DELETE)."
+  },
+  "getGet": {
+    "prefix": [
+      "request->getGet",
+      "request getGet"
+    ],
+    "body": "request->getGet(${1:index}, ${2:filter}, ${3:flags});",
+    "description": "Fetch an item from GET data."
+  },
+  "getPost": {
+    "prefix": [
+      "request->getPost",
+      "request getPost"
+    ],
+    "body": "request->getPost(${1:index}, ${2:filter}, ${3:flags});",
+    "description": "Fetch an item from POST data."
+  },
+  "getPostGet": {
+    "prefix": [
+      "request->getPostGet",
+      "request getPostGet"
+    ],
+    "body": "request->getPostGet(${1:index}, ${2:filter}, ${3:flags});",
+    "description": "Fetch an item from POST data with fallback to GET."
+  },
+  "getGetPost": {
+    "prefix": [
+      "request->getGetPost",
+      "request getGetPost"
+    ],
+    "body": "request->getGetPost(${1:index}, ${2:filter}, ${3:flags});",
+    "description": "Fetch an item from GET data with fallback to POST."
+  },
+  "getCookie": {
+    "prefix": [
+      "request->getCookie",
+      "request getCookie"
+    ],
+    "body": "request->getGetPost(${1:index}, ${2:filter}, ${3:flags});",
+    "description": "Fetch an item from the COOKIE array."
+  },
+  "getUserAgent": {
+    "prefix": [
+      "request->getUserAgent",
+      "request getUserAgent"
+    ],
+    "body": "request->getUserAgent();",
+    "description": "Fetch the user agent string."
+  },
+  "getOldInput": {
+    "prefix": [
+      "request->getOldInput",
+      "request getOldInput"
+    ],
+    "body": "request->getOldInput(${1:key});",
+    "description": "Attempts to get old Input data that has been flashed to the session with redirect_with_input()."
+  },
+  "getFiles": {
+    "prefix": [
+      "request->getFiles",
+      "request getFiles"
+    ],
+    "body": "request->getFiles();",
+    "description": "Returns an array of all files that have been uploaded with this request. Each file is represented by an UploadedFile instance."
+  },
+  "getFileMultiple": {
+    "prefix": [
+      "request->getFileMultiple",
+      "request getFileMultiple"
+    ],
+    "body": "request->getFileMultiple(${1:fileID});",
+    "description": "Verify if a file exist, by the name of the input field used to upload it, in the collection of uploaded files and if is have been uploaded with multiple option."
+  },
+  "getFile": {
+    "prefix": [
+      "request->getFile",
+      "request getFile"
+    ],
+    "body": "request->getFile(${1:fileID});",
+    "description": "Retrieves a single file by the name of the input field used to upload it."
+  },
+  "removeRelativeDirectory": {
+    "prefix": [
+      "request->removeRelativeDirectory",
+      "request removeRelativeDirectory"
+    ],
+    "body": "request->removeRelativeDirectory(${1:uri});",
+    "description": "Remove relative directory (../) and multi slashes (///)."
+  },
+  "getOptions": {
+    "prefix": [
+      "request->getOptions",
+      "request getOptions"
+    ],
+    "body": "request->getOptions();",
+    "description": "Returns an associative array of all CLI options found, with their values."
+  },
+  "getArgs": {
+    "prefix": [
+      "request->getArgs",
+      "request getArgs"
+    ],
+    "body": "request->getArgs();",
+    "description": "Returns an array of all CLI arguments (segments and options)."
+  },
+  "getSegments": {
+    "prefix": [
+      "request->getSegments",
+      "request getSegments"
+    ],
+    "body": "request->getSegments();",
+    "description": "Returns the path segments."
+  },
+  "getOption": {
+    "prefix": [
+      "request->getOption",
+      "request getOption"
+    ],
+    "body": "request->getOption();",
+    "description": "Returns the value for a single CLI option that was passed in."
+  },
+  "getOptionString": {
+    "prefix": [
+      "request->getOptionString",
+      "request getOptionString"
+    ],
+    "body": "request->getOptionString(${1:useLongOpts});",
+    "description": "Returns the options as a string, suitable for passing along on the CLI to other commands."
+  }
+}

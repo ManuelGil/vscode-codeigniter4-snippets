@@ -1,0 +1,342 @@
+{
+  "getStatusCode": {
+    "prefix": [
+      "response->getStatusCode",
+      "response getStatusCode"
+    ],
+    "body": "response->getStatusCode();",
+    "description": "Gets the response status code."
+  },
+  "setStatusCode": {
+    "prefix": [
+      "response->setStatusCode",
+      "response setStatusCode"
+    ],
+    "body": "response->setStatusCode(${1:code}, ${2:reason});",
+    "description": "Return an instance with the specified status code and, optionally, reason phrase."
+  },
+  "getReason": {
+    "prefix": [
+      "response->getReason",
+      "response getReason"
+    ],
+    "body": "response->getReason();",
+    "description": "Gets the response phrase associated with the status code."
+  },
+  "getReasonPhrase": {
+    "prefix": [
+      "response->getReasonPhrase",
+      "response getReasonPhrase"
+    ],
+    "body": "response->getReasonPhrase();",
+    "description": "Gets the response reason phrase associated with the status code."
+  },
+  "setDate": {
+    "prefix": [
+      "response->setDate",
+      "response setDate"
+    ],
+    "body": "response->setDate(${1:date});",
+    "description": "Sets the date header."
+  },
+  "setLastModified": {
+    "prefix": [
+      "response->setLastModified",
+      "response setLastModified"
+    ],
+    "body": "response->setLastModified(${1:date});",
+    "description": "Sets the Last-Modified date header."
+  },
+  "setLink": {
+    "prefix": [
+      "response->setLink",
+      "response setLink"
+    ],
+    "body": "response->setLink(${1:pager});",
+    "description": "Set the Link Header."
+  },
+  "setContentType": {
+    "prefix": [
+      "response->setContentType",
+      "response setContentType"
+    ],
+    "body": "response->setContentType(${1:mime}, ${2:charset});",
+    "description": "Sets the Content Type header for this response with the mime type and, optionally, the charset."
+  },
+  "setJSON": {
+    "prefix": [
+      "response->setJSON",
+      "response setJSON"
+    ],
+    "body": "response->setJSON(${1:body}, ${2:unencoded});",
+    "description": "Sets the Content Type header for this response with the mime type and, optionally, the charset."
+  },
+  "getJSON": {
+    "prefix": [
+      "response->getJSON",
+      "response getJSON"
+    ],
+    "body": "response->getJSON();",
+    "description": "Returns the current body, converted to JSON is it isn't already."
+  },
+  "setXML": {
+    "prefix": [
+      "response->setXML",
+      "response setXML"
+    ],
+    "body": "response->setXML();",
+    "description": "Converts $body into XML, and sets the correct Content-Type."
+  },
+  "noCache": {
+    "prefix": [
+      "response->noCache",
+      "response noCache"
+    ],
+    "body": "response->noCache();",
+    "description": "Sets the appropriate headers to ensure this response is not cached by the browsers."
+  },
+  "setCache": {
+    "prefix": [
+      "response->setCache",
+      "response setCache"
+    ],
+    "body": "response->setCache(${1:options});",
+    "description": "A shortcut method that allows the developer to set all of the cache-control headers in one method call."
+  },
+  "send": {
+    "prefix": [
+      "response->send",
+      "response send"
+    ],
+    "body": "response->send();",
+    "description": "Sends the output to the browser."
+  },
+  "sendHeaders": {
+    "prefix": [
+      "response->sendHeaders",
+      "response sendHeaders"
+    ],
+    "body": "response->sendHeaders();",
+    "description": "Sends the headers of this HTTP request to the browser."
+  },
+  "sendBody": {
+    "prefix": [
+      "response->sendBody",
+      "response sendBody"
+    ],
+    "body": "response->sendBody();",
+    "description": "Sends the Body of the message to the browser."
+  },
+  "setCookie": {
+    "prefix": [
+      "response->setCookie",
+      "response setCookie"
+    ],
+    "body": [
+      "response->setCookie(",
+      "\t${1:name},",
+      "\t${2:value},",
+      "\t${3:expire},",
+      "\t${4:domain},",
+      "\t${5:path},",
+      "\t${6:prefix},",
+      "\t${7:secure},",
+      "\t${8:httponly},",
+      "\t${9:samesite},",
+      ");"
+    ],
+    "description": "Set a cookie."
+  },
+  "hasCookie": {
+    "prefix": [
+      "response->hasCookie",
+      "response hasCookie"
+    ],
+    "body": "response->hasCookie(${1:name}, ${2:value}, ${3:prefix});",
+    "description": "Set a cookie."
+  },
+  "getCookie": {
+    "prefix": [
+      "response->getCookie",
+      "response getCookie"
+    ],
+    "body": "response->getCookie(${1:name}, ${2:prefix});",
+    "description": "Returns the cookie."
+  },
+  "deleteCookie": {
+    "prefix": [
+      "response->deleteCookie",
+      "response deleteCookie"
+    ],
+    "body": "response->deleteCookie(${1:name}, ${2:domain}, ${3:path}, ${4:prefix});",
+    "description": "Sets a cookie to be deleted when the response is sent."
+  },
+  "getCookies": {
+    "prefix": [
+      "response->getCookies",
+      "response getCookies"
+    ],
+    "body": "response->getCookies();",
+    "description": "Returns all cookies currently set."
+  },
+  "getCookieStore": {
+    "prefix": [
+      "response->getCookieStore",
+      "response getCookieStore"
+    ],
+    "body": "response->getCookieStore();",
+    "description": "Returns the `CookieStore` instance."
+  },
+  "redirect": {
+    "prefix": [
+      "response->redirect",
+      "response redirect"
+    ],
+    "body": "response->redirect(${1:uri}, ${2:method}, ${3:code});",
+    "description": "Perform a redirect to a new URL, in two flavors: header or location."
+  },
+  "download": {
+    "prefix": [
+      "response->download",
+      "response download"
+    ],
+    "body": "response->download(${1:filename}, ${2:data}, ${3:setMime});",
+    "description": "Generates the headers that force a download to happen. And sends the file to the browser."
+  },
+  "getCSP": {
+    "prefix": [
+      "response->getCSP",
+      "response getCSP"
+    ],
+    "body": "response->getCSP();",
+    "description": "Get Content Security Policy handler."
+  },
+  "respond": {
+    "prefix": [
+      "$this->respond",
+      "response respond"
+    ],
+    "body": "\\$this->respond(${1:data}, ${2:status}, ${3:message});",
+    "description": "Provides a single, simple method to return an API response, formatted to match the requested format, with proper content-type and status code."
+  },
+  "fail": {
+    "prefix": [
+      "$this->fail",
+      "response fail"
+    ],
+    "body": "\\$this->fail(${1:messages}, ${2:status}, ${3:code}, ${4:customMessage});",
+    "description": "Used for generic failures that no custom methods exist for."
+  },
+  "respondCreated": {
+    "prefix": [
+      "$this->respondCreated",
+      "response respondCreated"
+    ],
+    "body": "\\$this->respondCreated(${1:data}, ${2:message});",
+    "description": "Used after successfully creating a new resource."
+  },
+  "respondDeleted": {
+    "prefix": [
+      "$this->respondDeleted",
+      "response respondDeleted"
+    ],
+    "body": "\\$this->respondDeleted(${1:data}, ${2:message});",
+    "description": "Used after a resource has been successfully deleted."
+  },
+  "respondUpdated": {
+    "prefix": [
+      "$this->respondUpdated",
+      "response respondUpdated"
+    ],
+    "body": "\\$this->respondUpdated(${1:data}, ${2:message});",
+    "description": "Used after a resource has been successfully updated."
+  },
+  "respondNoContent": {
+    "prefix": [
+      "$this->respondNoContent",
+      "response respondNoContent"
+    ],
+    "body": "\\$this->respondNoContent(${1:message});",
+    "description": "Used after a command has been successfully executed but there is no meaningful reply to send back to the client."
+  },
+  "failUnauthorized": {
+    "prefix": [
+      "$this->failUnauthorized",
+      "response failUnauthorized"
+    ],
+    "body": "\\$this->failUnauthorized(${1:description}, ${2:code}, ${3:message});",
+    "description": "Used when the client is either didn't send authorization information, or had bad authorization credentials. User is encouraged to try again with the proper information."
+  },
+  "failForbidden": {
+    "prefix": [
+      "$this->failForbidden",
+      "response failForbidden"
+    ],
+    "body": "\\$this->failForbidden(${1:description}, ${2:code}, ${3:message});",
+    "description": "Used when access is always denied to this resource and no amount of trying again will help."
+  },
+  "failNotFound": {
+    "prefix": [
+      "$this->failNotFound",
+      "response failNotFound"
+    ],
+    "body": "\\$this->failNotFound(${1:description}, ${2:code}, ${3:message});",
+    "description": "Used when a specified resource cannot be found."
+  },
+  "failValidationError": {
+    "prefix": [
+      "$this->failValidationError",
+      "response failValidationError"
+    ],
+    "body": "\\$this->failValidationError(${1:description}, ${2:code}, ${3:message});",
+    "description": "Used when the data provided by the client cannot be validated."
+  },
+  "failValidationErrors": {
+    "prefix": [
+      "$this->failValidationErrors",
+      "response failValidationErrors"
+    ],
+    "body": "\\$this->failValidationErrors(${1:errors}, ${2:code}, ${3:message});",
+    "description": "Used when the data provided by the client cannot be validated on one or more fields."
+  },
+  "failResourceExists": {
+    "prefix": [
+      "$this->failResourceExists",
+      "response failResourceExists"
+    ],
+    "body": "\\$this->failResourceExists(${1:description}, ${2:code}, ${3:message});",
+    "description": "Use when trying to create a new resource and it already exists."
+  },
+  "failResourceGone": {
+    "prefix": [
+      "$this->failResourceGone",
+      "response failResourceGone"
+    ],
+    "body": "\\$this->failResourceGone(${1:description}, ${2:code}, ${3:message});",
+    "description": "Use when a resource was previously deleted. This is different than Not Found, because here we know the data previously existed, but is now gone, where Not Found means we simply cannot find any information about it."
+  },
+  "failTooManyRequests": {
+    "prefix": [
+      "$this->failTooManyRequests",
+      "response failTooManyRequests"
+    ],
+    "body": "\\$this->failTooManyRequests(${1:description}, ${2:code}, ${3:message});",
+    "description": "Used when the user has made too many requests for the resource recently."
+  },
+  "failServerError": {
+    "prefix": [
+      "$this->failServerError",
+      "response failServerError"
+    ],
+    "body": "\\$this->failServerError(${1:description}, ${2:code}, ${3:message});",
+    "description": "Used when there is a server error."
+  },
+  "setResponseFormat": {
+    "prefix": [
+      "$this->setResponseFormat",
+      "response setResponseFormat"
+    ],
+    "body": "\\$this->setResponseFormat(${1:format});",
+    "description": "Sets the format the response should be in."
+  }
+}

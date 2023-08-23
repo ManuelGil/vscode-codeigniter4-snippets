@@ -1,0 +1,90 @@
+{
+  "name": "vscode-codeigniter4-snippets",
+  "displayName": "CodeIgniter 4 Snippets",
+  "description": "CodeIgniter4 Snippets for Visual Studio Code",
+  "version": "1.0.0",
+  "icon": "icon.png",
+  "license": "MIT",
+  "publisher": "imgildev",
+  "author": {
+    "name": "Manuel Gil",
+    "url": "https://github.com/ManuelGil"
+  },
+  "engines": {
+    "vscode": "^1.46.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "autocomplete",
+    "autocomplete-functionality",
+    "codeigniter",
+    "codeigniter4",
+    "commands",
+    "grammars",
+    "grammars-utility",
+    "php",
+    "snippets",
+    "snippets-collection",
+    "snippets-collections",
+    "snippets-library",
+    "snippets-plugin"
+  ],
+  "homepage": "https://github.com/ManuelGil/vscode-codeigniter4-snippets",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ManuelGil/vscode-codeigniter4-snippets"
+  },
+  "bugs": {
+    "url": "https://github.com/ManuelGil/vscode-codeigniter4-snippets/issues"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "php",
+        "path": "./snippets/global/spark.json"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/global/common.json"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/global/const.json"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/core/builder.json"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/core/database.json"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/core/request.json"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/core/response.json"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/core/routes.json"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/core/session.json"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/core/time.json"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/core/validation.json"
+      }
+    ]
+  }
+}

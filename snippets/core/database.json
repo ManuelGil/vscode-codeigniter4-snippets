@@ -1,0 +1,386 @@
+{
+  "database connection": {
+    "prefix": [
+      "$db",
+      "database connection"
+    ],
+    "body": "\\$db = \\Config\\Database::connect(${1:group}, ${2:group});",
+    "description": "Connect to the database."
+  },
+  "database reconnect": {
+    "prefix": [
+      "$db->reconnect",
+      "database reconnect"
+    ],
+    "body": "\\$db->reconnect();",
+    "description": "Keep or establish the connection if no queries have been sent for a length of time exceeding the server's idle timeout."
+  },
+  "database close": {
+    "prefix": [
+      "$db->close",
+      "database close"
+    ],
+    "body": "\\$db->close();",
+    "description": "Close the database connection."
+  },
+  "database query": {
+    "prefix": [
+      "$db->query",
+      "database query"
+    ],
+    "body": "\\$db->query('${1:sql}', ${2:binds}, ${3:setEscapeFlags}, ${4:queryClass});",
+    "description": "Orchestrates a query against the database. Queries must use Database\\Statement objects to store the query and build it. This method works with the cache."
+  },
+  "database simpleQuery": {
+    "prefix": [
+      "$db->simpleQuery",
+      "database simpleQuery"
+    ],
+    "body": "\\$db->simpleQuery('${1:sql}');",
+    "description": "Performs a basic query against the database. No binding or caching is performed, nor are transactions handled. Simply takes a raw query string and returns the database-specific result id."
+  },
+  "database prefixTable": {
+    "prefix": [
+      "$db->prefixTable",
+      "database prefixTable"
+    ],
+    "body": "\\$db->prefixTable(${1:table});",
+    "description": "Prepends a database prefix if one exists in configuration."
+  },
+  "database affectedRows": {
+    "prefix": [
+      "$db->affectedRows",
+      "database affectedRows"
+    ],
+    "body": "\\$db->affectedRows();",
+    "description": "Returns the total number of rows affected by this query."
+  },
+  "database escape": {
+    "prefix": [
+      "$db->escape",
+      "database escape"
+    ],
+    "body": "\\$db->escape(${1:str});",
+    "description": "Returns the total number of rows affected by this query."
+  },
+  "database escapeString": {
+    "prefix": [
+      "$db->escapeString",
+      "database escapeString"
+    ],
+    "body": "\\$db->escapeString(${1:str}, ${2:boolean});",
+    "description": "Escape String."
+  },
+  "database escapeLikeString": {
+    "prefix": [
+      "$db->escapeLikeString",
+      "database escapeLikeString"
+    ],
+    "body": "\\$db->escapeLikeString(${1:str});",
+    "description": "Escape LIKE String."
+  },
+  "database setPrefix": {
+    "prefix": [
+      "$db->setPrefix",
+      "database setPrefix"
+    ],
+    "body": "\\$db->setPrefix(${1:prefix});",
+    "description": "Set DB Prefix. Set's the DB Prefix to something new without needing to reconnect."
+  },
+  "database getPrefix": {
+    "prefix": [
+      "$db->getPrefix",
+      "database getPrefix"
+    ],
+    "body": "\\$db->getPrefix();",
+    "description": "Returns the database prefix."
+  },
+  "database getPlatform": {
+    "prefix": [
+      "$db->getPlatform",
+      "database getPlatform"
+    ],
+    "body": "\\$db->getPlatform();",
+    "description": "The name of the platform in use (MySQLi, Postgre, SQLite3, OCI8, etc)."
+  },
+  "database setAliasedTables": {
+    "prefix": [
+      "$db->setAliasedTables",
+      "database setAliasedTables"
+    ],
+    "body": "\\$db->setAliasedTables(${1:aliases});",
+    "description": "Sets the Table Aliases to use. These are typically collected during use of the Builder, and set here so queries are built correctly."
+  },
+  "database addTableAlias": {
+    "prefix": [
+      "$db->addTableAlias",
+      "database addTableAlias"
+    ],
+    "body": "\\$db->addTableAlias(${1:table});",
+    "description": "Add a table alias to our list."
+  },
+  "database execute": {
+    "prefix": [
+      "$db->execute",
+      "database execute"
+    ],
+    "body": "\\$db->execute();",
+    "description": "Executes the query against the database."
+  },
+  "database transOff": {
+    "prefix": [
+      "$db->transOff",
+      "database transOff"
+    ],
+    "body": "\\$db->transOff();",
+    "description": "Disable Transactions. This permits transactions to be disabled at run-time."
+  },
+  "database transStrict": {
+    "prefix": [
+      "$db->transStrict",
+      "database transStrict"
+    ],
+    "body": "\\$db->transStrict(${1:boolean});",
+    "description": "Enable/disable Transaction Strict Mode."
+  },
+  "database transStart": {
+    "prefix": [
+      "$db->transStart",
+      "database transStart"
+    ],
+    "body": "\\$db->transStart(${1:boolean});",
+    "description": "Start Transaction."
+  },
+  "database transException": {
+    "prefix": [
+      "$db->transException",
+      "database transException"
+    ],
+    "body": "\\$db->transException(${1:boolean});",
+    "description": "If set to true, exceptions are thrown during transactions."
+  },
+  "database transComplete": {
+    "prefix": [
+      "$db->transComplete",
+      "database transComplete"
+    ],
+    "body": "\\$db->transComplete();",
+    "description": "Complete Transaction."
+  },
+  "database transStatus": {
+    "prefix": [
+      "$db->transStatus",
+      "database transStatus"
+    ],
+    "body": "\\$db->transStatus();",
+    "description": "Lets you retrieve the transaction flag to determine if it has failed."
+  },
+  "database transBegin": {
+    "prefix": [
+      "$db->transBegin",
+      "database transBegin"
+    ],
+    "body": "\\$db->transBegin(${1:boolean});",
+    "description": "Begin Transaction."
+  },
+  "database transCommit": {
+    "prefix": [
+      "$db->transCommit",
+      "database transCommit"
+    ],
+    "body": "\\$db->transCommit(${1:boolean});",
+    "description": "Commit Transaction."
+  },
+  "database transRollback": {
+    "prefix": [
+      "$db->transRollback",
+      "database transRollback"
+    ],
+    "body": "\\$db->transRollback();",
+    "description": "Rollback Transaction."
+  },
+  "database table": {
+    "prefix": [
+      "$db->table",
+      "database table"
+    ],
+    "body": "\\$db->table(${1:tableName});",
+    "description": "Returns a non-shared new instance of the query builder for this connection."
+  },
+  "database newQuery": {
+    "prefix": [
+      "$db->newQuery",
+      "database newQuery"
+    ],
+    "body": "\\$db->newQuery();",
+    "description": "Returns a new instance of the BaseBuilder class with a cleared FROM clause."
+  },
+  "database prepare": {
+    "prefix": [
+      "$db->prepare",
+      "database prepare"
+    ],
+    "body": "\\$db->prepare(${1:func}, ${2:options});",
+    "description": "Creates a prepared statement with the database that can then be used to execute multiple statements against. Within the closure, you would build the query in any normal way, though the Query Builder is the expected manner."
+  },
+  "database getLastQuery": {
+    "prefix": [
+      "$db->getLastQuery",
+      "database getLastQuery"
+    ],
+    "body": "\\$db->getLastQuery();",
+    "description": "Returns the last query's statement object."
+  },
+  "database showLastQuery": {
+    "prefix": [
+      "$db->showLastQuery",
+      "database showLastQuery"
+    ],
+    "body": "\\$db->showLastQuery();",
+    "description": "Returns a string representation of the last query's statement object."
+  },
+  "database getConnectStart": {
+    "prefix": [
+      "$db->getConnectStart",
+      "database getConnectStart"
+    ],
+    "body": "\\$db->getConnectStart();",
+    "description": "Returns the time we started to connect to this database in seconds with microseconds."
+  },
+  "database getConnectDuration": {
+    "prefix": [
+      "$db->getConnectDuration",
+      "database getConnectDuration"
+    ],
+    "body": "\\$db->getConnectDuration(${1:decimals});",
+    "description": "Returns the number of seconds with microseconds that it took to connect to the database."
+  },
+  "database protectIdentifiers": {
+    "prefix": [
+      "$db->protectIdentifiers",
+      "database protectIdentifiers"
+    ],
+    "body": "\\$db->protectIdentifiers(${1:item}, ${2:prefixSingle}, ${3:protectIdentifiers}, ${4:fieldExists},);",
+    "description": "Protect Identifiers."
+  },
+  "database escapeIdentifiers": {
+    "prefix": [
+      "$db->escapeIdentifiers",
+      "database escapeIdentifiers"
+    ],
+    "body": "\\$db->escapeIdentifiers(${1:item});",
+    "description": "Escape the SQL Identifiers."
+  },
+  "database listTables": {
+    "prefix": [
+      "$db->listTables",
+      "database listTables"
+    ],
+    "body": "\\$db->listTables(${1:constrainByPrefix});",
+    "description": "Returns an array of table names."
+  },
+  "database tableExists": {
+    "prefix": [
+      "$db->tableExists",
+      "database tableExists"
+    ],
+    "body": "\\$db->tableExists(${1:tableName}, ${2:boolean});",
+    "description": "Determine if a particular table exists."
+  },
+  "database getFieldNames": {
+    "prefix": [
+      "$db->getFieldNames",
+      "database getFieldNames"
+    ],
+    "body": "\\$db->getFieldNames(${1:table});",
+    "description": "Fetch Field Names."
+  },
+  "database fieldExists": {
+    "prefix": [
+      "$db->fieldExists",
+      "database fieldExists"
+    ],
+    "body": "\\$db->fieldExists(${1:tafieldNameble}, ${2:tableName});",
+    "description": "Determine if a particular field exists."
+  },
+  "database getFieldData": {
+    "prefix": [
+      "$db->getFieldData",
+      "database getFieldData"
+    ],
+    "body": "\\$db->getFieldData(${1:table});",
+    "description": "Returns an object with field data."
+  },
+  "database getIndexData": {
+    "prefix": [
+      "$db->getIndexData",
+      "database getIndexData"
+    ],
+    "body": "\\$db->getIndexData(${1:table});",
+    "description": "Returns an object with key data."
+  },
+  "database getForeignKeyData": {
+    "prefix": [
+      "$db->getForeignKeyData",
+      "database getForeignKeyData"
+    ],
+    "body": "\\$db->getForeignKeyData(${1:table});",
+    "description": "Returns an object with foreign key data."
+  },
+  "database disableForeignKeyChecks": {
+    "prefix": [
+      "$db->disableForeignKeyChecks",
+      "database disableForeignKeyChecks"
+    ],
+    "body": "\\$db->disableForeignKeyChecks();",
+    "description": "Disables foreign key checks temporarily."
+  },
+  "database enableForeignKeyChecks": {
+    "prefix": [
+      "$db->enableForeignKeyChecks",
+      "database enableForeignKeyChecks"
+    ],
+    "body": "\\$db->enableForeignKeyChecks();",
+    "description": "Enables foreign key checks temporarily."
+  },
+  "database pretend": {
+    "prefix": [
+      "$db->pretend",
+      "database pretend"
+    ],
+    "body": "\\$db->pretend(${1:boolean});",
+    "description": "Allows the engine to be set into a mode where queries are not actually executed, but they are still generated, timed, etc."
+  },
+  "database resetDataCache": {
+    "prefix": [
+      "$db->resetDataCache",
+      "database resetDataCache"
+    ],
+    "body": "\\$db->resetDataCache();",
+    "description": "Empties our data cache. Especially helpful during testing."
+  },
+  "database isWriteType": {
+    "prefix": [
+      "$db->isWriteType",
+      "database isWriteType"
+    ],
+    "body": "\\$db->isWriteType('${1:sql}');",
+    "description": "Determines if the statement is a write-type query or not."
+  },
+  "database error": {
+    "prefix": [
+      "$db->error",
+      "database error"
+    ],
+    "body": "\\$db->error();",
+    "description": "Returns the last error code and message."
+  },
+  "database insertID": {
+    "prefix": [
+      "$db->insertID",
+      "database insertID"
+    ],
+    "body": "\\$db->insertID();",
+    "description": "Insert ID."
+  }
+}
