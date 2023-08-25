@@ -194,8 +194,7 @@
       "routes group"
     ],
     "body": [
-      "\\$routes->group('${1:url}', ['namespace' => '${2:namespace}', 'filter' => '${2:filter}'],  static function (\\$routes)",
-      "{",
+      "\\$routes->group('${1:url}', ['namespace' => '${2:namespace}', 'filter' => '${2:filter}'],  static function (\\$routes) {",
       "\t//",
       "});"
     ],
@@ -294,7 +293,7 @@
       "$routes->getRoutesOptions",
       "routes getRoutesOptions"
     ],
-    "body": "\\$routes->getRoutesOptions('${1:from}', '${2:verb}')",
+    "body": "\\$routes->getRoutesOptions('${1:routeKey}', '${2:verb}')",
     "description": "Returns one or all routes options."
   },
   "getHTTPVerb": {
@@ -318,7 +317,7 @@
       "$routes->isRedirect",
       "routes isRedirect"
     ],
-    "body": "\\$routes->isRedirect('${1:from}')",
+    "body": "\\$routes->isRedirect('${1:routeKey}')",
     "description": "Determines if the route is a redirecting route."
   },
   "getRedirectCode": {
@@ -326,7 +325,7 @@
       "$routes->getRedirectCode",
       "routes getRedirectCode"
     ],
-    "body": "\\$routes->getRedirectCode('${1:from}')",
+    "body": "\\$routes->getRedirectCode('${1:routeKey}')",
     "description": "Grabs the HTTP status code from a redirecting Route."
   },
   "reverseRoute": {

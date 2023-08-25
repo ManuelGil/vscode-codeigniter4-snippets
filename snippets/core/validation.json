@@ -123,6 +123,14 @@
     "body": "\\$validation->loadRuleGroup(${1:group})",
     "description": "Loads custom rule groups (if set) into the current rules."
   },
+  "getValidated": {
+    "prefix": [
+      "$validation->getValidated",
+      "validation getValidated"
+    ],
+    "body": "\\$validation->getValidated()",
+    "description": "Returns the actual validated data."
+  },
   "rule alpha": {
     "prefix": "alpha",
     "body": "alpha",

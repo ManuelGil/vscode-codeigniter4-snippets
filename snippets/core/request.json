@@ -334,5 +334,13 @@
     ],
     "body": "request->getOptionString(${1:useLongOpts});",
     "description": "Returns the options as a string, suitable for passing along on the CLI to other commands."
+  },
+  "setValidLocales": {
+    "prefix": [
+      "request->setValidLocales",
+      "request setValidLocales"
+    ],
+    "body": "request->setValidLocales([${1:locales}]);",
+    "description": "Set the valid locales."
   }
 }

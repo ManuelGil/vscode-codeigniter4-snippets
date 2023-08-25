@@ -4,7 +4,7 @@
       "$db",
       "database connection"
     ],
-    "body": "\\$db = \\Config\\Database::connect(${1:group}, ${2:group});",
+    "body": "\\$db = \\Config\\Database::connect(${1:group}, ${2:getShared});",
     "description": "Connect to the database."
   },
   "database reconnect": {

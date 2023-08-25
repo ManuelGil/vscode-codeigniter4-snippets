@@ -6,6 +6,24 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## [1.2.0] - 2023-08-25
+
+### Added
+
+- Add new [redirect](./snippets/core/redirect.json) functions.
+- Add new function in [request](./snippets/core/request.json).
+- Add new function in [validation](./snippets/core/validation.json).
+
+### Changed
+
+- Rename param in [database](./snippets/core/database.json)
+- Rename params in [routes](./snippets/core/routes.json)
+
+### Fixed
+
+- Fix prefix in [builder](./snippets/core/builder.json).
+- Fix values in [database](./snippets/core/database.json).
+
 ## [1.1.0] - 2023-08-24
 
 ### Added
@@ -22,6 +40,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 - Initial release
 
-[unreleased]: https://github.com/ManuelGil/vscode-codeigniter4-snippets/compare/v1.1.0...HEAD
+[unreleased]: https://github.com/ManuelGil/vscode-codeigniter4-snippets/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/ManuelGil/vscode-codeigniter4-snippets/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/ManuelGil/vscode-codeigniter4-snippets/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/ManuelGil/vscode-codeigniter4-snippets/releases/tag/v1.0.0

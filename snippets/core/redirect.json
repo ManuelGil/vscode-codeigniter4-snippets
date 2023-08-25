@@ -1,0 +1,58 @@
+{
+  "to": {
+    "prefix": [
+      "redirect()->to",
+      "redirect to"
+    ],
+    "body": "to('${1:uri}', ${2:code}, '${3:method}')",
+    "description": "Sets the URI to redirect to and, optionally, the HTTP status code to use. If no code is provided it will be automatically determined."
+  },
+  "route": {
+    "prefix": [
+      "redirect()->route",
+      "redirect route"
+    ],
+    "body": "route('${1:route}', [${2:params}], ${3:code}, '${4:method}')",
+    "description": "Sets the URI to redirect to but as a reverse-routed or named route instead of a raw URI."
+  },
+  "back": {
+    "prefix": [
+      "redirect()->back",
+      "redirect back"
+    ],
+    "body": "back(${1:code}, '${2:method}')",
+    "description": "Helper function to return to previous page."
+  },
+  "withInput": {
+    "prefix": [
+      "redirect()->withInput",
+      "redirect withInput"
+    ],
+    "body": "withInput()",
+    "description": "Sets the current $_GET and $_POST arrays in the session. This also saves the validation errors."
+  },
+  "with": {
+    "prefix": [
+      "redirect()->with",
+      "redirect with"
+    ],
+    "body": "with('${1:key}', ${2:message})",
+    "description": "Adds a key and message to the session as Flashdata."
+  },
+  "withCookies": {
+    "prefix": [
+      "redirect()->withCookies",
+      "redirect withCookies"
+    ],
+    "body": "withCookies()",
+    "description": "Copies any cookies from the global Response instance into this RedirectResponse. Useful when you've just set a cookie but need ensure that's actually sent with the response instead of lost."
+  },
+  "withHeaders": {
+    "prefix": [
+      "redirect()->withHeaders",
+      "redirect withHeaders"
+    ],
+    "body": "withHeaders()",
+    "description": "Copies any headers from the global Response instance into this RedirectResponse. Useful when you've just set a header be need to ensure its actually sent with the redirect response."
+  }
+}

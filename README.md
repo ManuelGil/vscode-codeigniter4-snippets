@@ -24,6 +24,7 @@ CodeIgniter4 - snippets & autocomplete for VSCode editor.
 
 - [Query Builder](./snippets/core/builder.json)
 - [Database](./snippets/core/database.json)
+- [Redirect](./snippets/core/redirect.json)
 - [Request](./snippets/core/request.json)
 - [Response](./snippets/core/response.json)
 - [Routes](./snippets/core/routes.json)
