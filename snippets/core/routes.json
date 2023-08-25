@@ -200,5 +200,197 @@
       "});"
     ],
     "description": "Group a series of routes under a single URL segment."
+  },
+  "loadRoutes": {
+    "prefix": [
+      "$routes->loadRoutes",
+      "routes loadRoutes"
+    ],
+    "body": "\\$routes->loadRoutes('${1:routesFile}')",
+    "description": "Loads main routes file and discover routes."
+  },
+  "getPlaceholders": {
+    "prefix": [
+      "$routes->getPlaceholders",
+      "routes getPlaceholders"
+    ],
+    "body": "\\$routes->getPlaceholders()",
+    "description": "For `spark routes`"
+  },
+  "set404Override": {
+    "prefix": [
+      "$routes->set404Override",
+      "routes set404Override"
+    ],
+    "body": "\\$routes->set404Override($callable)",
+    "description": "ets the class/method that should be called if routing doesn't find a match. It can be either a closure or the controller/method name exactly like a route is defined: Users: :index."
+  },
+  "get404Override": {
+    "prefix": [
+      "$routes->get404Override",
+      "routes get404Override"
+    ],
+    "body": "\\$routes->get404Override()",
+    "description": "Returns the 404 Override setting, which can be null, a closure or the controller/string."
+  },
+  "setDefaultConstraint": {
+    "prefix": [
+      "$routes->setDefaultConstraint",
+      "routes setDefaultConstraint"
+    ],
+    "body": "\\$routes->setDefaultConstraint('${1:placeholder}')",
+    "description": "Sets the default constraint to be used in the system. Typically for use with the 'resource' method."
+  },
+  "getDefaultController": {
+    "prefix": [
+      "$routes->getDefaultController",
+      "routes getDefaultController"
+    ],
+    "body": "\\$routes->getDefaultController()",
+    "description": "Returns the name of the default controller. With Namespace."
+  },
+  "getDefaultMethod": {
+    "prefix": [
+      "$routes->getDefaultMethod",
+      "routes getDefaultMethod"
+    ],
+    "body": "\\$routes->getDefaultMethod()",
+    "description": "Returns the name of the default method to use within the controller."
+  },
+  "getDefaultNamespace": {
+    "prefix": [
+      "$routes->getDefaultNamespace",
+      "routes getDefaultNamespace"
+    ],
+    "body": "\\$routes->getDefaultNamespace()",
+    "description": "Returns the default namespace as set in the Routes config file."
+  },
+  "shouldTranslateURIDashes": {
+    "prefix": [
+      "$routes->shouldTranslateURIDashes",
+      "routes shouldTranslateURIDashes"
+    ],
+    "body": "\\$routes->shouldTranslateURIDashes()",
+    "description": "Returns the current value of the translateURIDashes setting."
+  },
+  "shouldAutoRoute": {
+    "prefix": [
+      "$routes->shouldAutoRoute",
+      "routes shouldAutoRoute"
+    ],
+    "body": "\\$routes->shouldAutoRoute()",
+    "description": "Returns the flag that tells whether to autoRoute URI against Controllers."
+  },
+  "getRoutes": {
+    "prefix": [
+      "$routes->getRoutes",
+      "routes getRoutes"
+    ],
+    "body": "\\$routes->getRoutes('${1:verb}', ${2:boolean})",
+    "description": "Returns the raw array of available routes."
+  },
+  "getRoutesOptions": {
+    "prefix": [
+      "$routes->getRoutesOptions",
+      "routes getRoutesOptions"
+    ],
+    "body": "\\$routes->getRoutesOptions('${1:from}', '${2:verb}')",
+    "description": "Returns one or all routes options."
+  },
+  "getHTTPVerb": {
+    "prefix": [
+      "$routes->getHTTPVerb",
+      "routes getHTTPVerb"
+    ],
+    "body": "\\$routes->getHTTPVerb()",
+    "description": "Returns the current HTTP Verb being used."
+  },
+  "setHTTPVerb": {
+    "prefix": [
+      "$routes->setHTTPVerb",
+      "routes setHTTPVerb"
+    ],
+    "body": "\\$routes->setHTTPVerb('${1:verb}')",
+    "description": "Sets the current HTTP verb. Used primarily for testing."
+  },
+  "isRedirect": {
+    "prefix": [
+      "$routes->isRedirect",
+      "routes isRedirect"
+    ],
+    "body": "\\$routes->isRedirect('${1:from}')",
+    "description": "Determines if the route is a redirecting route."
+  },
+  "getRedirectCode": {
+    "prefix": [
+      "$routes->getRedirectCode",
+      "routes getRedirectCode"
+    ],
+    "body": "\\$routes->getRedirectCode('${1:from}')",
+    "description": "Grabs the HTTP status code from a redirecting Route."
+  },
+  "reverseRoute": {
+    "prefix": [
+      "$routes->reverseRoute",
+      "routes reverseRoute"
+    ],
+    "body": "\\$routes->reverseRoute('${1:search}', '${2:params}')",
+    "description": "Attempts to look up a route based on its destination."
+  },
+  "isFiltered": {
+    "prefix": [
+      "$routes->isFiltered",
+      "routes isFiltered"
+    ],
+    "body": "\\$routes->isFiltered('${1:search}', '${2:verb}')",
+    "description": "Checks a route (using the \"from\") to see if it's filtered or not."
+  },
+  "getFilterForRoute": {
+    "prefix": [
+      "$routes->getFilterForRoute",
+      "routes getFilterForRoute"
+    ],
+    "body": "\\$routes->getFilterForRoute('${1:search}', '${2:verb}')",
+    "description": "Returns the filter that should be applied for a single route, along with any parameters it might have."
+  },
+  "getFiltersForRoute": {
+    "prefix": [
+      "$routes->getFiltersForRoute",
+      "routes getFiltersForRoute"
+    ],
+    "body": "\\$routes->getFiltersForRoute('${1:search}', '${2:verb}')",
+    "description": "Returns the filters that should be applied for a single route, along with any parameters it might have."
+  },
+  "resetRoutes": {
+    "prefix": [
+      "$routes->resetRoutes",
+      "routes resetRoutes"
+    ],
+    "body": "\\$routes->resetRoutes()",
+    "description": "Reset the routes, so that a test case can provide the explicit ones needed for it."
+  },
+  "getRegisteredControllers": {
+    "prefix": [
+      "$routes->getRegisteredControllers",
+      "routes getRegisteredControllers"
+    ],
+    "body": "\\$routes->getRegisteredControllers('${1:verb}')",
+    "description": "Get all controllers in Route Handlers."
+  },
+  "useSupportedLocalesOnly": {
+    "prefix": [
+      "$routes->useSupportedLocalesOnly",
+      "routes useSupportedLocalesOnly"
+    ],
+    "body": "\\$routes->useSupportedLocalesOnly(${1:boolean})",
+    "description": "Set The flag that limit or not the routes with {locale} placeholder to App::$supportedLocales."
+  },
+  "shouldUseSupportedLocalesOnly": {
+    "prefix": [
+      "$routes->shouldUseSupportedLocalesOnly",
+      "routes shouldUseSupportedLocalesOnly"
+    ],
+    "body": "\\$routes->shouldUseSupportedLocalesOnly()",
+    "description": "Get the flag that limit or not the routes with {locale} placeholder to App::$supportedLocales."
   }
 }

@@ -44,7 +44,7 @@
       "$db->prefixTable",
       "database prefixTable"
     ],
-    "body": "\\$db->prefixTable(${1:table});",
+    "body": "\\$db->prefixTable('${1:table}');",
     "description": "Prepends a database prefix if one exists in configuration."
   },
   "database affectedRows": {
@@ -116,7 +116,7 @@
       "$db->addTableAlias",
       "database addTableAlias"
     ],
-    "body": "\\$db->addTableAlias(${1:table});",
+    "body": "\\$db->addTableAlias('${1:table}');",
     "description": "Add a table alias to our list."
   },
   "database execute": {
@@ -204,7 +204,7 @@
       "$db->table",
       "database table"
     ],
-    "body": "\\$db->table(${1:tableName});",
+    "body": "\\$db->table('${1:tableName}');",
     "description": "Returns a non-shared new instance of the query builder for this connection."
   },
   "database newQuery": {
@@ -284,7 +284,7 @@
       "$db->tableExists",
       "database tableExists"
     ],
-    "body": "\\$db->tableExists(${1:tableName}, ${2:boolean});",
+    "body": "\\$db->tableExists('${1:tableName}', ${2:boolean});",
     "description": "Determine if a particular table exists."
   },
   "database getFieldNames": {
@@ -292,7 +292,7 @@
       "$db->getFieldNames",
       "database getFieldNames"
     ],
-    "body": "\\$db->getFieldNames(${1:table});",
+    "body": "\\$db->getFieldNames('${1:table}');",
     "description": "Fetch Field Names."
   },
   "database fieldExists": {
@@ -300,7 +300,7 @@
       "$db->fieldExists",
       "database fieldExists"
     ],
-    "body": "\\$db->fieldExists(${1:tafieldNameble}, ${2:tableName});",
+    "body": "\\$db->fieldExists(${1:tafieldNameble}, '${2:tableName}');",
     "description": "Determine if a particular field exists."
   },
   "database getFieldData": {
@@ -308,7 +308,7 @@
       "$db->getFieldData",
       "database getFieldData"
     ],
-    "body": "\\$db->getFieldData(${1:table});",
+    "body": "\\$db->getFieldData('${1:table}');",
     "description": "Returns an object with field data."
   },
   "database getIndexData": {
@@ -316,7 +316,7 @@
       "$db->getIndexData",
       "database getIndexData"
     ],
-    "body": "\\$db->getIndexData(${1:table});",
+    "body": "\\$db->getIndexData('${1:table}');",
     "description": "Returns an object with key data."
   },
   "database getForeignKeyData": {
@@ -324,7 +324,7 @@
       "$db->getForeignKeyData",
       "database getForeignKeyData"
     ],
-    "body": "\\$db->getForeignKeyData(${1:table});",
+    "body": "\\$db->getForeignKeyData('${1:table}');",
     "description": "Returns an object with foreign key data."
   },
   "database disableForeignKeyChecks": {

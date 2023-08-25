@@ -1,4 +1,12 @@
 {
+  "setRule": {
+    "prefix": [
+      "$validation->setRule",
+      "validation setRule"
+    ],
+    "body": "\\$validation->setRule('${1:field}', '${2:label}', [${3:rules}], [${4:errors}]);",
+    "description": "Sets an individual rule and custom error messages for a single field."
+  },
   "setRules": {
     "prefix": [
       "$validation->setRules",
@@ -40,7 +48,7 @@
       "$validation->check",
       "validation check"
     ],
-    "body": "\\$validation->check(${1:value}, ${2:rule});",
+    "body": "\\$validation->check('${1:value}', '${2:rule}', [${3:errors}], '${4:dbGroup}');",
     "description": "Check; runs the validation process, returning true or false determining whether or not validation was successful."
   },
   "getRuleGroup": {
