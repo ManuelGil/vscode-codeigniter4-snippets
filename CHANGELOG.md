@@ -6,6 +6,18 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## [1.3.0] - 2023-08-26
+
+### Added
+
+- Add new [view](./snippets/core/view.json) functions.
+
+### Fixed
+
+- Fix typo in [routes](./snippets/core/routes.json)
+- Fix typo in [package.json](./package.json).
+- Fix typo in [LICENSE](./LICENSE).
+
 ## [1.2.0] - 2023-08-25
 
 ### Added

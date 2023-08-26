@@ -31,6 +31,7 @@ CodeIgniter4 - snippets & autocomplete for VSCode editor.
 - [session](./snippets/core/session.json)
 - [time](./snippets/core/time.json)
 - [validation](./snippets/core/validation.json)
+- [view](./snippets/core/view.json)
 
 ## Other Repositories
 

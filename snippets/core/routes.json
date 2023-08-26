@@ -194,7 +194,7 @@
       "routes group"
     ],
     "body": [
-      "\\$routes->group('${1:url}', ['namespace' => '${2:namespace}', 'filter' => '${2:filter}'],  static function (\\$routes) {",
+      "\\$routes->group('${1:url}', ['namespace' => '${2:namespace}', 'filter' => '${3:filter}'],  static function (\\$routes) {",
       "\t//",
       "});"
     ],
