@@ -6,6 +6,12 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## [1.3.1] - 2023-08-26
+
+### Fixed
+
+- Fix outputs in [routes](./snippets/core/routes.json)
+
 ## [1.3.0] - 2023-08-26
 
 ### Added
