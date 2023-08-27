@@ -1,5 +1,5 @@
 {
-  "get": {
+  "session get": {
     "prefix": [
       "$session->get",
       "session get"
@@ -7,7 +7,7 @@
     "body": "\\$session->get('${1:key}');",
     "description": "Get user data that has been set in the session."
   },
-  "set": {
+  "session set": {
     "prefix": [
       "$session->set",
       "session set"
@@ -15,7 +15,7 @@
     "body": "\\$session->set([${1:data}], ${2:value});",
     "description": "Sets user data into the session."
   },
-  "has": {
+  "session has": {
     "prefix": [
       "$session->has",
       "session has"
@@ -23,7 +23,7 @@
     "body": "\\$session->has('${1:key}');",
     "description": "Returns whether an index exists in the session array."
   },
-  "push": {
+  "session push": {
     "prefix": [
       "$session->push",
       "session push"
@@ -31,7 +31,7 @@
     "body": "\\$session->push('${1:key}', ${2:data});",
     "description": "Push new value onto session value that is array."
   },
-  "remove": {
+  "session remove": {
     "prefix": [
       "$session->remove",
       "session remove"
@@ -39,7 +39,7 @@
     "body": "\\$session->remove('${1:key}');",
     "description": "Remove one or more session properties."
   },
-  "markAsFlashdata": {
+  "session markAsFlashdata": {
     "prefix": [
       "$session->markAsFlashdata",
       "session markAsFlashdata"
@@ -47,7 +47,7 @@
     "body": "\\$session->markAsFlashdata('${1:key}');",
     "description": "Mark a session property or properties as flashdata."
   },
-  "unmarkFlashdata": {
+  "session unmarkFlashdata": {
     "prefix": [
       "$session->unmarkFlashdata",
       "session unmarkFlashdata"
@@ -55,7 +55,7 @@
     "body": "\\$session->unmarkFlashdata('${1:key}');",
     "description": "Unmark data in the session as flashdata."
   },
-  "getFlashKeys": {
+  "session getFlashKeys": {
     "prefix": [
       "$session->getFlashKeys",
       "session getFlashKeys"
@@ -63,7 +63,7 @@
     "body": "\\$session->getFlashKeys();",
     "description": "Retrieve all of the keys for session data marked as flashdata."
   },
-  "setFlashdata": {
+  "session setFlashdata": {
     "prefix": [
       "$session->setFlashdata",
       "session setFlashdata"
@@ -71,7 +71,7 @@
     "body": "\\$session->setFlashdata([${1:data}], ${2:value});",
     "description": "Sets data into the session that will only last for a single request."
   },
-  "getFlashdata": {
+  "session getFlashdata": {
     "prefix": [
       "$session->getFlashdata",
       "session getFlashdata"
@@ -79,7 +79,7 @@
     "body": "\\$session->getFlashdata(${1:value});",
     "description": "Retrieve one or more items of flash data from the session."
   },
-  "keepFlashdata": {
+  "session keepFlashdata": {
     "prefix": [
       "$session->keepFlashdata",
       "session keepFlashdata"
@@ -87,7 +87,7 @@
     "body": "\\$session->keepFlashdata('${1:key}');",
     "description": "Keeps a single piece of flash data alive for one more request."
   },
-  "markAsTempdata": {
+  "session markAsTempdata": {
     "prefix": [
       "$session->markAsTempdata",
       "session markAsTempdata"
@@ -95,7 +95,7 @@
     "body": "\\$session->markAsTempdata('${1:key}', ${2:seconds});",
     "description": "Mark one of more pieces of data as being temporary, meaning that it has a set lifespan within the session."
   },
-  "unmarkTempdata": {
+  "session unmarkTempdata": {
     "prefix": [
       "$session->unmarkTempdata",
       "session unmarkTempdata"
@@ -103,7 +103,7 @@
     "body": "\\$session->unmarkTempdata('${1:key}');",
     "description": "Unmarks temporary data in the session, effectively removing its lifespan and allowing it to live as long as the session does."
   },
-  "setTempdata": {
+  "session setTempdata": {
     "prefix": [
       "$session->setTempdata",
       "session setTempdata"
@@ -111,7 +111,7 @@
     "body": "\\$session->setTempdata('${1:key}', ${2:value}, ${3:seconds});",
     "description": "Sets new data into the session, and marks it as temporary data with a set lifespan."
   },
-  "getTempdata": {
+  "session getTempdata": {
     "prefix": [
       "$session->getTempdata",
       "session getTempdata"
@@ -119,7 +119,7 @@
     "body": "\\$session->getTempdata('${1:key}');",
     "description": "Returns either a single piece of tempdata, or all temp data currently in the session."
   },
-  "removeTempdata": {
+  "session removeTempdata": {
     "prefix": [
       "$session->removeTempdata",
       "session removeTempdata"
@@ -127,7 +127,7 @@
     "body": "\\$session->removeTempdata('${1:key}');",
     "description": "Removes a single piece of temporary data from the session."
   },
-  "getTempKeys": {
+  "session getTempKeys": {
     "prefix": [
       "$session->getTempKeys",
       "session getTempKeys"
@@ -135,7 +135,7 @@
     "body": "\\$session->getTempKeys();",
     "description": "Retrieve the keys of all session data that have been marked as temporary data."
   },
-  "setSaveHandler": {
+  "session setSaveHandler": {
     "prefix": [
       "$session->setSaveHandler",
       "session setSaveHandler"
@@ -143,7 +143,7 @@
     "body": "\\$session->setSaveHandler();",
     "description": "Sets the driver as the session handler in PHP."
   },
-  "startSession": {
+  "session startSession": {
     "prefix": [
       "$session->startSession",
       "session startSession"
@@ -151,7 +151,7 @@
     "body": "\\$session->startSession();",
     "description": "Starts the session."
   },
-  "setCookie": {
+  "session setCookie": {
     "prefix": [
       "$session->setCookie",
       "session setCookie"
@@ -159,7 +159,7 @@
     "body": "\\$session->setCookie();",
     "description": "Takes care of setting the cookie on the client side."
   },
-  "start": {
+  "session start": {
     "prefix": [
       "$session->start",
       "session start"
@@ -167,7 +167,7 @@
     "body": "\\$session->start();",
     "description": "Initialize the session container and starts up the session."
   },
-  "stop": {
+  "session stop": {
     "prefix": [
       "$session->stop",
       "session stop"
@@ -175,7 +175,7 @@
     "body": "\\$session->stop();",
     "description": "Destroys the current session."
   },
-  "regenerate": {
+  "session regenerate": {
     "prefix": [
       "$session->regenerate",
       "session regenerate"
@@ -183,7 +183,7 @@
     "body": "\\$session->regenerate(${1:boolean});",
     "description": "Regenerates the session ID."
   },
-  "destroy": {
+  "session destroy": {
     "prefix": [
       "$session->destroy",
       "session destroy"

@@ -4,7 +4,7 @@
       "Time::now",
       "time now"
     ],
-    "body": "Time::now('${1:timezone}', '${2:locale}')",
+    "body": "Time::now('${1:timezone}', '${2:locale}');",
     "description": "Returns a new Time instance with the timezone set."
   },
   "time parse": {
@@ -12,7 +12,7 @@
       "Time::parse",
       "time parse"
     ],
-    "body": "Time::parse('${1:datetime}', ${2:timezone}, '${3:locale}')",
+    "body": "Time::parse('${1:datetime}', ${2:timezone}, '${3:locale}');",
     "description": "Returns a new Time instance while parsing a datetime string."
   },
   "time today": {
@@ -20,7 +20,7 @@
       "Time::today",
       "time today"
     ],
-    "body": "Time::today('${1:timezone}', '${2:locale}')",
+    "body": "Time::today('${1:timezone}', '${2:locale}');",
     "description": "Return a new time with the time set to midnight."
   },
   "time yesterday": {
@@ -28,7 +28,7 @@
       "Time::yesterday",
       "time yesterday"
     ],
-    "body": "Time::yesterday('${1:timezone}', '${2:locale}')",
+    "body": "Time::yesterday('${1:timezone}', '${2:locale}');",
     "description": "Returns an instance set to midnight yesterday morning."
   },
   "time tomorrow": {
@@ -36,7 +36,7 @@
       "Time::tomorrow",
       "time tomorrow"
     ],
-    "body": "Time::tomorrow('${1:timezone}', '${2:locale}')",
+    "body": "Time::tomorrow('${1:timezone}', '${2:locale}');",
     "description": "Returns an instance set to midnight yesterday morning."
   },
   "time createFromDate": {
@@ -44,7 +44,7 @@
       "Time::createFromDate",
       "time createFromDate"
     ],
-    "body": "Time::createFromDate(${1:year}, ${2:month}, ${3:day}, '${4:timezone}', '${5:locale}')",
+    "body": "Time::createFromDate(${1:year}, ${2:month}, ${3:day}, '${4:timezone}', '${5:locale}');",
     "description": "Returns a new instance based on the year, month and day. If any of those three are left empty, will default to the current value."
   },
   "time createFromTime": {
@@ -52,7 +52,7 @@
       "Time::createFromTime",
       "time createFromTime"
     ],
-    "body": "Time::createFromTime(${1:hour}, ${2:minutes}, ${3:seconds}, '${4:timezone}', '${5:locale}')",
+    "body": "Time::createFromTime(${1:hour}, ${2:minutes}, ${3:seconds}, '${4:timezone}', '${5:locale}');",
     "description": "Returns a new instance with the date set to today, and the time set to the values passed in."
   },
   "time create": {
@@ -60,7 +60,7 @@
       "Time::create",
       "time create"
     ],
-    "body": "Time::create(${1:year}, ${2:month}, ${3:day}, ${4:hour}, ${5:minutes}, ${6:seconds}, '${7:timezone}', '${8:locale}')",
+    "body": "Time::create(${1:year}, ${2:month}, ${3:day}, ${4:hour}, ${5:minutes}, ${6:seconds}, '${7:timezone}', '${8:locale}');",
     "description": "Returns a new instance with the date time values individually set."
   },
   "time createFromFormat": {
@@ -68,7 +68,7 @@
       "Time::createFromFormat",
       "time createFromFormat"
     ],
-    "body": "Time::createFromFormat('${1:format}', '${2:datetime}', '${3:timezone}')",
+    "body": "Time::createFromFormat('${1:format}', '${2:datetime}', '${3:timezone}');",
     "description": "Provides a replacement for DateTime's own createFromFormat function, that provides more flexible timeZone handling"
   },
   "time createFromTimestamp": {
@@ -76,7 +76,7 @@
       "Time::createFromTimestamp",
       "time createFromTimestamp"
     ],
-    "body": "Time::createFromTimestamp(${1:timestamp}, '${2:timezone}', '${3:locale}')",
+    "body": "Time::createFromTimestamp(${1:timestamp}, '${2:timezone}', '${3:locale}');",
     "description": "Returns a new instance with the datetime set based on the provided UNIX timestamp."
   },
   "time createFromInstance": {
@@ -84,7 +84,7 @@
       "Time::createFromInstance",
       "time createFromInstance"
     ],
-    "body": "Time::createFromInstance(DateTimeInterface ${1:dateTime}, '${2:locale}')",
+    "body": "Time::createFromInstance(DateTimeInterface ${1:dateTime}, '${2:locale}');",
     "description": "Takes an instance of DateTimeInterface and returns an instance of Time with it's same values."
   },
   "time instance": {
@@ -92,7 +92,7 @@
       "Time::instance",
       "time instance"
     ],
-    "body": "Time::instance(${1:dateTime}, '${2:locale}')",
+    "body": "Time::instance(${1:dateTime}, '${2:locale}');",
     "description": "Takes an instance of DateTime and returns an instance of Time with it's same values."
   },
   "time setTestNow": {
@@ -100,7 +100,7 @@
       "Time::setTestNow",
       "time setTestNow"
     ],
-    "body": "Time::setTestNow('${1:datetime}', '${2:timezone}', '${3:locale}')",
+    "body": "Time::setTestNow('${1:datetime}', '${2:timezone}', '${3:locale}');",
     "description": "Creates an instance of Time that will be returned during testing when calling 'Time: :now()' instead of the current time."
   },
   "time hasTestNow": {
@@ -108,7 +108,7 @@
       "Time::hasTestNow",
       "time hasTestNow"
     ],
-    "body": "Time::hasTestNow()",
+    "body": "Time::hasTestNow();",
     "description": "Returns whether we have a testNow instance saved."
   },
   "time toDateTime": {
@@ -116,7 +116,7 @@
       "$time->toDateTime",
       "time toDateTime"
     ],
-    "body": "\\$time->toDateTime()",
+    "body": "\\$time->toDateTime();",
     "description": "Converts the current instance to a mutable DateTime object."
   },
   "time getYear": {
@@ -124,7 +124,7 @@
       "$time->getYear",
       "time getYear"
     ],
-    "body": "\\$time->getYear()",
+    "body": "\\$time->getYear();",
     "description": "Returns the localized Year."
   },
   "time getMonth": {
@@ -132,7 +132,7 @@
       "$time->getMonth",
       "time getMonth"
     ],
-    "body": "\\$time->getMonth()",
+    "body": "\\$time->getMonth();",
     "description": "Returns the localized Month."
   },
   "time getDay": {
@@ -140,7 +140,7 @@
       "$time->getDay",
       "time getDay"
     ],
-    "body": "\\$time->getDay()",
+    "body": "\\$time->getDay();",
     "description": "Return the localized day of the month."
   },
   "time getHour": {
@@ -148,7 +148,7 @@
       "$time->getHour",
       "time getHour"
     ],
-    "body": "\\$time->getHour()",
+    "body": "\\$time->getHour();",
     "description": "Return the localized hour (in 24-hour format).."
   },
   "time getMinute": {
@@ -156,7 +156,7 @@
       "$time->getMinute",
       "time getMinute"
     ],
-    "body": "\\$time->getMinute()",
+    "body": "\\$time->getMinute();",
     "description": "Return the localized minutes in the hour.."
   },
   "time getSecond": {
@@ -164,7 +164,7 @@
       "$time->getSecond",
       "time getSecond"
     ],
-    "body": "\\$time->getSecond()",
+    "body": "\\$time->getSecond();",
     "description": "Return the localized seconds."
   },
   "time getDayOfWeek": {
@@ -172,7 +172,7 @@
       "$time->getDayOfWeek",
       "time getDayOfWeek"
     ],
-    "body": "\\$time->getDayOfWeek()",
+    "body": "\\$time->getDayOfWeek();",
     "description": "Return the index of the day of the week."
   },
   "time getDayOfYear": {
@@ -180,7 +180,7 @@
       "$time->getDayOfYear",
       "time getDayOfYear"
     ],
-    "body": "\\$time->getDayOfYear()",
+    "body": "\\$time->getDayOfYear();",
     "description": "Return the index of the day of the year."
   },
   "time getWeekOfMonth": {
@@ -188,7 +188,7 @@
       "$time->getWeekOfMonth",
       "time getWeekOfMonth"
     ],
-    "body": "\\$time->getWeekOfMonth()",
+    "body": "\\$time->getWeekOfMonth();",
     "description": "Return the index of the week in the month."
   },
   "time getWeekOfYear": {
@@ -196,7 +196,7 @@
       "$time->getWeekOfYear",
       "time getWeekOfYear"
     ],
-    "body": "\\$time->getWeekOfYear()",
+    "body": "\\$time->getWeekOfYear();",
     "description": "Return the index of the week in the year."
   },
   "time getAge": {
@@ -204,7 +204,7 @@
       "$time->getAge",
       "time getAge"
     ],
-    "body": "\\$time->getAge()",
+    "body": "\\$time->getAge();",
     "description": "Returns the age in years from the date and 'now'."
   },
   "time getQuarter": {
@@ -212,7 +212,7 @@
       "$time->getQuarter",
       "time getQuarter"
     ],
-    "body": "\\$time->getQuarter()",
+    "body": "\\$time->getQuarter();",
     "description": "Returns the number of the current quarter for the year."
   },
   "time getDst": {
@@ -220,7 +220,7 @@
       "$time->getDst",
       "time getDst"
     ],
-    "body": "\\$time->getDst()",
+    "body": "\\$time->getDst();",
     "description": "Are we in daylight savings time currently?"
   },
   "time getLocal": {
@@ -228,7 +228,7 @@
       "$time->getLocal",
       "time getLocal"
     ],
-    "body": "\\$time->getLocal()",
+    "body": "\\$time->getLocal();",
     "description": "Returns boolean whether the passed timezone is the same as the local timezone."
   },
   "time getUtc": {
@@ -236,7 +236,7 @@
       "$time->getUtc",
       "time getUtc"
     ],
-    "body": "\\$time->getUtc()",
+    "body": "\\$time->getUtc();",
     "description": "Returns boolean whether object is in UTC."
   },
   "time getTimezoneName": {
@@ -244,7 +244,7 @@
       "$time->getTimezoneName",
       "time getTimezoneName"
     ],
-    "body": "\\$time->getTimezoneName()",
+    "body": "\\$time->getTimezoneName();",
     "description": "Returns the name of the current timezone."
   },
   "time setYear": {
@@ -252,7 +252,7 @@
       "$time->setYear",
       "time setYear"
     ],
-    "body": "\\$time->setYear('${1:value}')",
+    "body": "\\$time->setYear('${1:value}');",
     "description": "Sets the current year for this instance."
   },
   "time setMonth": {
@@ -260,7 +260,7 @@
       "$time->setMonth",
       "time setMonth"
     ],
-    "body": "\\$time->setMonth('${1:value}')",
+    "body": "\\$time->setMonth('${1:value}');",
     "description": "Sets the month of the year."
   },
   "time setDay": {
@@ -268,7 +268,7 @@
       "$time->setDay",
       "time setDay"
     ],
-    "body": "\\$time->setDay('${1:value}')",
+    "body": "\\$time->setDay('${1:value}');",
     "description": "Sets the day of the month."
   },
   "time setHour": {
@@ -276,7 +276,7 @@
       "$time->setHour",
       "time setHour"
     ],
-    "body": "\\$time->setHour('${1:value}')",
+    "body": "\\$time->setHour('${1:value}');",
     "description": "Sets the hour of the day (24 hour cycle)."
   },
   "time setMinute": {
@@ -284,7 +284,7 @@
       "$time->setMinute",
       "time setMinute"
     ],
-    "body": "\\$time->setMinute('${1:value}')",
+    "body": "\\$time->setMinute('${1:value}');",
     "description": "Sets the minute of the hour."
   },
   "time setSecond": {
@@ -292,7 +292,7 @@
       "$time->setSecond",
       "time setSecond"
     ],
-    "body": "\\$time->setSecond('${1:value}')",
+    "body": "\\$time->setSecond('${1:value}');",
     "description": "Sets the second of the minute."
   },
   "time setTimezone": {
@@ -300,7 +300,7 @@
       "$time->setTimezone",
       "time setTimezone"
     ],
-    "body": "\\$time->setTimezone('${1:timezone}')",
+    "body": "\\$time->setTimezone('${1:timezone}');",
     "description": "Returns a new instance with the revised timezone."
   },
   "time setTimestamp": {
@@ -308,7 +308,7 @@
       "$time->setTimestamp",
       "time setTimestamp"
     ],
-    "body": "\\$time->setTimestamp(${1:timestamp})",
+    "body": "\\$time->setTimestamp(${1:timestamp});",
     "description": "Returns a new instance with the date set to the new timestamp."
   },
   "time addSeconds": {
@@ -316,7 +316,7 @@
       "$time->addSeconds",
       "time addSeconds"
     ],
-    "body": "\\$time->addSeconds(${1:seconds})",
+    "body": "\\$time->addSeconds(${1:seconds});",
     "description": "Returns a new Time instance with $seconds added to the time."
   },
   "time addMinutes": {
@@ -324,7 +324,7 @@
       "$time->addMinutes",
       "time addMinutes"
     ],
-    "body": "\\$time->addMinutes(${1:minutes})",
+    "body": "\\$time->addMinutes(${1:minutes});",
     "description": "Returns a new Time instance with $minutes added to the time."
   },
   "time addHours": {
@@ -332,7 +332,7 @@
       "$time->addHours",
       "time addHours"
     ],
-    "body": "\\$time->addHours(${1:hours})",
+    "body": "\\$time->addHours(${1:hours});",
     "description": "Returns a new Time instance with $hours added to the time."
   },
   "time addDays": {
@@ -340,7 +340,7 @@
       "$time->addDays",
       "time addDays"
     ],
-    "body": "\\$time->addDays(${1:days})",
+    "body": "\\$time->addDays(${1:days});",
     "description": "Returns a new Time instance with $days added to the time."
   },
   "time addMonths": {
@@ -348,7 +348,7 @@
       "$time->addMonths",
       "time addMonths"
     ],
-    "body": "\\$time->addMonths(${1:months})",
+    "body": "\\$time->addMonths(${1:months});",
     "description": "Returns a new Time instance with $months added to the time."
   },
   "time addYears": {
@@ -356,7 +356,7 @@
       "$time->addYears",
       "time addYears"
     ],
-    "body": "\\$time->addYears(${1:years})",
+    "body": "\\$time->addYears(${1:years});",
     "description": "Returns a new Time instance with ${1:years} added to the time."
   },
   "time subSeconds": {
@@ -364,7 +364,7 @@
       "$time->subSeconds",
       "time subSeconds"
     ],
-    "body": "\\$time->subSeconds(${1:seconds})",
+    "body": "\\$time->subSeconds(${1:seconds});",
     "description": "Returns a new Time instance with $seconds subtracted from the time."
   },
   "time subMinutes": {
@@ -372,7 +372,7 @@
       "$time->subMinutes",
       "time subMinutes"
     ],
-    "body": "\\$time->subMinutes(${1:minutes})",
+    "body": "\\$time->subMinutes(${1:minutes});",
     "description": "Returns a new Time instance with $minutes subtracted from the time."
   },
   "time subHours": {
@@ -380,7 +380,7 @@
       "$time->subHours",
       "time subHours"
     ],
-    "body": "\\$time->subHours(${1:hours})",
+    "body": "\\$time->subHours(${1:hours});",
     "description": "Returns a new Time instance with $hours subtracted from the time."
   },
   "time subDays": {
@@ -388,7 +388,7 @@
       "$time->subDays",
       "time subDays"
     ],
-    "body": "\\$time->subDays(${1:days})",
+    "body": "\\$time->subDays(${1:days});",
     "description": "Returns a new Time instance with $days subtracted from the time."
   },
   "time subMonths": {
@@ -396,7 +396,7 @@
       "$time->subMonths",
       "time subMonths"
     ],
-    "body": "\\$time->subMonths(${1:months})",
+    "body": "\\$time->subMonths(${1:months});",
     "description": "Returns a new Time instance with $months subtracted from the time."
   },
   "time subYears": {
@@ -404,7 +404,7 @@
       "$time->subYears",
       "time subYears"
     ],
-    "body": "\\$time->subYears(${1:years})",
+    "body": "\\$time->subYears(${1:years});",
     "description": "Returns a new Time instance with $hours subtracted from the time."
   },
   "time toDateTimeString": {
@@ -412,7 +412,7 @@
       "$time->toDateTimeString",
       "time toDateTimeString"
     ],
-    "body": "\\$time->toDateTimeString()",
+    "body": "\\$time->toDateTimeString();",
     "description": "Returns the localized value of the date in the format 'Y-m-d H:i:s'."
   },
   "time toDateString": {
@@ -420,7 +420,7 @@
       "$time->toDateString",
       "time toDateString"
     ],
-    "body": "\\$time->toDateString()",
+    "body": "\\$time->toDateString();",
     "description": "Returns a localized version of the date in Y-m-d format."
   },
   "time toFormattedDateString": {
@@ -428,7 +428,7 @@
       "$time->toFormattedDateString",
       "time toFormattedDateString"
     ],
-    "body": "\\$time->toFormattedDateString()",
+    "body": "\\$time->toFormattedDateString();",
     "description": "Returns a localized version of the date in nicer date format: i.e. Apr 1, 2017"
   },
   "time toTimeString": {
@@ -436,7 +436,7 @@
       "$time->toTimeString",
       "time toTimeString"
     ],
-    "body": "\\$time->toTimeString()",
+    "body": "\\$time->toTimeString();",
     "description": "Returns a localized version of the time in nicer date format: i.e. 13:20:33"
   },
   "time toLocalizedString": {
@@ -444,7 +444,7 @@
       "$time->toLocalizedString",
       "time toLocalizedString"
     ],
-    "body": "\\$time->toLocalizedString('${1:format}')",
+    "body": "\\$time->toLocalizedString('${1:format}');",
     "description": "Returns the localized value of this instance in $format"
   },
   "time equals": {
@@ -452,7 +452,7 @@
       "$time->equals",
       "time equals"
     ],
-    "body": "\\$time->equals('${1:testTime}', ''${2:timezone}'')",
+    "body": "\\$time->equals('${1:testTime}', ''${2:timezone}'');",
     "description": "Determines if the datetime passed in is equal to the current instance. Equal in this case means that they represent the same moment in time, and are not required to be in the same timezone, as both times are converted to UTC and compared that way."
   },
   "time sameAs": {
@@ -460,7 +460,7 @@
       "$time->sameAs",
       "time sameAs"
     ],
-    "body": "\\$time->sameAs('${1:testTime}', ''${1:timezone}'')",
+    "body": "\\$time->sameAs('${1:testTime}', ''${1:timezone}'');",
     "description": "Ensures that the times are identical, taking timezone into account."
   },
   "time isBefore": {
@@ -468,7 +468,7 @@
       "$time->isBefore",
       "time isBefore"
     ],
-    "body": "\\$time->isBefore('${1:testTime}', ''${1:timezone}'')",
+    "body": "\\$time->isBefore('${1:testTime}', ''${1:timezone}'');",
     "description": "Determines if the current instance's time is before $testTime, after converting to UTC."
   },
   "time isAfter": {
@@ -476,7 +476,7 @@
       "$time->isAfter",
       "time isAfter"
     ],
-    "body": "\\$time->isAfter('${1:testTime}', ''${1:timezone}'')",
+    "body": "\\$time->isAfter('${1:testTime}', ''${1:timezone}'');",
     "description": "Determines if the current instance's time is after $testTime, after converting in UTC."
   },
   "time humanize": {
@@ -484,7 +484,7 @@
       "$time->humanize",
       "time humanize"
     ],
-    "body": "\\$time->humanize()",
+    "body": "\\$time->humanize();",
     "description": "Returns a text string that is easily readable that describes how long ago, or how long from now, a date is, like: 6 hours ago."
   },
   "time difference": {
@@ -492,7 +492,7 @@
       "$time->difference",
       "time difference"
     ],
-    "body": "\\$time->difference('${1:testTime}', ''${1:timezone}'')",
+    "body": "\\$time->difference('${1:testTime}', ''${1:timezone}'');",
     "description": ""
   },
   "time getUTCObject": {
@@ -500,7 +500,7 @@
       "$time->getUTCObject",
       "time getUTCObject"
     ],
-    "body": "\\$time->getUTCObject('${1:time}', ''${1:timezone}'')",
+    "body": "\\$time->getUTCObject('${1:time}', ''${1:timezone}'');",
     "description": "Returns a Time instance with the timezone converted to UTC."
   },
   "time getCalendar": {
@@ -508,7 +508,7 @@
       "$time->getCalendar",
       "time getCalendar"
     ],
-    "body": "\\$time->getCalendar()",
+    "body": "\\$time->getCalendar();",
     "description": "Returns the IntlCalendar object used for this object, taking into account the locale, date, etc."
   }
 }

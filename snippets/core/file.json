@@ -1,0 +1,58 @@
+{
+  "file getSize": {
+    "prefix": [
+      "$file->getSize",
+      "file getSize"
+    ],
+    "body": "\\$file->getSize();",
+    "description": "Retrieve the file size."
+  },
+  "file getSizeByUnit": {
+    "prefix": [
+      "$file->getSizeByUnit",
+      "file getSizeByUnit"
+    ],
+    "body": "\\$file->getSizeByUnit('${1:unit}');",
+    "description": "Retrieve the file size by unit."
+  },
+  "file guessExtension": {
+    "prefix": [
+      "$file->guessExtension",
+      "file guessExtension"
+    ],
+    "body": "\\$file->guessExtension();",
+    "description": "Attempts to determine the file extension based on the trusted getType() method. If the mime type is unknown, will return null."
+  },
+  "file getMimeType": {
+    "prefix": [
+      "$file->getMimeType",
+      "file getMimeType"
+    ],
+    "body": "\\$file->getMimeType();",
+    "description": "Retrieve the media type of the file. SHOULD not use information from the $_FILES array, but should use other methods to more accurately determine the type of file, like finfo, or mime_content_type()."
+  },
+  "file getRandomName": {
+    "prefix": [
+      "$file->getRandomName",
+      "file getRandomName"
+    ],
+    "body": "\\$file->getRandomName();",
+    "description": "Generates a random names based on a simple hash and the time, with the correct file extension attached."
+  },
+  "file move": {
+    "prefix": [
+      "$file->move",
+      "file move"
+    ],
+    "body": "\\$file->move('${1:targetPath}', '${2:name}', ${3:boolean});",
+    "description": "Moves a file to a new location."
+  },
+  "file getDestination": {
+    "prefix": [
+      "$file->getDestination",
+      "file getDestination"
+    ],
+    "body": "\\$file->getDestination('${1:destination}', '${2:delimiter}', ${3:int});",
+    "description": "Returns the destination path for the move operation where overwriting is not expected."
+  }
+}

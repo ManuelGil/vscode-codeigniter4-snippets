@@ -4,7 +4,7 @@
       "$view->render",
       "view render"
     ],
-    "body": "\\$view->render('${1:view}', [${2:options}], ${3:boolean})",
+    "body": "\\$view->render('${1:view}', [${2:options}], ${3:boolean});",
     "description": "Builds the output based upon a file name and any data that has already been set."
   },
   "view renderString": {
@@ -12,7 +12,7 @@
       "$view->renderString",
       "view renderString"
     ],
-    "body": "\\$view->renderString('${1:view}', [${2:options}], ${3:boolean})",
+    "body": "\\$view->renderString('${1:view}', [${2:options}], ${3:boolean});",
     "description": "Builds the output based upon a string and any data that has already been set."
   },
   "view excerpt": {
@@ -20,7 +20,7 @@
       "$view->excerpt",
       "view excerpt"
     ],
-    "body": "\\$view->excerpt('${1:string}', ${2:length})",
+    "body": "\\$view->excerpt('${1:string}', ${2:length});",
     "description": "Extract first bit of a long string and add ellipsis"
   },
   "view setData": {
@@ -28,7 +28,7 @@
       "$view->setData",
       "view setData"
     ],
-    "body": "\\$view->setData([${1:data}], '${2:context}')",
+    "body": "\\$view->setData([${1:data}], '${2:context}');",
     "description": "Sets several pieces of view data at once."
   },
   "view setVar": {
@@ -36,7 +36,7 @@
       "$view->setVar",
       "view setVar"
     ],
-    "body": "\\$view->setVar('${1:name}', ${2:value}, '${3:context}')",
+    "body": "\\$view->setVar('${1:name}', ${2:value}, '${3:context}');",
     "description": "Sets a single piece of view data."
   },
   "view resetData": {
@@ -44,7 +44,7 @@
       "$view->resetData",
       "view resetData"
     ],
-    "body": "\\$view->resetData()",
+    "body": "\\$view->resetData();",
     "description": "Removes all of the view data from the system."
   },
   "view getData": {
@@ -52,7 +52,7 @@
       "$view->getData",
       "view getData"
     ],
-    "body": "\\$view->getData()",
+    "body": "\\$view->getData();",
     "description": "Returns the current data that will be displayed in the view."
   },
   "view extend": {
@@ -60,7 +60,7 @@
       "$this->extend",
       "view extend"
     ],
-    "body": "\\$this->extend('${1:layout}')",
+    "body": "\\$this->extend('${1:layout}');",
     "description": "Specifies that the current view should extend an existing layout."
   },
   "view section": {
@@ -68,7 +68,7 @@
       "$this->section",
       "view section"
     ],
-    "body": "\\$this->section('${1:name}')",
+    "body": "\\$this->section('${1:name}');",
     "description": "Starts holds content for a section within the layout."
   },
   "view endSection": {
@@ -76,7 +76,7 @@
       "$this->endSection",
       "view endSection"
     ],
-    "body": "\\$this->endSection()",
+    "body": "\\$this->endSection();",
     "description": "Captures the last section."
   },
   "view renderSection": {
@@ -84,7 +84,7 @@
       "$this->renderSection",
       "view renderSection"
     ],
-    "body": "\\$this->renderSection('${1:sectionName}', ${2:boolean})",
+    "body": "\\$this->renderSection('${1:sectionName}', ${2:boolean});",
     "description": "Renders a section's contents."
   },
   "view include": {
@@ -92,7 +92,7 @@
       "$this->include",
       "view include"
     ],
-    "body": "\\$this->include('${1:view}', [${2:options}], ${3:boolean})",
+    "body": "\\$this->include('${1:view}', [${2:options}], ${3:boolean});",
     "description": "Used within layout views to include additional views."
   },
   "view getPerformanceData": {
@@ -100,7 +100,7 @@
       "$view->getPerformanceData",
       "view getPerformanceData"
     ],
-    "body": "\\$view->getPerformanceData()",
+    "body": "\\$view->getPerformanceData();",
     "description": "Returns the performance data that might have been collected during the execution. Used primarily in the Debug Toolbar."
   }
 }

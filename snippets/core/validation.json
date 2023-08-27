@@ -1,5 +1,5 @@
 {
-  "setRule": {
+  "validation setRule": {
     "prefix": [
       "$validation->setRule",
       "validation setRule"
@@ -7,7 +7,7 @@
     "body": "\\$validation->setRule('${1:field}', '${2:label}', [${3:rules}], [${4:errors}]);",
     "description": "Sets an individual rule and custom error messages for a single field."
   },
-  "setRules": {
+  "validation setRules": {
     "prefix": [
       "$validation->setRules",
       "validation setRules"
@@ -19,7 +19,7 @@
     ],
     "description": "Sets an individual rule and custom error messages for a single field."
   },
-  "withRequest": {
+  "validation withRequest": {
     "prefix": [
       "$validation->withRequest",
       "validation withRequest"
@@ -27,7 +27,7 @@
     "body": "\\$validation->withRequest($this->request)->run();",
     "description": "Takes a Request object and grabs the input data to use from its array values."
   },
-  "run": {
+  "validation run": {
     "prefix": [
       "$validation->run",
       "validation run"
@@ -35,7 +35,7 @@
     "body": "\\$validation->run([${1:data}], ${2:group})",
     "description": "Runs the validation process, returning true/false determining whether validation was successful or not."
   },
-  "reset": {
+  "validation reset": {
     "prefix": [
       "$validation->reset",
       "validation reset"
@@ -43,7 +43,7 @@
     "body": "\\$validation->reset();",
     "description": "Resets the class to a blank slate. Should be called whenever you need to process more than one array."
   },
-  "check": {
+  "validation check": {
     "prefix": [
       "$validation->check",
       "validation check"
@@ -51,7 +51,7 @@
     "body": "\\$validation->check('${1:value}', '${2:rule}', [${3:errors}], '${4:dbGroup}');",
     "description": "Check; runs the validation process, returning true or false determining whether or not validation was successful."
   },
-  "getRuleGroup": {
+  "validation getRuleGroup": {
     "prefix": [
       "$validation->getRuleGroup",
       "validation getRuleGroup"
@@ -59,7 +59,7 @@
     "body": "\\$validation->getRuleGroup(${1:group});",
     "description": "Get rule group."
   },
-  "setRuleGroup": {
+  "validation setRuleGroup": {
     "prefix": [
       "$validation->setRuleGroup",
       "validation setRuleGroup"
@@ -67,7 +67,7 @@
     "body": "\\$validation->setRuleGroup(${1:group});",
     "description": "Set rule group."
   },
-  "getError": {
+  "validation getError": {
     "prefix": [
       "$validation->getError",
       "validation getError"
@@ -75,7 +75,7 @@
     "body": "\\$validation->getError(${1:field});",
     "description": "Returns the error for a specified $field (or empty string if not set)."
   },
-  "hasError": {
+  "validation hasError": {
     "prefix": [
       "$validation->hasError",
       "validation hasError"
@@ -83,7 +83,7 @@
     "body": "\\$validation->hasError(${1:field})",
     "description": "Checks to see if an error exists for the given field."
   },
-  "listErrors": {
+  "validation listErrors": {
     "prefix": [
       "$validation->listErrors",
       "validation listErrors"
@@ -91,7 +91,7 @@
     "body": "\\$validation->listErrors(${1:template})",
     "description": "Returns the rendered HTML of the errors as defined in $template."
   },
-  "showError": {
+  "validation showError": {
     "prefix": [
       "$validation->showError",
       "validation showError"
@@ -99,7 +99,7 @@
     "body": "\\$validation->showError(${1:field}, ${2:template})",
     "description": "Displays a single error in formatted HTML as defined in the $template view."
   },
-  "getErrors": {
+  "validation getErrors": {
     "prefix": [
       "$validation->getErrors",
       "validation getErrors"
@@ -107,7 +107,7 @@
     "body": "\\$validation->getErrors()",
     "description": "Returns the array of errors that were encountered during a run() call."
   },
-  "setError": {
+  "validation setError": {
     "prefix": [
       "$validation->setError",
       "validation setError"
@@ -115,7 +115,7 @@
     "body": "\\$validation->setError(${1:alias}, ${2:error})",
     "description": "Sets the error for a specific field. Used by custom validation methods."
   },
-  "loadRuleGroup": {
+  "validation loadRuleGroup": {
     "prefix": [
       "$validation->loadRuleGroup",
       "validation loadRuleGroup"
@@ -123,7 +123,7 @@
     "body": "\\$validation->loadRuleGroup(${1:group})",
     "description": "Loads custom rule groups (if set) into the current rules."
   },
-  "getValidated": {
+  "validation getValidated": {
     "prefix": [
       "$validation->getValidated",
       "validation getValidated"
@@ -131,242 +131,242 @@
     "body": "\\$validation->getValidated()",
     "description": "Returns the actual validated data."
   },
-  "rule alpha": {
+  "validation rule alpha": {
     "prefix": "alpha",
     "body": "alpha",
     "description": "Fails if field has anything other than alphabetic characters."
   },
-  "rule alpha_space": {
+  "validation rule alpha_space": {
     "prefix": "alpha_space",
     "body": "alpha_space",
     "description": "Fails if field contains anything other than alphabetic characters or spaces."
   },
-  "rule alpha_dash": {
+  "validation rule alpha_dash": {
     "prefix": "alpha_dash",
     "body": "alpha_dash",
     "description": "Fails if field contains anything other than alphanumeric characters, underscores or dashes."
   },
-  "rule alpha_numeric": {
+  "validation rule alpha_numeric": {
     "prefix": "alpha_numeric",
     "body": "alpha_numeric",
     "description": "Fails if field contains anything other than alphanumeric characters."
   },
-  "rule alpha_numeric_space": {
+  "validation rule alpha_numeric_space": {
     "prefix": "alpha_numeric_space",
     "body": "alpha_numeric_space",
     "description": "Fails if field contains anything other than alphanumeric or space characters."
   },
-  "rule alpha_numeric_punct": {
+  "validation rule alpha_numeric_punct": {
     "prefix": "alpha_numeric_punct",
     "body": "alpha_numeric_punct",
     "description": "Fails if field contains anything other than alphanumeric, space, or this limited set of punctuation characters: ~ (tilde), ! (exclamation), # (number), $ (dollar), % (percent), & (ampersand), ``* (asterisk), - (dash), _ (underscore), + (plus), = (equals), | (vertical bar), : (colon), . (period)."
   },
-  "rule decimal": {
+  "validation rule decimal": {
     "prefix": "decimal",
     "body": "decimal",
     "description": "Fails if field contains anything other than a decimal number. Also accepts a + or - sign for the number."
   },
-  "rule differs": {
+  "validation rule differs": {
     "prefix": "differs",
     "body": "differs[${1:field}]",
     "description": "Fails if field does not differ from the one in the parameter."
   },
-  "rule exact_length": {
+  "validation rule exact_length": {
     "prefix": "exact_length",
     "body": "exact_length[${1:values}]",
     "description": "Fails if field is not exactly the parameter value. One or more comma-separated values."
   },
-  "rule greater_than": {
+  "validation rule greater_than": {
     "prefix": "greater_than",
     "body": "greater_than[${1:value}]",
     "description": "Fails if field is less than or equal to the parameter value or not numeric."
   },
-  "rule greater_than_equal_to": {
+  "validation rule greater_than_equal_to": {
     "prefix": "greater_than_equal_to",
     "body": "greater_than_equal_to[${1:value}]",
     "description": "Fails if field is less than the parameter value, or not numeric."
   },
-  "rule hex": {
+  "validation rule hex": {
     "prefix": "hex",
     "body": "hex",
     "description": "Fails if field contains anything other than hexadecimal characters."
   },
-  "rule if_exist": {
+  "validation rule if_exist": {
     "prefix": "if_exist",
     "body": "if_exist",
     "description": "If this rule is present, validation will check the field only when the field key exists in the data to validate."
   },
-  "rule in_list": {
+  "validation rule in_list": {
     "prefix": "in_list",
     "body": "in_list[${1:values}]",
     "description": "Fails if field is not within a predetermined list."
   },
-  "rule integer": {
+  "validation rule integer": {
     "prefix": "integer",
     "body": "integer",
     "description": "Fails if field contains anything other than an integer."
   },
-  "rule is_natural": {
+  "validation rule is_natural": {
     "prefix": "is_natural",
     "body": "is_natural",
     "description": "Fails if field contains anything other than a natural number: 0, 1, 2, 3, etc."
   },
-  "rule is_natural_no_zero": {
+  "validation rule is_natural_no_zero": {
     "prefix": "is_natural_no_zero",
     "body": "is_natural_no_zero",
     "description": "Fails if field contains anything other than a natural number, except zero: 1, 2, 3, etc."
   },
-  "rule is_not_unique": {
+  "validation rule is_not_unique": {
     "prefix": "is_not_unique",
     "body": "is_not_unique[${1:field}, ${2:where_field}, ${3:where_value}]",
     "description": "Checks the database to see if the given value exist. Can ignore records by field/value to filter (currently accept only one filter)."
   },
-  "rule is_unique": {
+  "validation rule is_unique": {
     "prefix": "is_unique",
     "body": "is_unique[${1:field}, ${2:ignore_field}, ${3:ignore_value}]",
     "description": "Checks if this field value exists in the database. Optionally set a column and value to ignore, useful when updating records to ignore itself."
   },
-  "rule less_than": {
+  "validation rule less_than": {
     "prefix": "less_than",
     "body": "less_than[${1:value}]",
     "description": "Fails if field is greater than or equal to the parameter value or not numeric."
   },
-  "rule less_than_equal_to": {
+  "validation rule less_than_equal_to": {
     "prefix": "less_than_equal_to",
     "body": "less_than_equal_to[${1:value}]",
     "description": "Fails if field is greater than the parameter value or not numeric."
   },
-  "rule matches": {
+  "validation rule matches": {
     "prefix": "matches",
     "body": "matches[${1:field}]",
     "description": "The value must match the value of the field in the parameter."
   },
-  "rule max_length": {
+  "validation rule max_length": {
     "prefix": "max_length",
     "body": "max_length[${1:field}]",
     "description": "Fails if field is longer than the parameter value."
   },
-  "rule min_length": {
+  "validation rule min_length": {
     "prefix": "min_length",
     "body": "min_length[${1:field}]",
     "description": "Fails if field is shorter than the parameter value."
   },
-  "rule not_in_list": {
+  "validation rule not_in_list": {
     "prefix": "not_in_list",
     "body": "not_in_list[${1:values}]",
     "description": "Fails if field is within a predetermined list."
   },
-  "rule numeric": {
+  "validation rule numeric": {
     "prefix": "numeric",
     "body": "numeric",
     "description": "Fails if field contains anything other than numeric characters."
   },
-  "rule regex_match": {
+  "validation rule regex_match": {
     "prefix": "regex_match",
     "body": "regex_match[/${1:regex}/]",
     "description": "Fails if field does not match the regular expression."
   },
-  "rule permit_empty": {
+  "validation rule permit_empty": {
     "prefix": "permit_empty",
     "body": "permit_empty",
     "description": "Allows the field to receive an empty array, empty string, null or false."
   },
-  "rule required": {
+  "validation rule required": {
     "prefix": "required",
     "body": "required",
     "description": "Fails if the field is an empty array, empty string, null or false."
   },
-  "rule required_with": {
+  "validation rule required_with": {
     "prefix": "required_with",
     "body": "required_with[${1:fields}]",
     "description": "The field is required when any of the other fields is not empty() in the data."
   },
-  "rule required_without": {
+  "validation rule required_without": {
     "prefix": "required_without",
     "body": "required_without[${1:fields}]",
     "description": "The field is required when any of the other fields is empty() in the data."
   },
-  "rule string": {
+  "validation rule string": {
     "prefix": "string",
     "body": "string",
     "description": "A generic alternative to the alpha\\* rules that confirms the element is a string."
   },
-  "rule timezone": {
+  "validation rule timezone": {
     "prefix": "timezone",
     "body": "timezone",
     "description": "Fails if field does match a timezone per timezone_identifiers_list()"
   },
-  "rule valid_base64": {
+  "validation rule valid_base64": {
     "prefix": "valid_base64",
     "body": "valid_base64",
     "description": "Fails if field contains anything other than valid Base64 characters."
   },
-  "rule valid_json": {
+  "validation rule valid_json": {
     "prefix": "valid_json",
     "body": "valid_json",
     "description": "Fails if field does not contain a valid JSON string."
   },
-  "rule valid_email": {
+  "validation rule valid_email": {
     "prefix": "valid_email",
     "body": "valid_email",
     "description": "Fails if field does not contain a valid email address."
   },
-  "rule valid_emails": {
+  "validation rule valid_emails": {
     "prefix": "valid_emails",
     "body": "valid_emails",
     "description": "Fails if any value provided in a comma separated list is not a valid email."
   },
-  "rule valid_ip": {
+  "validation rule valid_ip": {
     "prefix": "valid_ip",
     "body": "valid_ip[${1:protocol}]",
     "description": "Fails if the supplied IP is not valid. Accepts an optional parameter of ipv4 or ipv6 to specify an IP format."
   },
-  "rule valid_url": {
+  "validation rule valid_url": {
     "prefix": "valid_url",
     "body": "valid_url",
     "description": "Fails if field does not contain (loosely) a URL. Includes simple strings that could be hostnames, like \"codeigniter\". Normally, valid_url_strict should be used."
   },
-  "rule valid_url_strict": {
+  "validation rule valid_url_strict": {
     "prefix": "valid_url_strict",
     "body": "valid_url_strict[${1:schemas}]",
     "description": "Fails if field does not contain a valid URL. You can optionally specify a list of valid schemas. If not specified, http,https are valid. This rule uses PHP's FILTER_VALIDATE_URL."
   },
-  "rule valid_date": {
+  "validation rule valid_date": {
     "prefix": "valid_date",
     "body": "valid_date[${1:format}]",
     "description": "Fails if field does not contain a valid date. Any string that strtotime() accepts is valid if you don't specify an optional parameter to matches a date format. So it is usually necessary to specify the parameter."
   },
-  "rule valid_cc_number": {
+  "validation rule valid_cc_number": {
     "prefix": "valid_cc_number",
     "body": "valid_cc_number[${1:provider}]",
     "description": "Verifies that the credit card number matches the format used by the specified provider. Current supported providers are: American Express (amex), China Unionpay (unionpay), Diners Club CarteBlance (carteblanche), Diners Club (dinersclub), Discover Card (discover), Interpayment (interpayment), JCB (jcb), Maestro (maestro), Dankort (dankort), NSPK MIR (mir), Troy (troy), MasterCard (mastercard), Visa (visa), UATP (uatp), Verve (verve), CIBC Convenience Card (cibc), Royal Bank of Canada Client Card (rbc), TD Canada Trust Access Card (tdtrust), Scotiabank Scotia Card (scotia), BMO ABM Card (bmoabm), HSBC Canada Card (hsbc)"
   },
-  "rule uploaded": {
+  "validation rule uploaded": {
     "prefix": "uploaded",
     "body": "uploaded[${1:field}]",
     "description": "Fails if the name of the parameter does not match the name of any uploaded files."
   },
-  "rule max_size": {
+  "validation rule max_size": {
     "prefix": "max_size",
     "body": "max_size[${1:field}, ${2:size}]",
     "description": "Fails if the uploaded file named in the parameter is larger than the second parameter in kilobytes (kb). Or if the file is larger than allowed maximum size declared in php.ini config file - upload_max_filesize directive."
   },
-  "rule max_dims": {
+  "validation rule max_dims": {
     "prefix": "max_dims",
     "body": "max_dims[${1:field}, ${2:width}, ${3:height}]",
     "description": "Fails if the maximum width and height of an uploaded image exceed values. The first parameter is the field name. The second is the width, and the third is the height. Will also fail if the file cannot be determined to be an image."
   },
-  "rule mime_in": {
+  "validation rule mime_in": {
     "prefix": "mime_in",
     "body": "mime_in[${1:field}, ${2:mime_type}]",
     "description": "Fails if the file's mime type is not one listed in the parameters."
   },
-  "rule ext_in": {
+  "validation rule ext_in": {
     "prefix": "ext_in",
     "body": "ext_in[${1:field}, ${2:extensions}]",
     "description": "Fails if the file's extension is not one listed in the parameters."
   },
-  "rule is_image": {
+  "validation rule is_image": {
     "prefix": "is_image",
     "body": "is_image[${1:field}]",
     "description": "Fails if the file cannot be determined to be an image based on the mime type."

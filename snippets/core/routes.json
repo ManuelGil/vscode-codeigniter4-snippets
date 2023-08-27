@@ -1,5 +1,5 @@
 {
-  "get": {
+  "routes get": {
     "prefix": [
       "$routes->get",
       "routes get"
@@ -7,7 +7,7 @@
     "body": "\\$routes->get('${1:url}', '${2:control}::${3:function}', ['as' => '${4:alias}', 'filter' => '${5:filter}']);",
     "description": "Specifies a route that is only available to GET requests."
   },
-  "post": {
+  "routes post": {
     "prefix": [
       "$routes->post",
       "routes post"
@@ -15,7 +15,7 @@
     "body": "\\$routes->post('${1:url}', '${2:control}::${3:function}', ['as' => '${4:alias}', 'filter' => '${5:filter}']);",
     "description": "Specifies a route that is only available to POST requests."
   },
-  "put": {
+  "routes put": {
     "prefix": [
       "$routes->put",
       "routes put"
@@ -23,7 +23,7 @@
     "body": "\\$routes->put('${1:url}', '${2:control}::${3:function}', ['as' => '${4:alias}', 'filter' => '${5:filter}']);",
     "description": "Specifies a route that is only available to PUT requests."
   },
-  "delete": {
+  "routes delete": {
     "prefix": [
       "$routes->delete",
       "routes delete"
@@ -31,7 +31,7 @@
     "body": "\\$routes->delete('${1:url}', '${2:control}::${3:function}', ['as' => '${4:alias}', 'filter' => '${5:filter}']);",
     "description": "Specifies a route that is only available to DELETE requests."
   },
-  "head": {
+  "routes head": {
     "prefix": [
       "$routes->head",
       "routes head"
@@ -39,7 +39,7 @@
     "body": "\\$routes->head('${1:url}', '${2:control}::${3:function}', ['as' => '${4:alias}', 'filter' => '${5:filter}']);",
     "description": "Specifies a route that is only available to HEAD requests."
   },
-  "patch": {
+  "routes patch": {
     "prefix": [
       "$routes->patch",
       "routes patch"
@@ -47,7 +47,7 @@
     "body": "\\$routes->patch('${1:url}', '${2:control}::${3:function}', ['as' => '${4:alias}', 'filter' => '${5:filter}']);",
     "description": "Specifies a route that is only available to PATCH requests."
   },
-  "options": {
+  "routes options": {
     "prefix": [
       "$routes->options",
       "routes options"
@@ -55,7 +55,7 @@
     "body": "\\$routes->options('${1:url}', '${2:control}::${3:function}', ['as' => '${4:alias}', 'filter' => '${5:filter}']);",
     "description": "Specifies a route that is only available to OPTIONS requests."
   },
-  "cli": {
+  "routes cli": {
     "prefix": [
       "$routes->cli",
       "routes cli"
@@ -63,7 +63,7 @@
     "body": "\\$routes->cli('${1:url}', '${2:control}::${3:function}', ['as' => '${4:alias}', 'filter' => '${5:filter}']);",
     "description": "Specifies a route that is only available to command-line requests."
   },
-  "add": {
+  "routes add": {
     "prefix": [
       "$routes->add",
       "routes add"
@@ -71,7 +71,7 @@
     "body": "\\$routes->add('${1:url}', '${2:control}::${3:function}', ['as' => '${4:alias}', 'filter' => '${5:filter}']);",
     "description": "Adds a single route to the collection."
   },
-  "view": {
+  "routes view": {
     "prefix": [
       "$routes->view",
       "routes view"
@@ -79,7 +79,7 @@
     "body": "\\$routes->view('${1:url}', '${2:view}', ['as' => '${3:alias}', 'filter' => '${4:filter}']);",
     "description": "Specifies a route that will only display a view."
   },
-  "addPlaceholder": {
+  "routes addPlaceholder": {
     "prefix": [
       "$routes->addPlaceholder",
       "routes addPlaceholder"
@@ -87,7 +87,7 @@
     "body": "\\$routes->addPlaceholder('${1:uuid}', '${2:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}}');",
     "description": "Registers a new constraint with the system."
   },
-  "presenter": {
+  "routes presenter": {
     "prefix": [
       "$routes->presenter",
       "routes presenter"
@@ -95,7 +95,7 @@
     "body": "\\$routes->presenter('${1:ulr}');",
     "description": "Creates a collections of HTTP-verb based routes for a presenter controller."
   },
-  "resource": {
+  "routes resource": {
     "prefix": [
       "$routes->resource",
       "routes resource"
@@ -103,7 +103,7 @@
     "body": "\\$routes->resource('${1:ulr}');",
     "description": "Creates a collections of HTTP-verb based routes for a controller."
   },
-  "match": {
+  "routes match": {
     "prefix": [
       "$routes->match",
       "routes match"
@@ -111,7 +111,7 @@
     "body": "\\$routes->match([${1:verb}], '${2:url}', '${3:control}::${4:function}', ['as' => '${5:alias}', 'filter' => '${6:filter}']);",
     "description": "Specifies a single route to match for multiple HTTP Verbs."
   },
-  "addRedirect": {
+  "routes addRedirect": {
     "prefix": [
       "$routes->addRedirect",
       "routes addRedirect"
@@ -119,7 +119,7 @@
     "body": "\\$routes->addRedirect('${1:url}', '${2:route}');",
     "description": "Adds a temporary redirect from one route to another."
   },
-  "map": {
+  "routes map": {
     "prefix": [
       "$routes->map",
       "routes map"
@@ -127,7 +127,7 @@
     "body": "\\$routes->map(['${1:routes}'], ['as' => '${2:alias}', 'filter' => '${3:filter}']);",
     "description": "A shortcut method to add a number of routes at a single time."
   },
-  "setPrioritize": {
+  "routes setPrioritize": {
     "prefix": [
       "$routes->setPrioritize",
       "routes setPrioritize"
@@ -135,7 +135,7 @@
     "body": "\\$routes->setPrioritize('${1:boolean}');",
     "description": "Enable or Disable sorting routes by priority."
   },
-  "setTranslateURIDashes": {
+  "routes setTranslateURIDashes": {
     "prefix": [
       "$routes->setTranslateURIDashes",
       "routes setTranslateURIDashes"
@@ -143,7 +143,7 @@
     "body": "\\$routes->setTranslateURIDashes('${1:boolean}');",
     "description": "Tells the system whether to convert dashes in URI strings into underscores."
   },
-  "setAutoRoute": {
+  "routes setAutoRoute": {
     "prefix": [
       "$routes->setAutoRoute",
       "routes setAutoRoute"
@@ -151,7 +151,7 @@
     "body": "\\$routes->setAutoRoute('${1:boolean}');",
     "description": "If TRUE, the system will attempt to match the URI against Controllers by matching each segment against folders/files in APPPATH/Controllers, when a match wasn't found against defined routes."
   },
-  "setDefaultNamespace": {
+  "routes setDefaultNamespace": {
     "prefix": [
       "$routes->setDefaultNamespace",
       "routes setDefaultNamespace"
@@ -159,7 +159,7 @@
     "body": "\\$routes->setDefaultNamespace('${1:namespace}');",
     "description": "Sets the default namespace to use for Controllers when no other namespace has been specified."
   },
-  "setDefaultController": {
+  "routes setDefaultController": {
     "prefix": [
       "$routes->setDefaultController",
       "routes setDefaultController"
@@ -167,7 +167,7 @@
     "body": "\\$routes->setDefaultController('${1:controller}');",
     "description": "Sets the default controller to use when no other controller has been specified."
   },
-  "setDefaultMethod": {
+  "routes setDefaultMethod": {
     "prefix": [
       "$routes->setDefaultMethod",
       "routes setDefaultMethod"
@@ -175,7 +175,7 @@
     "body": "\\$routes->setDefaultMethod('${1:method}');",
     "description": "Sets the default method to call on the controller when no other method has been set in the route."
   },
-  "environment": {
+  "routes environment": {
     "prefix": [
       "$routes->environment",
       "routes environment"
@@ -188,7 +188,7 @@
     ],
     "description": "Limits the routes to a specified ENVIRONMENT or they won't run."
   },
-  "group": {
+  "routes group": {
     "prefix": [
       "$routes->group",
       "routes group"
@@ -200,7 +200,7 @@
     ],
     "description": "Group a series of routes under a single URL segment."
   },
-  "loadRoutes": {
+  "routes loadRoutes": {
     "prefix": [
       "$routes->loadRoutes",
       "routes loadRoutes"
@@ -208,7 +208,7 @@
     "body": "\\$routes->loadRoutes('${1:routesFile}')",
     "description": "Loads main routes file and discover routes."
   },
-  "getPlaceholders": {
+  "routes getPlaceholders": {
     "prefix": [
       "$routes->getPlaceholders",
       "routes getPlaceholders"
@@ -216,7 +216,7 @@
     "body": "\\$routes->getPlaceholders()",
     "description": "For `spark routes`"
   },
-  "set404Override": {
+  "routes set404Override": {
     "prefix": [
       "$routes->set404Override",
       "routes set404Override"
@@ -224,7 +224,7 @@
     "body": "\\$routes->set404Override($callable)",
     "description": "ets the class/method that should be called if routing doesn't find a match. It can be either a closure or the controller/method name exactly like a route is defined: Users: :index."
   },
-  "get404Override": {
+  "routes get404Override": {
     "prefix": [
       "$routes->get404Override",
       "routes get404Override"
@@ -232,7 +232,7 @@
     "body": "\\$routes->get404Override()",
     "description": "Returns the 404 Override setting, which can be null, a closure or the controller/string."
   },
-  "setDefaultConstraint": {
+  "routes setDefaultConstraint": {
     "prefix": [
       "$routes->setDefaultConstraint",
       "routes setDefaultConstraint"
@@ -240,7 +240,7 @@
     "body": "\\$routes->setDefaultConstraint('${1:placeholder}')",
     "description": "Sets the default constraint to be used in the system. Typically for use with the 'resource' method."
   },
-  "getDefaultController": {
+  "routes getDefaultController": {
     "prefix": [
       "$routes->getDefaultController",
       "routes getDefaultController"
@@ -248,7 +248,7 @@
     "body": "\\$routes->getDefaultController()",
     "description": "Returns the name of the default controller. With Namespace."
   },
-  "getDefaultMethod": {
+  "routes getDefaultMethod": {
     "prefix": [
       "$routes->getDefaultMethod",
       "routes getDefaultMethod"
@@ -256,7 +256,7 @@
     "body": "\\$routes->getDefaultMethod()",
     "description": "Returns the name of the default method to use within the controller."
   },
-  "getDefaultNamespace": {
+  "routes getDefaultNamespace": {
     "prefix": [
       "$routes->getDefaultNamespace",
       "routes getDefaultNamespace"
@@ -264,7 +264,7 @@
     "body": "\\$routes->getDefaultNamespace()",
     "description": "Returns the default namespace as set in the Routes config file."
   },
-  "shouldTranslateURIDashes": {
+  "routes shouldTranslateURIDashes": {
     "prefix": [
       "$routes->shouldTranslateURIDashes",
       "routes shouldTranslateURIDashes"
@@ -272,7 +272,7 @@
     "body": "\\$routes->shouldTranslateURIDashes()",
     "description": "Returns the current value of the translateURIDashes setting."
   },
-  "shouldAutoRoute": {
+  "routes shouldAutoRoute": {
     "prefix": [
       "$routes->shouldAutoRoute",
       "routes shouldAutoRoute"
@@ -280,7 +280,7 @@
     "body": "\\$routes->shouldAutoRoute()",
     "description": "Returns the flag that tells whether to autoRoute URI against Controllers."
   },
-  "getRoutes": {
+  "routes getRoutes": {
     "prefix": [
       "$routes->getRoutes",
       "routes getRoutes"
@@ -288,7 +288,7 @@
     "body": "\\$routes->getRoutes('${1:verb}', ${2:boolean})",
     "description": "Returns the raw array of available routes."
   },
-  "getRoutesOptions": {
+  "routes getRoutesOptions": {
     "prefix": [
       "$routes->getRoutesOptions",
       "routes getRoutesOptions"
@@ -296,7 +296,7 @@
     "body": "\\$routes->getRoutesOptions('${1:routeKey}', '${2:verb}')",
     "description": "Returns one or all routes options."
   },
-  "getHTTPVerb": {
+  "routes getHTTPVerb": {
     "prefix": [
       "$routes->getHTTPVerb",
       "routes getHTTPVerb"
@@ -304,7 +304,7 @@
     "body": "\\$routes->getHTTPVerb()",
     "description": "Returns the current HTTP Verb being used."
   },
-  "setHTTPVerb": {
+  "routes setHTTPVerb": {
     "prefix": [
       "$routes->setHTTPVerb",
       "routes setHTTPVerb"
@@ -312,7 +312,7 @@
     "body": "\\$routes->setHTTPVerb('${1:verb}')",
     "description": "Sets the current HTTP verb. Used primarily for testing."
   },
-  "isRedirect": {
+  "routes isRedirect": {
     "prefix": [
       "$routes->isRedirect",
       "routes isRedirect"
@@ -320,7 +320,7 @@
     "body": "\\$routes->isRedirect('${1:routeKey}')",
     "description": "Determines if the route is a redirecting route."
   },
-  "getRedirectCode": {
+  "routes getRedirectCode": {
     "prefix": [
       "$routes->getRedirectCode",
       "routes getRedirectCode"
@@ -328,7 +328,7 @@
     "body": "\\$routes->getRedirectCode('${1:routeKey}')",
     "description": "Grabs the HTTP status code from a redirecting Route."
   },
-  "reverseRoute": {
+  "routes reverseRoute": {
     "prefix": [
       "$routes->reverseRoute",
       "routes reverseRoute"
@@ -336,7 +336,7 @@
     "body": "\\$routes->reverseRoute('${1:search}', '${2:params}')",
     "description": "Attempts to look up a route based on its destination."
   },
-  "isFiltered": {
+  "routes isFiltered": {
     "prefix": [
       "$routes->isFiltered",
       "routes isFiltered"
@@ -344,7 +344,7 @@
     "body": "\\$routes->isFiltered('${1:search}', '${2:verb}')",
     "description": "Checks a route (using the \"from\") to see if it's filtered or not."
   },
-  "getFilterForRoute": {
+  "routes getFilterForRoute": {
     "prefix": [
       "$routes->getFilterForRoute",
       "routes getFilterForRoute"
@@ -352,7 +352,7 @@
     "body": "\\$routes->getFilterForRoute('${1:search}', '${2:verb}')",
     "description": "Returns the filter that should be applied for a single route, along with any parameters it might have."
   },
-  "getFiltersForRoute": {
+  "routes getFiltersForRoute": {
     "prefix": [
       "$routes->getFiltersForRoute",
       "routes getFiltersForRoute"
@@ -360,7 +360,7 @@
     "body": "\\$routes->getFiltersForRoute('${1:search}', '${2:verb}')",
     "description": "Returns the filters that should be applied for a single route, along with any parameters it might have."
   },
-  "resetRoutes": {
+  "routes resetRoutes": {
     "prefix": [
       "$routes->resetRoutes",
       "routes resetRoutes"
@@ -368,7 +368,7 @@
     "body": "\\$routes->resetRoutes()",
     "description": "Reset the routes, so that a test case can provide the explicit ones needed for it."
   },
-  "getRegisteredControllers": {
+  "routes getRegisteredControllers": {
     "prefix": [
       "$routes->getRegisteredControllers",
       "routes getRegisteredControllers"
@@ -376,7 +376,7 @@
     "body": "\\$routes->getRegisteredControllers('${1:verb}')",
     "description": "Get all controllers in Route Handlers."
   },
-  "useSupportedLocalesOnly": {
+  "routes useSupportedLocalesOnly": {
     "prefix": [
       "$routes->useSupportedLocalesOnly",
       "routes useSupportedLocalesOnly"
@@ -384,7 +384,7 @@
     "body": "\\$routes->useSupportedLocalesOnly(${1:boolean})",
     "description": "Set The flag that limit or not the routes with {locale} placeholder to App::$supportedLocales."
   },
-  "shouldUseSupportedLocalesOnly": {
+  "routes shouldUseSupportedLocalesOnly": {
     "prefix": [
       "$routes->shouldUseSupportedLocalesOnly",
       "routes shouldUseSupportedLocalesOnly"
