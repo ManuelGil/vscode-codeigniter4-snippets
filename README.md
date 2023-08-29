@@ -24,19 +24,20 @@ CodeIgniter4 - snippets & autocomplete for VSCode editor.
 
 - [Query Builder](./snippets/core/builder.json)
 - [Database](./snippets/core/database.json)
+- [File](./snippets/core/file.json)
 - [Redirect](./snippets/core/redirect.json)
 - [Request](./snippets/core/request.json)
 - [Response](./snippets/core/response.json)
 - [Routes](./snippets/core/routes.json)
-- [session](./snippets/core/session.json)
-- [time](./snippets/core/time.json)
-- [validation](./snippets/core/validation.json)
-- [view](./snippets/core/view.json)
+- [Session](./snippets/core/session.json)
+- [Time](./snippets/core/time.json)
+- [Validation](./snippets/core/validation.json)
+- [View](./snippets/core/view.json)
 
 ## Other Repositories
 
-- Mustache Template - Snippets & Autocomplete [VSCode Mustache Snippets](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-mustache-snippets)
-- Moodle Pack [VSCode Moodle Snippets](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-moodle-snippets)
+- [CodeIgniter4 Snippets for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-codeigniter4-snippets)
+- [CodeIgniter4 Spark for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-codeigniter4-spark)
 
 ## Community
 
@@ -54,4 +55,4 @@ See also the list of [contributors](https://github.com/ManuelGil/vscode-codeigni
 
 ## License
 
-Mustache Snippets is licensed under the MIT License - see the [MIT License](https://opensource.org/licenses/MIT) for details.
+Codeigniter 4 Snippets for VSCode is licensed under the MIT License - see the [MIT License](https://opensource.org/licenses/MIT) for details.

@@ -54,5 +54,93 @@
     ],
     "body": "\\$file->getDestination('${1:destination}', '${2:delimiter}', ${3:int});",
     "description": "Returns the destination path for the move operation where overwriting is not expected."
+  },
+  "file hasMoved": {
+    "prefix": [
+      "$file->hasMoved",
+      "file hasMoved"
+    ],
+    "body": "\\$file->hasMoved();",
+    "description": "Returns whether the file has been moved or not. If it has, the move() method will not work and certain properties, like the tempName, will no longer be available."
+  },
+  "file getError": {
+    "prefix": [
+      "$file->getError",
+      "file getError"
+    ],
+    "body": "\\$file->getError();",
+    "description": "Retrieve the error associated with the uploaded file."
+  },
+  "file getErrorString": {
+    "prefix": [
+      "$file->getErrorString",
+      "file getErrorString"
+    ],
+    "body": "\\$file->getErrorString();",
+    "description": "Get error string."
+  },
+  "file getClientMimeType": {
+    "prefix": [
+      "$file->getClientMimeType",
+      "file getClientMimeType"
+    ],
+    "body": "\\$file->getClientMimeType();",
+    "description": "Returns the mime type as provided by the client."
+  },
+  "file getName": {
+    "prefix": [
+      "$file->getName",
+      "file getName"
+    ],
+    "body": "\\$file->getName();",
+    "description": "Retrieve the filename. This will typically be the filename sent by the client, and should not be trusted. If the file has been moved, this will return the final name of the moved file."
+  },
+  "file getClientName": {
+    "prefix": [
+      "$file->getClientName",
+      "file getClientName"
+    ],
+    "body": "\\$file->getClientName();",
+    "description": "Returns the name of the file as provided by the client during upload."
+  },
+  "file getTempName": {
+    "prefix": [
+      "$file->getTempName",
+      "file getTempName"
+    ],
+    "body": "\\$file->getTempName();",
+    "description": "Gets the temporary filename where the file was uploaded to."
+  },
+  "file getExtension": {
+    "prefix": [
+      "$file->getExtension",
+      "file getExtension"
+    ],
+    "body": "\\$file->getExtension();",
+    "description": "Overrides SPLFileInfo's to work with uploaded files, since the temp file that's been uploaded doesn't have an extension."
+  },
+  "file getClientExtension": {
+    "prefix": [
+      "$file->getClientExtension",
+      "file getClientExtension"
+    ],
+    "body": "\\$file->getClientExtension();",
+    "description": "Returns the original file extension, based on the file name that was uploaded. This is NOT a trusted source."
+  },
+  "file isValid": {
+    "prefix": [
+      "$file->isValid",
+      "file isValid"
+    ],
+    "body": "\\$file->isValid();",
+    "description": "Returns whether the file was uploaded successfully, based on whether it was uploaded via HTTP and has no errors."
+  },
+  "file store": {
+    "prefix": [
+      "$file->store",
+      "file store"
+    ],
+    "body": "\\$file->store('${1:folderName}', '${2:fileName}');",
+    "description": "Save the uploaded file to a new location."
   }
 }
