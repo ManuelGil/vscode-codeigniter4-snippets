@@ -204,7 +204,7 @@
       "$files->addDirectories",
       "files addDirectories"
     ],
-    "body": "\\$file->addDirectories([$directories], ${2:boolean});",
+    "body": "\\$file->addDirectories([${1:directories}], ${2:boolean});",
     "description": "Verifies and adds files from each directory to the list."
   },
   "files addDirectory": {

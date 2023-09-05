@@ -1,0 +1,146 @@
+{
+  "image withFile": {
+    "prefix": [
+      "$image->withFile",
+      "image withFile"
+    ],
+    "body": "\\$image->withFile('${1:path}')",
+    "description": "Sets another image for this handler to work on. Keeps us from needing to continually instantiate the handler."
+  },
+  "image getFile": {
+    "prefix": [
+      "$image->getFile",
+      "image getFile"
+    ],
+    "body": "\\$image->getFile()",
+    "description": "Returns the image instance."
+  },
+  "image getResource": {
+    "prefix": [
+      "$image->getResource",
+      "image getResource"
+    ],
+    "body": "\\$image->getResource()",
+    "description": "Returns the temporary image used during the image processing. Good for extending the system or doing things this library is not intended to do."
+  },
+  "image withResource": {
+    "prefix": [
+      "$image->withResource",
+      "image withResource"
+    ],
+    "body": "\\$image->withResource()",
+    "description": "Load the temporary image used during the image processing. Some functions e.g. save() will only copy and not compress your image otherwise."
+  },
+  "image resize": {
+    "prefix": [
+      "$image->resize",
+      "image resize"
+    ],
+    "body": "\\$image->resize(${1:width}, ${2:height}, ${3:boolean}, '${4:masterDim}')",
+    "description": "Resize the image."
+  },
+  "image crop": {
+    "prefix": [
+      "$image->crop",
+      "image crop"
+    ],
+    "body": "\\$image->crop(${1:width}, ${2:height}, ${3:x}, ${4:y}, ${5:boolean}, '${6:masterDim}')",
+    "description": "Crops the image to the desired height and width. If one of the height/width values is not provided, that value will be set the appropriate value based on offsets and image dimensions."
+  },
+  "image convert": {
+    "prefix": [
+      "$image->convert",
+      "image convert"
+    ],
+    "body": "\\$image->convert(${1:imageType})",
+    "description": "Changes the stored image type to indicate the new file format to use when saving. Does not touch the actual resource."
+  },
+  "image rotate": {
+    "prefix": [
+      "$image->rotate",
+      "image rotate"
+    ],
+    "body": "\\$image->rotate(${1:angle})",
+    "description": "Rotates the image on the current canvas."
+  },
+  "image flatten": {
+    "prefix": [
+      "$image->flatten",
+      "image flatten"
+    ],
+    "body": "\\$image->flatten(${1:red}, ${2:green}, ${3:blue})",
+    "description": "Flattens transparencies, default white background."
+  },
+  "image flip": {
+    "prefix": [
+      "$image->flip",
+      "image flip"
+    ],
+    "body": "\\$image->flip('${1:dir}')",
+    "description": "Flips an image either horizontally or vertically."
+  },
+  "image text": {
+    "prefix": [
+      "$image->text",
+      "image text"
+    ],
+    "body": "\\$image->text('${1:text}', [${2:options}])",
+    "description": "Overlays a string of text over the image."
+  },
+  "image reorient": {
+    "prefix": [
+      "$image->reorient",
+      "image reorient"
+    ],
+    "body": "\\$image->reorient(${1:boolean})",
+    "description": "Reads the EXIF information from the image and modifies the orientation so that displays correctly in the browser. This is especially an issue with images taken by smartphones who always store the image up-right, but set the orientation flag to display it correctly."
+  },
+  "image getEXIF": {
+    "prefix": [
+      "$image->getEXIF",
+      "image getEXIF"
+    ],
+    "body": "\\$image->getEXIF('${1:key}', ${2:boolean})",
+    "description": "Retrieve the EXIF information from the image, if possible. Returns an array of the information, or null if nothing can be found."
+  },
+  "image fit": {
+    "prefix": [
+      "$image->fit",
+      "image fit"
+    ],
+    "body": "\\$image->fit(${1:width}, ${2:height}, '${3:position}')",
+    "description": "Combine cropping and resizing into a single command."
+  },
+  "image getVersion": {
+    "prefix": [
+      "$image->getVersion",
+      "image getVersion"
+    ],
+    "body": "\\$image->getVersion();",
+    "description": "Get the version of the image library in use."
+  },
+  "image save": {
+    "prefix": [
+      "$image->save",
+      "image save"
+    ],
+    "body": "\\$image->save('${1:target}', ${2:quality});",
+    "description": "Saves any changes that have been made to file."
+  },
+  "image getWidth": {
+    "prefix": [
+      "$image->getWidth",
+      "image getWidth"
+    ],
+    "body": "\\$image->getWidth()",
+    "description": "Return image width."
+  },
+  "image getHeight": {
+    "prefix": [
+      "$image->getHeight",
+      "image getHeight"
+    ],
+    "body": "\\$image->getHeight()",
+    "description": "Return image height."
+  }
+}

@@ -9,7 +9,7 @@ CodeIgniter4 - snippets & autocomplete for VSCode editor.
 
 ## Requirements
 
-- CodeIgniter 4.4.0 or later
+- CodeIgniter 4.3.0 or later
 - VSCode 1.46.0 or later
 
 ## Features
@@ -25,6 +25,7 @@ CodeIgniter4 - snippets & autocomplete for VSCode editor.
 - [Query Builder](./snippets/core/builder.json)
 - [Database](./snippets/core/database.json)
 - [File](./snippets/core/file.json)
+- [Image](./snippets/core/image.json)
 - [Redirect](./snippets/core/redirect.json)
 - [Request](./snippets/core/request.json)
 - [Response](./snippets/core/response.json)
