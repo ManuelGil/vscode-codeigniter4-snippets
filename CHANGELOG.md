@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.6.0] - 2023-09-05
+
+### Added
+
+- Add new functions in [file](./snippets/core/file.json).
+
 ## [1.5.0] - 2023-08-28
 
 ### Added
@@ -75,7 +81,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release
 
-[unreleased]: https://github.com/ManuelGil/vscode-codeigniter4-snippets/compare/v1.5.0...HEAD
+[unreleased]: https://github.com/ManuelGil/vscode-codeigniter4-snippets/compare/v1.6.0...HEAD
+[1.6.0]: https://github.com/ManuelGil/vscode-codeigniter4-snippets/compare/v1.5.0...v1.6.0
 [1.5.0]: https://github.com/ManuelGil/vscode-codeigniter4-snippets/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/ManuelGil/vscode-codeigniter4-snippets/compare/v1.3.1...v1.4.0
 [1.3.1]: https://github.com/ManuelGil/vscode-codeigniter4-snippets/compare/v1.3.0...v1.3.1

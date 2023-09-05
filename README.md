@@ -9,7 +9,7 @@ CodeIgniter4 - snippets & autocomplete for VSCode editor.
 
 ## Requirements
 
-- CodeIgniter between versions 4.3.0 and 4.4.0
+- CodeIgniter 4.4.0 or later
 - VSCode 1.46.0 or later
 
 ## Features

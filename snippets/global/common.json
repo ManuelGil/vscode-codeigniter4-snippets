@@ -141,7 +141,7 @@
   },
   "function _solidus": {
     "prefix": "_solidus",
-    "body": "_solidus()",
+    "body": "_solidus(${1:docTypesConfig})",
     "description": "Generates the solidus character (`/`) depending on the HTML5 compatibility flag in `Config\\DocTypes`."
   },
   "function remove_invisible_characters": {

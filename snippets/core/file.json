@@ -142,5 +142,109 @@
     ],
     "body": "\\$file->store('${1:folderName}', '${2:fileName}');",
     "description": "Save the uploaded file to a new location."
+  },
+  "files get": {
+    "prefix": [
+      "$files->get",
+      "files get"
+    ],
+    "body": "\\$file->get();",
+    "description": "Optimizes and returns the current file list."
+  },
+  "files set": {
+    "prefix": [
+      "$files->set",
+      "files set"
+    ],
+    "body": "\\$file->set([${1:files}]);",
+    "description": "Sets the file list directly, files are still subject to verification. This works as a \"reset\" method with []."
+  },
+  "files add": {
+    "prefix": [
+      "$files->add",
+      "files add"
+    ],
+    "body": "\\$file->add('${1:paths}', ${2:boolean});",
+    "description": "Adds an array/single file or directory to the list."
+  },
+  "files addFiles": {
+    "prefix": [
+      "$files->addFiles",
+      "files addFiles"
+    ],
+    "body": "\\$file->addFiles([${1:files}]);",
+    "description": "Verifies and adds files to the list."
+  },
+  "files addFile": {
+    "prefix": [
+      "$files->addFile",
+      "files addFile"
+    ],
+    "body": "\\$file->addFile('${1:file}');",
+    "description": "Verifies and adds a single file to the file list."
+  },
+  "files removeFiles": {
+    "prefix": [
+      "$files->removeFiles",
+      "files removeFiles"
+    ],
+    "body": "\\$file->removeFiles([${1:files}]);",
+    "description": "Removes files from the list."
+  },
+  "files removeFile": {
+    "prefix": [
+      "$files->removeFile",
+      "files removeFile"
+    ],
+    "body": "\\$file->removeFile('${1:file}');",
+    "description": "Removes a single file from the list."
+  },
+  "files addDirectories": {
+    "prefix": [
+      "$files->addDirectories",
+      "files addDirectories"
+    ],
+    "body": "\\$file->addDirectories([$directories], ${2:boolean});",
+    "description": "Verifies and adds files from each directory to the list."
+  },
+  "files addDirectory": {
+    "prefix": [
+      "$files->addDirectory",
+      "files addDirectory"
+    ],
+    "body": "\\$file->addDirectory('${1:directory}', ${2:boolean});",
+    "description": "Verifies and adds all files from a directory."
+  },
+  "files removePattern": {
+    "prefix": [
+      "$files->removePattern",
+      "files removePattern"
+    ],
+    "body": "\\$file->removePattern('${1:pattern}', '${2:scope}');",
+    "description": "Removes any files from the list that match the supplied pattern (within the optional scope)."
+  },
+  "files retainPattern": {
+    "prefix": [
+      "$files->retainPattern",
+      "files retainPattern"
+    ],
+    "body": "\\$file->retainPattern('${1:pattern}', '${2:scope}');",
+    "description": "Keeps only the files from the list that match (within the optional scope)."
+  },
+  "files count": {
+    "prefix": [
+      "$files->count",
+      "files count"
+    ],
+    "body": "\\$file->count();",
+    "description": "Returns the current number of files in the collection. Fulfills Countable."
+  },
+  "files getIterator": {
+    "prefix": [
+      "$files->getIterator",
+      "files getIterator"
+    ],
+    "body": "\\$file->getIterator();",
+    "description": "* Yields as an Iterator for the current files. Fulfills IteratorAggregate."
   }
 }
