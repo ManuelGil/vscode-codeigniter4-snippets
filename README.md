@@ -1,11 +1,11 @@
 ![icon](https://raw.githubusercontent.com/ManuelGil/vscode-codeigniter4-snippets/main/icon.png)
 
-# Codeigniter 4 Snippets for VSCode
+# CodeIgniter 4 Snippets for VSCode
 
 [![Latest Release](https://img.shields.io/visual-studio-marketplace/v/imgildev.vscode-codeigniter4-snippets?style=flat&label=VS%20Marketplace&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-codeigniter4-snippets)
 [![GitHub license](https://img.shields.io/github/license/ManuelGil/vscode-codeigniter4-snippets)]()
 
-CodeIgniter4 - snippets & autocomplete for VSCode editor.
+CodeIgniter 4 - snippets & autocomplete for VSCode editor.
 
 ## Requirements
 
@@ -25,6 +25,8 @@ CodeIgniter4 - snippets & autocomplete for VSCode editor.
 - [Query Builder](./snippets/core/builder.json)
 - [Cookie](./snippets/core/cookie.json)
 - [Database](./snippets/core/database.json)
+- [Email](./snippets/core/email.json)
+- [Encryptation](./snippets/core/encrypter.json)
 - [File](./snippets/core/file.json)
 - [Image](./snippets/core/image.json)
 - [Redirect](./snippets/core/redirect.json)
@@ -305,6 +307,78 @@ CodeIgniter4 - snippets & autocomplete for VSCode editor.
 | ci:db:isWriteType | $db->isWriteType |
 | ci:db:error | $db->error |
 | ci:db:insertID | $db->insertID |
+
+### Email
+
+| Snippet | Purpose |
+| --- | --- |
+| ci:email:initialize | $email->initialize |
+| ci:email:clear | $email->clear |
+| ci:email:setFrom | $email->setFrom |
+| ci:email:setReplyTo | $email->setReplyTo |
+| ci:email:setTo | $email->setTo |
+| ci:email:setCC | $email->setCC |
+| ci:email:setBCC | $email->setBCC |
+| ci:email:setSubject | $email->setSubject |
+| ci:email:setMessage | $email->setMessage |
+| ci:email:attach | $email->attach |
+| ci:email:setAttachmentCID | $email->setAttachmentCID |
+| ci:email:setHeader | $email->setHeader |
+| ci:email:setAltMessage | $email->setAltMessage |
+| ci:email:setMailType | $email->setMailType |
+| ci:email:setWordWrap | $email->setWordWrap |
+| ci:email:setProtocol | $email->setProtocol |
+| ci:email:setPriority | $email->setPriority |
+| ci:email:setNewline | $email->setNewline |
+| ci:email:setCRLF | $email->setCRLF |
+| ci:email:validateEmail | $email->validateEmail |
+| ci:email:isValidEmail | $email->isValidEmail |
+| ci:email:cleanEmail | $email->cleanEmail |
+| ci:email:wordWrap | $email->wordWrap |
+| ci:email:send | $email->send |
+| ci:email:batchBCCSend | $email->batchBCCSend |
+| ci:email:printDebugger | $email->printDebugger |
+| ci:email:archive | config archiv |
+| ci:email:fromEmail | config fromEmai |
+| ci:email:fromName | config fromNam |
+| ci:email:userAgent | config userAgen |
+| ci:email:mailPath | config mailPat |
+| ci:email:protocol | config protoco |
+| ci:email:SMTPHost | config SMTPHos |
+| ci:email:SMTPUser | config SMTPUse |
+| ci:email:SMTPPass | config SMTPPas |
+| ci:email:SMTPPort | config SMTPPor |
+| ci:email:SMTPTimeout | config SMTPTimeou |
+| ci:email:SMTPKeepAlive | config SMTPKeepAliv |
+| ci:email:SMTPCrypto | config SMTPCrypt |
+| ci:email:wordWrap | config wordWra |
+| ci:email:wrapChars | config wrapChar |
+| ci:email:mailType | config mailTyp |
+| ci:email:charset | config charse |
+| ci:email:altMessage | config altMessag |
+| ci:email:validate | config validat |
+| ci:email:priority | config priorit |
+| ci:email:newline | config newlin |
+| ci:email:CRLF | config CRL |
+| ci:email:DSN | config DS |
+| ci:email:sendMultipart | config sendMultipar |
+| ci:email:BCCBatchMode | config BCCBatchMod |
+| ci:email:BCCBatchSize | config BCCBatchSiz |
+
+### Encryptation
+
+| Snippet | Purpose |
+| --- | --- |
+| ci:encryption:encrypt | $encrypter->encrypt |
+| ci:encryption:decrypt | $encrypter->decrypt |
+| ci:encryptation:key | $config->key |
+| ci:encryptation:driver | $config->driver |
+| ci:encryptation:blockSize | $config->blockSize |
+| ci:encryptation:digest | $config->digest |
+| ci:encryptation:rawData | $config->rawData |
+| ci:encryptation:encryptKeyInfo | $config->encryptKeyInfo |
+| ci:encryptation:authKeyInfo | $config->authKeyInfo |
+| ci:encryptation:cipher | $config->cipher |
 
 ### File
 
@@ -711,8 +785,8 @@ ci:routes:shouldUseSupportedLocalesOnly | $routes->shouldUseSupportedLocalesOnly
 
 ## Other Repositories
 
-- [CodeIgniter4 Snippets for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-codeigniter4-snippets)
-- [CodeIgniter4 Spark for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-codeigniter4-spark)
+- [CodeIgniter 4 Snippets for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-codeigniter4-snippets)
+- [CodeIgniter 4 Spark for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-codeigniter4-spark)
 
 ## Community
 
@@ -730,4 +804,4 @@ See also the list of [contributors](https://github.com/ManuelGil/vscode-codeigni
 
 ## License
 
-Codeigniter 4 Snippets for VSCode is licensed under the MIT License - see the [MIT License](https://opensource.org/licenses/MIT) for details.
+CodeIgniter 4 Snippets for VSCode is licensed under the MIT License - see the [MIT License](https://opensource.org/licenses/MIT) for details.

@@ -1,0 +1,432 @@
+{
+  "email initialize": {
+    "prefix": [
+      "ci:email:initialize",
+      "$email->initialize",
+      "email initialize"
+    ],
+    "body": "\\$email->initialize(${1:config});",
+    "description": "Initialize preferences."
+  },
+  "email clear": {
+    "prefix": [
+      "ci:email:clear",
+      "$email->clear",
+      "email clear"
+    ],
+    "body": "\\$email->clear(${1:boolean});",
+    "description": "Initializes all the email variables to an empty state. This method is intended for use if you run the email sending method in a loop, permitting the data to be reset between cycles."
+  },
+  "email setFrom": {
+    "prefix": [
+      "ci:email:setFrom",
+      "$email->setFrom",
+      "email setFrom"
+    ],
+    "body": "\\$email->setFrom('${1:from}', '${2:name}', ${3:returnPath});"
+  },
+  "email setReplyTo": {
+    "prefix": [
+      "ci:email:setReplyTo",
+      "$email->setReplyTo",
+      "email setReplyTo"
+    ],
+    "body": "\\$email->setReplyTo(${1:replyto}, '${2:name}');",
+    "description": "Sets the reply-to address. If the information is not provided the information in the setFrom method is used."
+  },
+  "email setTo": {
+    "prefix": [
+      "ci:email:setTo",
+      "$email->setTo",
+      "email setTo"
+    ],
+    "body": "\\$email->setTo(${1:to});",
+    "description": "Sets the email address(s) of the recipient(s)."
+  },
+  "email setCC": {
+    "prefix": [
+      "ci:email:setCC",
+      "$email->setCC",
+      "email setCC"
+    ],
+    "body": "\\$email->setCC(${1:cc});",
+    "description": "Sets the CC email address(s). Just like the “to”, can be a single e-mail, a comma-delimited list or an array."
+  },
+  "email setBCC": {
+    "prefix": [
+      "ci:email:setBCC",
+      "$email->setBCC",
+      "email setBCC"
+    ],
+    "body": "\\$email->setBCC(${1:bcc}, '${2:limit}');",
+    "description": "Sets the BCC email address(s). Just like the setTo() method, can be a single e-mail, a comma-delimited list or an array."
+  },
+  "email setSubject": {
+    "prefix": [
+      "ci:email:setSubject",
+      "$email->setSubject",
+      "email setSubject"
+    ],
+    "body": "\\$email->setSubject(${1:subject});",
+    "description": "Sets the email subjec."
+  },
+  "email setMessage": {
+    "prefix": [
+      "ci:email:setMessage",
+      "$email->setMessage",
+      "email setMessage"
+    ],
+    "body": "\\$email->setMessage(${1:body});",
+    "description": "Sets the e-mail message body."
+  },
+  "email attach": {
+    "prefix": [
+      "ci:email:attach",
+      "$email->attach",
+      "email attach"
+    ],
+    "body": "\\$email->attach(${1:file}, '${2:disposition}', ${3:newname}, '${4:mime}');",
+    "description": "Enables you to send an attachment. Put the file path/name in the first parameter. For multiple attachments use the method multiple times."
+  },
+  "email setAttachmentCID": {
+    "prefix": [
+      "ci:email:setAttachmentCID",
+      "$email->setAttachmentCID",
+      "email setAttachmentCID"
+    ],
+    "body": "\\$email->setAttachmentCID(${1:filename});",
+    "description": "Set and return attachment Content-ID. Useful for attached inline pictures."
+  },
+  "email setHeader": {
+    "prefix": [
+      "ci:email:setHeader",
+      "$email->setHeader",
+      "email setHeader"
+    ],
+    "body": "\\$email->setHeader(${1:header}, ${2:value});",
+    "description": "Appends additional headers to the e-mail."
+  },
+  "email setAltMessage": {
+    "prefix": [
+      "ci:email:setAltMessage",
+      "$email->setAltMessage",
+      "email setAltMessage"
+    ],
+    "body": "\\$email->setAltMessage('${1:str}');",
+    "description": "Sets the alternative e-mail message body."
+  },
+  "email setMailType": {
+    "prefix": [
+      "ci:email:setMailType",
+      "$email->setMailType",
+      "email setMailType"
+    ],
+    "body": "\\$email->setMailType('${1:type}');"
+  },
+  "email setWordWrap": {
+    "prefix": [
+      "ci:email:setWordWrap",
+      "$email->setWordWrap",
+      "email setWordWrap"
+    ],
+    "body": "\\$email->setWordWrap(${1:wordWrap});"
+  },
+  "email setProtocol": {
+    "prefix": [
+      "ci:email:setProtocol",
+      "$email->setProtocol",
+      "email setProtocol"
+    ],
+    "body": "\\$email->setProtocol('${1:protocol}');"
+  },
+  "email setPriority": {
+    "prefix": [
+      "ci:email:setPriority",
+      "$email->setPriority",
+      "email setPriority"
+    ],
+    "body": "\\$email->setPriority(${1:n});"
+  },
+  "email setNewline": {
+    "prefix": [
+      "ci:email:setNewline",
+      "$email->setNewline",
+      "email setNewline"
+    ],
+    "body": "\\$email->setNewline('${1:newline}');"
+  },
+  "email setCRLF": {
+    "prefix": [
+      "ci:email:setCRLF",
+      "$email->setCRLF",
+      "email setCRLF"
+    ],
+    "body": "\\$email->setCRLF('${1:CRLF}');"
+  },
+  "email validateEmail": {
+    "prefix": [
+      "ci:email:validateEmail",
+      "$email->validateEmail",
+      "email validateEmail"
+    ],
+    "body": "\\$email->validateEmail('${1:email}');"
+  },
+  "email isValidEmail": {
+    "prefix": [
+      "ci:email:isValidEmail",
+      "$email->isValidEmail",
+      "email isValidEmail"
+    ],
+    "body": "\\$email->isValidEmail('${1:email}');"
+  },
+  "email cleanEmail": {
+    "prefix": [
+      "ci:email:cleanEmail",
+      "$email->cleanEmail",
+      "email cleanEmail"
+    ],
+    "body": "\\$email->cleanEmail('${1:email}');"
+  },
+  "email wordWrap": {
+    "prefix": [
+      "ci:email:wordWrap",
+      "$email->wordWrap",
+      "email wordWrap"
+    ],
+    "body": "\\$email->wordWrap('${1:str}', ${2:charlim});"
+  },
+  "email send": {
+    "prefix": [
+      "ci:email:send",
+      "$email->send",
+      "email send"
+    ],
+    "body": "\\$email->send(${1:boolean});",
+    "description": "The e-mail sending method. Returns boolean true or false based on success or failure."
+  },
+  "email batchBCCSend": {
+    "prefix": [
+      "ci:email:batchBCCSend",
+      "$email->batchBCCSend",
+      "email batchBCCSend"
+    ],
+    "body": "\\$email->batchBCCSend();",
+    "description": "Batch Bcc Send. Sends groups of BCCs in batches"
+  },
+  "email printDebugger": {
+    "prefix": [
+      "ci:email:printDebugger",
+      "$email->printDebugger",
+      "email printDebugger"
+    ],
+    "body": "\\$email->printDebugger([${1:include}]);",
+    "description": "Returns a string containing any server messages, the email headers, and the email message. Useful for debugging."
+  },
+  "email config archive": {
+    "prefix": [
+      "ci:email:archive",
+      "config archive"
+    ],
+    "body": "\\$config['archive'];",
+    "description": "Properties from the last successful send."
+  },
+  "email config fromEmail": {
+    "prefix": [
+      "ci:email:fromEmail",
+      "config fromEmail"
+    ],
+    "body": "\\$config['fromEmail'];",
+    "description": "Properties to be added to the next archive."
+  },
+  "email config fromName": {
+    "prefix": [
+      "ci:email:fromName",
+      "config fromName"
+    ],
+    "body": "\\$config['fromName'];"
+  },
+  "email config userAgent": {
+    "prefix": [
+      "ci:email:userAgent",
+      "config userAgent"
+    ],
+    "body": "\\$config['userAgent'] = 'CodeIgniter';",
+    "description": "Used as the User-Agent and X-Mailer headers' value."
+  },
+  "email config mailPath": {
+    "prefix": [
+      "ci:email:mailPath",
+      "config mailPath"
+    ],
+    "body": "\\$config['mailPath'] = '/usr/sbin/sendmail';",
+    "description": "Path to the Sendmail binary."
+  },
+  "email config protocol": {
+    "prefix": [
+      "ci:email:protocol",
+      "config protocol"
+    ],
+    "body": "\\$config['protocol'] = 'mail';",
+    "description": "Which method to use for sending e-mails."
+  },
+  "email config SMTPHost": {
+    "prefix": [
+      "ci:email:SMTPHost",
+      "config SMTPHost"
+    ],
+    "body": "\\$config['SMTPHost'] = '';",
+    "description": "STMP Server host."
+  },
+  "email config SMTPUser": {
+    "prefix": [
+      "ci:email:SMTPUser",
+      "config SMTPUser"
+    ],
+    "body": "\\$config['SMTPUser'] = '';",
+    "description": "SMTP Username."
+  },
+  "email config SMTPPass": {
+    "prefix": [
+      "ci:email:SMTPPass",
+      "config SMTPPass"
+    ],
+    "body": "\\$config['SMTPPass'] = '';",
+    "description": "SMTP Password."
+  },
+  "email config SMTPPort": {
+    "prefix": [
+      "ci:email:SMTPPort",
+      "config SMTPPort"
+    ],
+    "body": "\\$config['SMTPPort'] = 25;",
+    "description": "SMTP Server port."
+  },
+  "email config SMTPTimeout": {
+    "prefix": [
+      "ci:email:SMTPTimeout",
+      "config SMTPTimeout"
+    ],
+    "body": "\\$config['SMTPTimeout'] = 5;",
+    "description": "SMTP connection timeout in seconds."
+  },
+  "email config SMTPKeepAlive": {
+    "prefix": [
+      "ci:email:SMTPKeepAlive",
+      "config SMTPKeepAlive"
+    ],
+    "body": "\\$config['SMTPKeepAlive'] = false;",
+    "description": "SMTP persistent connection."
+  },
+  "email config SMTPCrypto": {
+    "prefix": [
+      "ci:email:SMTPCrypto",
+      "config SMTPCrypto"
+    ],
+    "body": "\\$config['SMTPCrypto'] = '';",
+    "description": "SMTP Encryption."
+  },
+  "email config wordWrap": {
+    "prefix": [
+      "ci:email:wordWrap",
+      "config wordWrap"
+    ],
+    "body": "\\$config['wordWrap'] = true;",
+    "description": "Whether to apply word-wrapping to the message body.."
+  },
+  "email config wrapChars": {
+    "prefix": [
+      "ci:email:wrapChars",
+      "config wrapChars"
+    ],
+    "body": "\\$config['wrapChars'] = 76;",
+    "description": "Number of characters to wrap at."
+  },
+  "email config mailType": {
+    "prefix": [
+      "ci:email:mailType",
+      "config mailType"
+    ],
+    "body": "\\$config['mailType'] = 'text';",
+    "description": "Message format."
+  },
+  "email config charset": {
+    "prefix": [
+      "ci:email:charset",
+      "config charset"
+    ],
+    "body": "\\$config['charset'] = 'utf-8';",
+    "description": "Character set (default: utf-8)."
+  },
+  "email config altMessage": {
+    "prefix": [
+      "ci:email:altMessage",
+      "config altMessage"
+    ],
+    "body": "\\$config['altMessage'] = '';",
+    "description": "Alternative message (for HTML messages only)."
+  },
+  "email config validate": {
+    "prefix": [
+      "ci:email:validate",
+      "config validate"
+    ],
+    "body": "\\$config['validate'] = true;",
+    "description": "Whether to validate e-mail addresses."
+  },
+  "email config priority": {
+    "prefix": [
+      "ci:email:priority",
+      "config priority"
+    ],
+    "body": "\\$config['priority'] = 3;",
+    "description": "X-Priority header value."
+  },
+  "email config newline": {
+    "prefix": [
+      "ci:email:newline",
+      "config newline"
+    ],
+    "body": "\\$config['newline'] = \"\\n\";",
+    "description": "Newline character sequence. Use \"\\r\\n\" to comply with RFC 822."
+  },
+  "email config CRLF": {
+    "prefix": [
+      "ci:email:CRLF",
+      "config CRLF"
+    ],
+    "body": "\\$config['CRLF'] = \"\\n\";",
+    "description": "CRLF character sequence."
+  },
+  "email config DSN": {
+    "prefix": [
+      "ci:email:DSN",
+      "config DSN"
+    ],
+    "body": "\\$config['DSN'] = false;",
+    "description": "Whether to use Delivery Status Notification."
+  },
+  "email config sendMultipart": {
+    "prefix": [
+      "ci:email:sendMultipart",
+      "config sendMultipart"
+    ],
+    "body": "\\$config['sendMultipart'] = true;",
+    "description": "Whether to send multipart alternatives. Yahoo! doesn't seem to like these."
+  },
+  "email config BCCBatchMode": {
+    "prefix": [
+      "ci:email:BCCBatchMode",
+      "config BCCBatchMode"
+    ],
+    "body": "\\$config['BCCBatchMode'] = false;",
+    "description": "Whether to send messages to BCC recipients in batches."
+  },
+  "email config BCCBatchSize": {
+    "prefix": [
+      "ci:email:BCCBatchSize",
+      "config BCCBatchSize"
+    ],
+    "body": "\\$config['BCCBatchSize'] = 200;",
+    "description": "BCC Batch max number size."
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "encryption encrypt": {
+    "prefix": [
+      "ci:encryption:encrypt",
+      "$encrypter->encrypt",
+      "encryption encrypt"
+    ],
+    "body": "\\$encrypter->encrypt('${1:data}', ${2:params});",
+    "description": "Encrypt - convert plaintext into ciphertext."
+  },
+  "encryption decrypt": {
+    "prefix": [
+      "ci:encryption:decrypt",
+      "$encrypter->decrypt",
+      "encryption decrypt"
+    ],
+    "body": "\\$encrypter->decrypt('${1:data}', ${2:params});",
+    "description": "Decrypt - convert ciphertext into plaintext."
+  },
+  "encryptation config key": {
+    "prefix": [
+      "ci:encryptation:key",
+      "$config->key",
+      "config key"
+    ],
+    "body": "\\$config->key = '$1';",
+    "description": "Encryption Key Starter."
+  },
+  "encryptation config driver": {
+    "prefix": [
+      "ci:encryptation:driver",
+      "$config->driver",
+      "config driver"
+    ],
+    "body": "\\$config->driver = 'OpenSSL';",
+    "description": "Encryption Driver to Use."
+  },
+  "encryptation config blockSize": {
+    "prefix": [
+      "ci:encryptation:blockSize",
+      "$config->blockSize",
+      "config blockSize"
+    ],
+    "body": "\\$config->blockSize = 16';",
+    "description": "SodiumHandler's Padding Length in Bytes."
+  },
+  "encryptation config digest": {
+    "prefix": [
+      "ci:encryptation:digest",
+      "$config->digest",
+      "config digest"
+    ],
+    "body": "\\$config->digest = 'SHA512';",
+    "description": "Encryption digest."
+  },
+  "encryptation config rawData": {
+    "prefix": [
+      "ci:encryptation:rawData",
+      "$config->rawData",
+      "config rawData"
+    ],
+    "body": "\\$config->rawData = true;",
+    "description": "Whether the cipher-text should be raw. If set to false, then it will be base64 encoded. This setting is only used by OpenSSLHandler."
+  },
+  "encryptation config encryptKeyInfo": {
+    "prefix": [
+      "ci:encryptation:encryptKeyInfo",
+      "$config->encryptKeyInfo",
+      "config encryptKeyInfo"
+    ],
+    "body": "\\$config->encryptKeyInfo = '';",
+    "description": "Encryption key info. This setting is only used by OpenSSLHandler."
+  },
+  "encryptation config authKeyInfo": {
+    "prefix": [
+      "ci:encryptation:authKeyInfo",
+      "$config->authKeyInfo",
+      "config authKeyInfo"
+    ],
+    "body": "\\$config->authKeyInfo = '';",
+    "description": "Authentication key info. This setting is only used by OpenSSLHandler."
+  },
+  "encryptation config cipher": {
+    "prefix": [
+      "ci:encryptation:cipher",
+      "$config->cipher",
+      "config cipher"
+    ],
+    "body": "\\$config->cipher = 'AES-256-CTR';",
+    "description": "Cipher to use. This setting is only used by OpenSSLHandler."
+  }
+}
