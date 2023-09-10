@@ -1,6 +1,7 @@
 {
   "database connection": {
     "prefix": [
+      "ci:db",
       "$db",
       "database connection"
     ],
@@ -9,6 +10,7 @@
   },
   "database reconnect": {
     "prefix": [
+      "ci:db:reconnect",
       "$db->reconnect",
       "database reconnect"
     ],
@@ -17,6 +19,7 @@
   },
   "database close": {
     "prefix": [
+      "ci:db:close",
       "$db->close",
       "database close"
     ],
@@ -25,6 +28,7 @@
   },
   "database query": {
     "prefix": [
+      "ci:db:query",
       "$db->query",
       "database query"
     ],
@@ -33,6 +37,7 @@
   },
   "database simpleQuery": {
     "prefix": [
+      "ci:db:simpleQuery",
       "$db->simpleQuery",
       "database simpleQuery"
     ],
@@ -41,6 +46,7 @@
   },
   "database prefixTable": {
     "prefix": [
+      "ci:db:prefixTable",
       "$db->prefixTable",
       "database prefixTable"
     ],
@@ -49,6 +55,7 @@
   },
   "database affectedRows": {
     "prefix": [
+      "ci:db:affectedRows",
       "$db->affectedRows",
       "database affectedRows"
     ],
@@ -57,6 +64,7 @@
   },
   "database escape": {
     "prefix": [
+      "ci:db:escape",
       "$db->escape",
       "database escape"
     ],
@@ -65,6 +73,7 @@
   },
   "database escapeString": {
     "prefix": [
+      "ci:db:escapeString",
       "$db->escapeString",
       "database escapeString"
     ],
@@ -73,6 +82,7 @@
   },
   "database escapeLikeString": {
     "prefix": [
+      "ci:db:escapeLikeString",
       "$db->escapeLikeString",
       "database escapeLikeString"
     ],
@@ -81,6 +91,7 @@
   },
   "database setPrefix": {
     "prefix": [
+      "ci:db:setPrefix",
       "$db->setPrefix",
       "database setPrefix"
     ],
@@ -89,6 +100,7 @@
   },
   "database getPrefix": {
     "prefix": [
+      "ci:db:getPrefix",
       "$db->getPrefix",
       "database getPrefix"
     ],
@@ -97,6 +109,7 @@
   },
   "database getPlatform": {
     "prefix": [
+      "ci:db:getPlatform",
       "$db->getPlatform",
       "database getPlatform"
     ],
@@ -105,6 +118,7 @@
   },
   "database setAliasedTables": {
     "prefix": [
+      "ci:db:setAliasedTables",
       "$db->setAliasedTables",
       "database setAliasedTables"
     ],
@@ -113,6 +127,7 @@
   },
   "database addTableAlias": {
     "prefix": [
+      "ci:db:addTableAlias",
       "$db->addTableAlias",
       "database addTableAlias"
     ],
@@ -121,6 +136,7 @@
   },
   "database execute": {
     "prefix": [
+      "ci:db:execute",
       "$db->execute",
       "database execute"
     ],
@@ -129,6 +145,7 @@
   },
   "database transOff": {
     "prefix": [
+      "ci:db:transOff",
       "$db->transOff",
       "database transOff"
     ],
@@ -137,6 +154,7 @@
   },
   "database transStrict": {
     "prefix": [
+      "ci:db:transStrict",
       "$db->transStrict",
       "database transStrict"
     ],
@@ -145,6 +163,7 @@
   },
   "database transStart": {
     "prefix": [
+      "ci:db:transStart",
       "$db->transStart",
       "database transStart"
     ],
@@ -153,6 +172,7 @@
   },
   "database transException": {
     "prefix": [
+      "ci:db:transException",
       "$db->transException",
       "database transException"
     ],
@@ -161,6 +181,7 @@
   },
   "database transComplete": {
     "prefix": [
+      "ci:db:transComplete",
       "$db->transComplete",
       "database transComplete"
     ],
@@ -169,6 +190,7 @@
   },
   "database transStatus": {
     "prefix": [
+      "ci:db:transStatus",
       "$db->transStatus",
       "database transStatus"
     ],
@@ -177,6 +199,7 @@
   },
   "database transBegin": {
     "prefix": [
+      "ci:db:transBegin",
       "$db->transBegin",
       "database transBegin"
     ],
@@ -185,6 +208,7 @@
   },
   "database transCommit": {
     "prefix": [
+      "ci:db:transCommit",
       "$db->transCommit",
       "database transCommit"
     ],
@@ -193,6 +217,7 @@
   },
   "database transRollback": {
     "prefix": [
+      "ci:db:transRollback",
       "$db->transRollback",
       "database transRollback"
     ],
@@ -201,6 +226,7 @@
   },
   "database table": {
     "prefix": [
+      "ci:db:table",
       "$db->table",
       "database table"
     ],
@@ -209,6 +235,7 @@
   },
   "database newQuery": {
     "prefix": [
+      "ci:db:newQuery",
       "$db->newQuery",
       "database newQuery"
     ],
@@ -217,6 +244,7 @@
   },
   "database prepare": {
     "prefix": [
+      "ci:db:prepare",
       "$db->prepare",
       "database prepare"
     ],
@@ -225,6 +253,7 @@
   },
   "database getLastQuery": {
     "prefix": [
+      "ci:db:getLastQuery",
       "$db->getLastQuery",
       "database getLastQuery"
     ],
@@ -233,6 +262,7 @@
   },
   "database showLastQuery": {
     "prefix": [
+      "ci:db:showLastQuery",
       "$db->showLastQuery",
       "database showLastQuery"
     ],
@@ -241,6 +271,7 @@
   },
   "database getConnectStart": {
     "prefix": [
+      "ci:db:getConnectStart",
       "$db->getConnectStart",
       "database getConnectStart"
     ],
@@ -249,6 +280,7 @@
   },
   "database getConnectDuration": {
     "prefix": [
+      "ci:db:getConnectDuration",
       "$db->getConnectDuration",
       "database getConnectDuration"
     ],
@@ -257,6 +289,7 @@
   },
   "database protectIdentifiers": {
     "prefix": [
+      "ci:db:protectIdentifiers",
       "$db->protectIdentifiers",
       "database protectIdentifiers"
     ],
@@ -265,6 +298,7 @@
   },
   "database escapeIdentifiers": {
     "prefix": [
+      "ci:db:escapeIdentifiers",
       "$db->escapeIdentifiers",
       "database escapeIdentifiers"
     ],
@@ -273,6 +307,7 @@
   },
   "database listTables": {
     "prefix": [
+      "ci:db:listTables",
       "$db->listTables",
       "database listTables"
     ],
@@ -281,6 +316,7 @@
   },
   "database tableExists": {
     "prefix": [
+      "ci:db:tableExists",
       "$db->tableExists",
       "database tableExists"
     ],
@@ -289,6 +325,7 @@
   },
   "database getFieldNames": {
     "prefix": [
+      "ci:db:getFieldNames",
       "$db->getFieldNames",
       "database getFieldNames"
     ],
@@ -297,6 +334,7 @@
   },
   "database fieldExists": {
     "prefix": [
+      "ci:db:fieldExists",
       "$db->fieldExists",
       "database fieldExists"
     ],
@@ -305,6 +343,7 @@
   },
   "database getFieldData": {
     "prefix": [
+      "ci:db:getFieldData",
       "$db->getFieldData",
       "database getFieldData"
     ],
@@ -313,6 +352,7 @@
   },
   "database getIndexData": {
     "prefix": [
+      "ci:db:getIndexData",
       "$db->getIndexData",
       "database getIndexData"
     ],
@@ -321,6 +361,7 @@
   },
   "database getForeignKeyData": {
     "prefix": [
+      "ci:db:getForeignKeyData",
       "$db->getForeignKeyData",
       "database getForeignKeyData"
     ],
@@ -329,6 +370,7 @@
   },
   "database disableForeignKeyChecks": {
     "prefix": [
+      "ci:db:disableForeignKeyChecks",
       "$db->disableForeignKeyChecks",
       "database disableForeignKeyChecks"
     ],
@@ -337,6 +379,7 @@
   },
   "database enableForeignKeyChecks": {
     "prefix": [
+      "ci:db:enableForeignKeyChecks",
       "$db->enableForeignKeyChecks",
       "database enableForeignKeyChecks"
     ],
@@ -345,6 +388,7 @@
   },
   "database pretend": {
     "prefix": [
+      "ci:db:pretend",
       "$db->pretend",
       "database pretend"
     ],
@@ -353,6 +397,7 @@
   },
   "database resetDataCache": {
     "prefix": [
+      "ci:db:resetDataCache",
       "$db->resetDataCache",
       "database resetDataCache"
     ],
@@ -361,6 +406,7 @@
   },
   "database isWriteType": {
     "prefix": [
+      "ci:db:isWriteType",
       "$db->isWriteType",
       "database isWriteType"
     ],
@@ -369,6 +415,7 @@
   },
   "database error": {
     "prefix": [
+      "ci:db:error",
       "$db->error",
       "database error"
     ],
@@ -377,6 +424,7 @@
   },
   "database insertID": {
     "prefix": [
+      "ci:db:insertID",
       "$db->insertID",
       "database insertID"
     ],

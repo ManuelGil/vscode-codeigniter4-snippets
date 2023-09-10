@@ -1,6 +1,7 @@
 {
   "redirect to": {
     "prefix": [
+      "ci:redirect:to",
       "redirect()->to",
       "redirect to"
     ],
@@ -9,6 +10,7 @@
   },
   "redirect route": {
     "prefix": [
+      "ci:redirect:route",
       "redirect()->route",
       "redirect route"
     ],
@@ -17,6 +19,7 @@
   },
   "redirect back": {
     "prefix": [
+      "ci:redirect:back",
       "redirect()->back",
       "redirect back"
     ],
@@ -25,6 +28,7 @@
   },
   "redirect withInput": {
     "prefix": [
+      "ci:redirect:withInput",
       "redirect()->withInput",
       "redirect withInput"
     ],
@@ -33,6 +37,7 @@
   },
   "redirect with": {
     "prefix": [
+      "ci:redirect:with",
       "redirect()->with",
       "redirect with"
     ],
@@ -41,6 +46,7 @@
   },
   "redirect withCookies": {
     "prefix": [
+      "ci:redirect:withCookies",
       "redirect()->withCookies",
       "redirect withCookies"
     ],
@@ -49,6 +55,7 @@
   },
   "redirect withHeaders": {
     "prefix": [
+      "ci:redirect:withHeaders",
       "redirect()->withHeaders",
       "redirect withHeaders"
     ],

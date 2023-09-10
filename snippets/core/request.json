@@ -1,6 +1,7 @@
 {
   "request getIPAddress": {
     "prefix": [
+      "ci:request:getIPAddress",
       "request->getIPAddress",
       "request getIPAddress"
     ],
@@ -9,6 +10,7 @@
   },
   "request isValidIP": {
     "prefix": [
+      "ci:request:isValidIP",
       "request->isValidIP",
       "request isValidIP"
     ],
@@ -17,6 +19,7 @@
   },
   "request getMethod": {
     "prefix": [
+      "ci:request:getMethod",
       "request->getMethod",
       "request getMethod"
     ],
@@ -25,6 +28,7 @@
   },
   "request setMethod": {
     "prefix": [
+      "ci:request:setMethod",
       "request->setMethod",
       "request setMethod"
     ],
@@ -33,6 +37,7 @@
   },
   "request withMethod": {
     "prefix": [
+      "ci:request:withMethod",
       "request->withMethod",
       "request withMethod"
     ],
@@ -41,6 +46,7 @@
   },
   "request getUri": {
     "prefix": [
+      "ci:request:getUri",
       "request->getUri",
       "request getUri"
     ],
@@ -49,6 +55,7 @@
   },
   "request getServer": {
     "prefix": [
+      "ci:request:getServer",
       "request->getServer",
       "request getServer"
     ],
@@ -57,6 +64,7 @@
   },
   "request detectLocale": {
     "prefix": [
+      "ci:request:detectLocale",
       "request->detectLocale",
       "request detectLocale"
     ],
@@ -65,6 +73,7 @@
   },
   "request detectPath": {
     "prefix": [
+      "ci:request:detectPath",
       "request->detectPath",
       "request detectPath"
     ],
@@ -73,6 +82,7 @@
   },
   "request parseRequestURI": {
     "prefix": [
+      "ci:request:parseRequestURI",
       "request->parseRequestURI",
       "request parseRequestURI"
     ],
@@ -81,6 +91,7 @@
   },
   "request parseQueryString": {
     "prefix": [
+      "ci:request:parseQueryString",
       "request->parseQueryString",
       "request parseQueryString"
     ],
@@ -89,6 +100,7 @@
   },
   "request negotiate": {
     "prefix": [
+      "ci:request:negotiate",
       "request->negotiate",
       "request negotiate"
     ],
@@ -97,6 +109,7 @@
   },
   "request is": {
     "prefix": [
+      "ci:request:is",
       "request->is",
       "request is"
     ],
@@ -105,6 +118,7 @@
   },
   "request isCLI": {
     "prefix": [
+      "ci:request:isCLI",
       "request->isCLI",
       "request isCLI"
     ],
@@ -113,6 +127,7 @@
   },
   "request isAJAX": {
     "prefix": [
+      "ci:request:isAJAX",
       "request->isAJAX",
       "request isAJAX"
     ],
@@ -121,6 +136,7 @@
   },
   "request isSecure": {
     "prefix": [
+      "ci:request:isSecure",
       "request->isSecure",
       "request isSecure"
     ],
@@ -129,6 +145,7 @@
   },
   "request setPath": {
     "prefix": [
+      "ci:request:setPath",
       "request->setPath",
       "request setPath"
     ],
@@ -137,6 +154,7 @@
   },
   "request getPath": {
     "prefix": [
+      "ci:request:getPath",
       "request->getPath",
       "request getPath"
     ],
@@ -145,6 +163,7 @@
   },
   "request setLocale": {
     "prefix": [
+      "ci:request:setLocale",
       "request->setLocale",
       "request setLocale"
     ],
@@ -153,6 +172,7 @@
   },
   "request getLocale": {
     "prefix": [
+      "ci:request:getLocale",
       "request->getLocale",
       "request getLocale"
     ],
@@ -161,6 +181,7 @@
   },
   "request getDefaultLocale": {
     "prefix": [
+      "ci:request:getDefaultLocale",
       "request->getDefaultLocale",
       "request getDefaultLocale"
     ],
@@ -169,6 +190,7 @@
   },
   "request getVar": {
     "prefix": [
+      "ci:request:getVar",
       "request->getVar",
       "request getVar"
     ],
@@ -177,6 +199,7 @@
   },
   "request getJSON": {
     "prefix": [
+      "ci:request:getJSON",
       "request->getJSON",
       "request getJSON"
     ],
@@ -185,6 +208,7 @@
   },
   "request getJsonVar": {
     "prefix": [
+      "ci:request:getJsonVar",
       "request->getJsonVar",
       "request getJsonVar"
     ],
@@ -193,6 +217,7 @@
   },
   "request getRawInput": {
     "prefix": [
+      "ci:request:getRawInput",
       "request->getRawInput",
       "request getRawInput"
     ],
@@ -201,6 +226,7 @@
   },
   "request getRawInputVar": {
     "prefix": [
+      "ci:request:getRawInputVar",
       "request->getRawInputVar",
       "request getRawInputVar"
     ],
@@ -209,6 +235,7 @@
   },
   "request getGet": {
     "prefix": [
+      "ci:request:getGet",
       "request->getGet",
       "request getGet"
     ],
@@ -217,6 +244,7 @@
   },
   "request getPost": {
     "prefix": [
+      "ci:request:getPost",
       "request->getPost",
       "request getPost"
     ],
@@ -225,6 +253,7 @@
   },
   "request getPostGet": {
     "prefix": [
+      "ci:request:getPostGet",
       "request->getPostGet",
       "request getPostGet"
     ],
@@ -233,6 +262,7 @@
   },
   "request getGetPost": {
     "prefix": [
+      "ci:request:getGetPost",
       "request->getGetPost",
       "request getGetPost"
     ],
@@ -241,6 +271,7 @@
   },
   "request getCookie": {
     "prefix": [
+      "ci:request:getCookie",
       "request->getCookie",
       "request getCookie"
     ],
@@ -249,6 +280,7 @@
   },
   "request getUserAgent": {
     "prefix": [
+      "ci:request:getUserAgent",
       "request->getUserAgent",
       "request getUserAgent"
     ],
@@ -257,6 +289,7 @@
   },
   "request getOldInput": {
     "prefix": [
+      "ci:request:getOldInput",
       "request->getOldInput",
       "request getOldInput"
     ],
@@ -265,6 +298,7 @@
   },
   "request getFiles": {
     "prefix": [
+      "ci:request:getFiles",
       "request->getFiles",
       "request getFiles"
     ],
@@ -273,6 +307,7 @@
   },
   "request getFileMultiple": {
     "prefix": [
+      "ci:request:getFileMultiple",
       "request->getFileMultiple",
       "request getFileMultiple"
     ],
@@ -281,6 +316,7 @@
   },
   "request getFile": {
     "prefix": [
+      "ci:request:getFile",
       "request->getFile",
       "request getFile"
     ],
@@ -289,6 +325,7 @@
   },
   "request removeRelativeDirectory": {
     "prefix": [
+      "ci:request:removeRelativeDirectory",
       "request->removeRelativeDirectory",
       "request removeRelativeDirectory"
     ],
@@ -297,6 +334,7 @@
   },
   "request getOptions": {
     "prefix": [
+      "ci:request:getOptions",
       "request->getOptions",
       "request getOptions"
     ],
@@ -305,6 +343,7 @@
   },
   "request getArgs": {
     "prefix": [
+      "ci:request:getArgs",
       "request->getArgs",
       "request getArgs"
     ],
@@ -313,6 +352,7 @@
   },
   "request getSegments": {
     "prefix": [
+      "ci:request:getSegments",
       "request->getSegments",
       "request getSegments"
     ],
@@ -321,6 +361,7 @@
   },
   "request getOption": {
     "prefix": [
+      "ci:request:getOption",
       "request->getOption",
       "request getOption"
     ],
@@ -329,6 +370,7 @@
   },
   "request getOptionString": {
     "prefix": [
+      "ci:request:getOptionString",
       "request->getOptionString",
       "request getOptionString"
     ],
@@ -337,6 +379,7 @@
   },
   "request setValidLocales": {
     "prefix": [
+      "ci:request:setValidLocales",
       "request->setValidLocales",
       "request setValidLocales"
     ],

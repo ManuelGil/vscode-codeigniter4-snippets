@@ -1,6 +1,7 @@
 {
   "query builder db": {
     "prefix": [
+      "ci:builder:db",
       "$builder->db",
       "builder db"
     ],
@@ -9,6 +10,7 @@
   },
   "query builder testMode": {
     "prefix": [
+      "ci:testMode",
       "testMode",
       "builder testMode"
     ],
@@ -17,6 +19,7 @@
   },
   "query builder getTable": {
     "prefix": [
+      "ci:getTable",
       "getTable",
       "builder getTable"
     ],
@@ -25,6 +28,7 @@
   },
   "query builder getBinds": {
     "prefix": [
+      "ci:getBinds",
       "getBinds",
       "builder getBinds"
     ],
@@ -33,6 +37,7 @@
   },
   "query builder ignore": {
     "prefix": [
+      "ci:ignore",
       "ignore",
       "builder ignore"
     ],
@@ -41,6 +46,7 @@
   },
   "query builder select": {
     "prefix": [
+      "ci:select",
       "select",
       "builder select"
     ],
@@ -49,6 +55,7 @@
   },
   "query builder selectMax": {
     "prefix": [
+      "ci:selectMax",
       "selectMax",
       "builder selectMax"
     ],
@@ -57,6 +64,7 @@
   },
   "query builder selectMin": {
     "prefix": [
+      "ci:selectMin",
       "selectMin",
       "builder selectMin"
     ],
@@ -65,6 +73,7 @@
   },
   "query builder selectAvg": {
     "prefix": [
+      "ci:selectAvg",
       "selectAvg",
       "builder selectAvg"
     ],
@@ -73,6 +82,7 @@
   },
   "query builder selectSum": {
     "prefix": [
+      "ci:selectSum",
       "selectSum",
       "builder selectSum"
     ],
@@ -81,6 +91,7 @@
   },
   "query builder selectCount": {
     "prefix": [
+      "ci:selectCount",
       "selectCount",
       "builder selectCount"
     ],
@@ -89,6 +100,7 @@
   },
   "query builder selectSubquery": {
     "prefix": [
+      "ci:selectSubquery",
       "selectSubquery",
       "builder selectSubquery"
     ],
@@ -97,6 +109,7 @@
   },
   "query builder distinct": {
     "prefix": [
+      "ci:distinct",
       "distinct",
       "builder distinct"
     ],
@@ -105,6 +118,7 @@
   },
   "query builder from": {
     "prefix": [
+      "ci:from",
       "from",
       "builder from"
     ],
@@ -113,14 +127,16 @@
   },
   "query builder fromSubquery": {
     "prefix": [
+      "ci:fromSubquery",
       "fromSubquery",
       "builder fromSubquery"
     ],
     "body": "fromSubquery(${1:from}, ${2:alias})",
-    "description": ""
+    "description": "Specifies the FROM clause of a query using a subquery."
   },
   "query builder join": {
     "prefix": [
+      "ci:join",
       "join",
       "builder join"
     ],
@@ -129,6 +145,7 @@
   },
   "query builder where": {
     "prefix": [
+      "ci:where",
       "where",
       "builder where"
     ],
@@ -137,6 +154,7 @@
   },
   "query builder orWhere": {
     "prefix": [
+      "ci:orWhere",
       "orWhere",
       "builder orWhere"
     ],
@@ -145,6 +163,7 @@
   },
   "query builder whereIn": {
     "prefix": [
+      "ci:whereIn",
       "whereIn",
       "builder whereIn"
     ],
@@ -153,6 +172,7 @@
   },
   "query builder orWhereIn": {
     "prefix": [
+      "ci:orWhereIn",
       "orWhereIn",
       "builder orWhereIn"
     ],
@@ -161,6 +181,7 @@
   },
   "query builder whereNotIn": {
     "prefix": [
+      "ci:whereNotIn",
       "whereNotIn",
       "builder whereNotIn"
     ],
@@ -169,6 +190,7 @@
   },
   "query builder orWhereNotIn": {
     "prefix": [
+      "ci:orWhereNotIn",
       "orWhereNotIn",
       "builder orWhereNotIn"
     ],
@@ -177,6 +199,7 @@
   },
   "query builder havingIn": {
     "prefix": [
+      "ci:havingIn",
       "havingIn",
       "builder havingIn"
     ],
@@ -185,6 +208,7 @@
   },
   "query builder orHavingIn": {
     "prefix": [
+      "ci:orHavingIn",
       "orHavingIn",
       "builder orHavingIn"
     ],
@@ -193,6 +217,7 @@
   },
   "query builder havingNotIn": {
     "prefix": [
+      "ci:havingNotIn",
       "havingNotIn",
       "builder havingNotIn"
     ],
@@ -201,6 +226,7 @@
   },
   "query builder orHavingNotIn": {
     "prefix": [
+      "ci:orHavingNotIn",
       "orHavingNotIn",
       "builder orHavingNotIn"
     ],
@@ -209,6 +235,7 @@
   },
   "query builder like": {
     "prefix": [
+      "ci:like",
       "like",
       "builder like"
     ],
@@ -217,6 +244,7 @@
   },
   "query builder notLike": {
     "prefix": [
+      "ci:notLike",
       "notLike",
       "builder notLike"
     ],
@@ -225,6 +253,7 @@
   },
   "query builder orLike": {
     "prefix": [
+      "ci:orLike",
       "orLike",
       "builder orLike"
     ],
@@ -233,6 +262,7 @@
   },
   "query builder orNotLike": {
     "prefix": [
+      "ci:orNotLike",
       "orNotLike",
       "builder orNotLike"
     ],
@@ -241,6 +271,7 @@
   },
   "query builder havingLike": {
     "prefix": [
+      "ci:havingLike",
       "havingLike",
       "builder havingLike"
     ],
@@ -249,6 +280,7 @@
   },
   "query builder notHavingLike": {
     "prefix": [
+      "ci:notHavingLike",
       "notHavingLike",
       "builder notHavingLike"
     ],
@@ -257,6 +289,7 @@
   },
   "query builder orHavingLike": {
     "prefix": [
+      "ci:orHavingLike",
       "orHavingLike",
       "builder orHavingLike"
     ],
@@ -265,6 +298,7 @@
   },
   "query builder orNotHavingLike": {
     "prefix": [
+      "ci:orNotHavingLike",
       "orNotHavingLike",
       "builder orNotHavingLike"
     ],
@@ -273,6 +307,7 @@
   },
   "query builder union": {
     "prefix": [
+      "ci:union",
       "union",
       "builder union"
     ],
@@ -281,6 +316,7 @@
   },
   "query builder unionAll": {
     "prefix": [
+      "ci:unionAll",
       "unionAll",
       "builder unionAll"
     ],
@@ -289,6 +325,7 @@
   },
   "query builder groupStart": {
     "prefix": [
+      "ci:groupStart",
       "groupStart",
       "builder groupStart"
     ],
@@ -297,6 +334,7 @@
   },
   "query builder orGroupStart": {
     "prefix": [
+      "ci:orGroupStart",
       "orGroupStart",
       "builder orGroupStart"
     ],
@@ -305,6 +343,7 @@
   },
   "query builder notGroupStart": {
     "prefix": [
+      "ci:notGroupStart",
       "notGroupStart",
       "builder notGroupStart"
     ],
@@ -313,6 +352,7 @@
   },
   "query builder orNotGroupStart": {
     "prefix": [
+      "ci:orNotGroupStart",
       "orNotGroupStart",
       "builder orNotGroupStart"
     ],
@@ -321,6 +361,7 @@
   },
   "query builder groupEnd": {
     "prefix": [
+      "ci:groupEnd",
       "groupEnd",
       "builder groupEnd"
     ],
@@ -329,6 +370,7 @@
   },
   "query builder havingGroupStart": {
     "prefix": [
+      "ci:havingGroupStart",
       "havingGroupStart",
       "builder havingGroupStart"
     ],
@@ -337,6 +379,7 @@
   },
   "query builder orHavingGroupStart": {
     "prefix": [
+      "ci:orHavingGroupStart",
       "orHavingGroupStart",
       "builder orHavingGroupStart"
     ],
@@ -345,6 +388,7 @@
   },
   "query builder notHavingGroupStart": {
     "prefix": [
+      "ci:notHavingGroupStart",
       "notHavingGroupStart",
       "builder notHavingGroupStart"
     ],
@@ -353,6 +397,7 @@
   },
   "query builder orNotHavingGroupStart": {
     "prefix": [
+      "ci:orNotHavingGroupStart",
       "orNotHavingGroupStart",
       "builder orNotHavingGroupStart"
     ],
@@ -361,6 +406,7 @@
   },
   "query builder havingGroupEnd": {
     "prefix": [
+      "ci:havingGroupEnd",
       "havingGroupEnd",
       "builder havingGroupEnd"
     ],
@@ -369,14 +415,16 @@
   },
   "query builder groupBy": {
     "prefix": [
+      "ci:groupBy",
       "groupBy",
       "builder groupBy"
     ],
     "body": "groupBy('${1:by}', ${2:boolean})",
-    "description": ""
+    "description": "Adds a GROUP BY clause to a query."
   },
   "query builder having": {
     "prefix": [
+      "ci:having",
       "having",
       "builder having"
     ],
@@ -385,6 +433,7 @@
   },
   "query builder orHaving": {
     "prefix": [
+      "ci:orHaving",
       "orHaving",
       "builder orHaving"
     ],
@@ -393,22 +442,25 @@
   },
   "query builder orderBy": {
     "prefix": [
+      "ci:orderBy",
       "orderBy",
       "builder orderBy"
     ],
     "body": "orderBy('${1:orderBy}', ${2:direction}, ${3:boolean})",
-    "description": ""
+    "description": "Adds an ORDER BY clause to a query."
   },
   "query builder limit": {
     "prefix": [
+      "ci:limit",
       "limit",
       "builder limit"
     ],
     "body": "limit(${1:value}, ${2:offset})",
-    "description": ""
+    "description": "Adds LIMIT and OFFSET clauses to a query."
   },
   "query builder offset": {
     "prefix": [
+      "ci:offset",
       "offset",
       "builder offset"
     ],
@@ -417,6 +469,7 @@
   },
   "query builder set": {
     "prefix": [
+      "ci:set",
       "set",
       "builder set"
     ],
@@ -425,6 +478,7 @@
   },
   "query builder getSetData": {
     "prefix": [
+      "ci:getSetData",
       "getSetData",
       "builder getSetData"
     ],
@@ -433,6 +487,7 @@
   },
   "query builder getCompiledSelect": {
     "prefix": [
+      "ci:getCompiledSelect",
       "getCompiledSelect",
       "builder getCompiledSelect"
     ],
@@ -441,6 +496,7 @@
   },
   "query builder get": {
     "prefix": [
+      "ci:get",
       "get",
       "builder get"
     ],
@@ -449,6 +505,7 @@
   },
   "query builder countAll": {
     "prefix": [
+      "ci:countAll",
       "countAll",
       "builder countAll"
     ],
@@ -457,6 +514,7 @@
   },
   "query builder countAllResults": {
     "prefix": [
+      "ci:countAllResults",
       "countAllResults",
       "builder countAllResults"
     ],
@@ -465,6 +523,7 @@
   },
   "query builder getCompiledQBWhere": {
     "prefix": [
+      "ci:getCompiledQBWhere",
       "getCompiledQBWhere",
       "builder getCompiledQBWhere"
     ],
@@ -473,6 +532,7 @@
   },
   "query builder getWhere": {
     "prefix": [
+      "ci:getWhere",
       "getWhere",
       "builder getWhere"
     ],
@@ -481,6 +541,7 @@
   },
   "query builder setData": {
     "prefix": [
+      "ci:setData",
       "setData",
       "builder setData"
     ],
@@ -489,6 +550,7 @@
   },
   "query builder getCompiledUpsert": {
     "prefix": [
+      "ci:getCompiledUpsert",
       "getCompiledUpsert",
       "builder getCompiledUpsert"
     ],
@@ -497,6 +559,7 @@
   },
   "query builder upsert": {
     "prefix": [
+      "ci:upsert",
       "upsert",
       "builder upsert"
     ],
@@ -505,6 +568,7 @@
   },
   "query builder upsertBatch": {
     "prefix": [
+      "ci:upsertBatch",
       "upsertBatch",
       "builder upsertBatch"
     ],
@@ -513,6 +577,7 @@
   },
   "query builder updateFields": {
     "prefix": [
+      "ci:updateFields",
       "updateFields",
       "builder updateFields"
     ],
@@ -521,6 +586,7 @@
   },
   "query builder onConstraint": {
     "prefix": [
+      "ci:onConstraint",
       "onConstraint",
       "builder onConstraint"
     ],
@@ -529,6 +595,7 @@
   },
   "query builder setQueryAsData": {
     "prefix": [
+      "ci:setQueryAsData",
       "setQueryAsData",
       "builder setQueryAsData"
     ],
@@ -537,6 +604,7 @@
   },
   "query builder insertBatch": {
     "prefix": [
+      "ci:insertBatch",
       "insertBatch",
       "builder insertBatch"
     ],
@@ -545,6 +613,7 @@
   },
   "query builder setInsertBatch": {
     "prefix": [
+      "ci:setInsertBatch",
       "setInsertBatch",
       "builder setInsertBatch"
     ],
@@ -553,6 +622,7 @@
   },
   "query builder getCompiledInsert": {
     "prefix": [
+      "ci:getCompiledInsert",
       "getCompiledInsert",
       "builder getCompiledInsert"
     ],
@@ -561,6 +631,7 @@
   },
   "query builder insert": {
     "prefix": [
+      "ci:insert",
       "insert",
       "builder insert"
     ],
@@ -569,6 +640,7 @@
   },
   "query builder replace": {
     "prefix": [
+      "ci:replace",
       "replace",
       "builder replace"
     ],
@@ -577,6 +649,7 @@
   },
   "query builder getCompiledUpdate": {
     "prefix": [
+      "ci:getCompiledUpdate",
       "getCompiledUpdate",
       "builder getCompiledUpdate"
     ],
@@ -585,6 +658,7 @@
   },
   "query builder update": {
     "prefix": [
+      "ci:update",
       "update",
       "builder update"
     ],
@@ -593,6 +667,7 @@
   },
   "query builder updateBatch": {
     "prefix": [
+      "ci:updateBatch",
       "updateBatch",
       "builder updateBatch"
     ],
@@ -601,6 +676,7 @@
   },
   "query builder setUpdateBatch": {
     "prefix": [
+      "ci:setUpdateBatch",
       "setUpdateBatch",
       "builder setUpdateBatch"
     ],
@@ -609,6 +685,7 @@
   },
   "query builder emptyTable": {
     "prefix": [
+      "ci:emptyTable",
       "emptyTable",
       "builder emptyTable"
     ],
@@ -617,6 +694,7 @@
   },
   "query builder truncate": {
     "prefix": [
+      "ci:truncate",
       "truncate",
       "builder truncate"
     ],
@@ -625,6 +703,7 @@
   },
   "query builder getCompiledDelete": {
     "prefix": [
+      "ci:getCompiledDelete",
       "getCompiledDelete",
       "builder getCompiledDelete"
     ],
@@ -633,6 +712,7 @@
   },
   "query builder delete": {
     "prefix": [
+      "ci:delete",
       "delete",
       "builder delete"
     ],
@@ -641,6 +721,7 @@
   },
   "query builder deleteBatch": {
     "prefix": [
+      "ci:deleteBatch",
       "deleteBatch",
       "builder deleteBatch"
     ],
@@ -649,6 +730,7 @@
   },
   "query builder increment": {
     "prefix": [
+      "ci:increment",
       "increment",
       "builder increment"
     ],
@@ -657,6 +739,7 @@
   },
   "query builder decrement": {
     "prefix": [
+      "ci:decrement",
       "decrement",
       "builder decrement"
     ],
@@ -665,6 +748,7 @@
   },
   "query builder resetQuery": {
     "prefix": [
+      "ci:resetQuery",
       "resetQuery",
       "builder resetQuery"
     ],

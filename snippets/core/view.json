@@ -1,6 +1,7 @@
 {
   "view render": {
     "prefix": [
+      "ci:view:render",
       "$view->render",
       "view render"
     ],
@@ -9,6 +10,7 @@
   },
   "view renderString": {
     "prefix": [
+      "ci:view:renderString",
       "$view->renderString",
       "view renderString"
     ],
@@ -17,6 +19,7 @@
   },
   "view excerpt": {
     "prefix": [
+      "ci:view:excerpt",
       "$view->excerpt",
       "view excerpt"
     ],
@@ -25,6 +28,7 @@
   },
   "view setData": {
     "prefix": [
+      "ci:view:setData",
       "$view->setData",
       "view setData"
     ],
@@ -33,6 +37,7 @@
   },
   "view setVar": {
     "prefix": [
+      "ci:view:setVar",
       "$view->setVar",
       "view setVar"
     ],
@@ -41,6 +46,7 @@
   },
   "view resetData": {
     "prefix": [
+      "ci:view:resetData",
       "$view->resetData",
       "view resetData"
     ],
@@ -49,6 +55,7 @@
   },
   "view getData": {
     "prefix": [
+      "ci:view:getData",
       "$view->getData",
       "view getData"
     ],
@@ -57,6 +64,7 @@
   },
   "view extend": {
     "prefix": [
+      "ci:view:extend",
       "$this->extend",
       "view extend"
     ],
@@ -65,6 +73,7 @@
   },
   "view section": {
     "prefix": [
+      "ci:view:section",
       "$this->section",
       "view section"
     ],
@@ -73,6 +82,7 @@
   },
   "view endSection": {
     "prefix": [
+      "ci:view:endSection",
       "$this->endSection",
       "view endSection"
     ],
@@ -81,6 +91,7 @@
   },
   "view renderSection": {
     "prefix": [
+      "ci:view:renderSection",
       "$this->renderSection",
       "view renderSection"
     ],
@@ -89,6 +100,7 @@
   },
   "view include": {
     "prefix": [
+      "ci:view:include",
       "$this->include",
       "view include"
     ],
@@ -97,6 +109,7 @@
   },
   "view getPerformanceData": {
     "prefix": [
+      "ci:view:getPerformanceData",
       "$view->getPerformanceData",
       "view getPerformanceData"
     ],

@@ -1,6 +1,7 @@
 {
   "time now": {
     "prefix": [
+      "ci:time:now",
       "Time::now",
       "time now"
     ],
@@ -9,6 +10,7 @@
   },
   "time parse": {
     "prefix": [
+      "ci:time:parse",
       "Time::parse",
       "time parse"
     ],
@@ -17,6 +19,7 @@
   },
   "time today": {
     "prefix": [
+      "ci:time:today",
       "Time::today",
       "time today"
     ],
@@ -25,6 +28,7 @@
   },
   "time yesterday": {
     "prefix": [
+      "ci:time:yesterday",
       "Time::yesterday",
       "time yesterday"
     ],
@@ -33,6 +37,7 @@
   },
   "time tomorrow": {
     "prefix": [
+      "ci:time:tomorrow",
       "Time::tomorrow",
       "time tomorrow"
     ],
@@ -41,6 +46,7 @@
   },
   "time createFromDate": {
     "prefix": [
+      "ci:time:createFromDate",
       "Time::createFromDate",
       "time createFromDate"
     ],
@@ -49,6 +55,7 @@
   },
   "time createFromTime": {
     "prefix": [
+      "ci:time:createFromTime",
       "Time::createFromTime",
       "time createFromTime"
     ],
@@ -57,6 +64,7 @@
   },
   "time create": {
     "prefix": [
+      "ci:time:create",
       "Time::create",
       "time create"
     ],
@@ -65,6 +73,7 @@
   },
   "time createFromFormat": {
     "prefix": [
+      "ci:time:createFromFormat",
       "Time::createFromFormat",
       "time createFromFormat"
     ],
@@ -73,6 +82,7 @@
   },
   "time createFromTimestamp": {
     "prefix": [
+      "ci:time:createFromTimestamp",
       "Time::createFromTimestamp",
       "time createFromTimestamp"
     ],
@@ -81,6 +91,7 @@
   },
   "time createFromInstance": {
     "prefix": [
+      "ci:time:createFromInstance",
       "Time::createFromInstance",
       "time createFromInstance"
     ],
@@ -89,6 +100,7 @@
   },
   "time instance": {
     "prefix": [
+      "ci:time:instance",
       "Time::instance",
       "time instance"
     ],
@@ -97,6 +109,7 @@
   },
   "time setTestNow": {
     "prefix": [
+      "ci:time:setTestNow",
       "Time::setTestNow",
       "time setTestNow"
     ],
@@ -105,6 +118,7 @@
   },
   "time hasTestNow": {
     "prefix": [
+      "ci:time:hasTestNow",
       "Time::hasTestNow",
       "time hasTestNow"
     ],
@@ -113,6 +127,7 @@
   },
   "time toDateTime": {
     "prefix": [
+      "ci:time:toDateTime",
       "$time->toDateTime",
       "time toDateTime"
     ],
@@ -121,6 +136,7 @@
   },
   "time getYear": {
     "prefix": [
+      "ci:time:getYear",
       "$time->getYear",
       "time getYear"
     ],
@@ -129,6 +145,7 @@
   },
   "time getMonth": {
     "prefix": [
+      "ci:time:getMonth",
       "$time->getMonth",
       "time getMonth"
     ],
@@ -137,6 +154,7 @@
   },
   "time getDay": {
     "prefix": [
+      "ci:time:getDay",
       "$time->getDay",
       "time getDay"
     ],
@@ -145,6 +163,7 @@
   },
   "time getHour": {
     "prefix": [
+      "ci:time:getHour",
       "$time->getHour",
       "time getHour"
     ],
@@ -153,6 +172,7 @@
   },
   "time getMinute": {
     "prefix": [
+      "ci:time:getMinute",
       "$time->getMinute",
       "time getMinute"
     ],
@@ -161,6 +181,7 @@
   },
   "time getSecond": {
     "prefix": [
+      "ci:time:getSecond",
       "$time->getSecond",
       "time getSecond"
     ],
@@ -169,6 +190,7 @@
   },
   "time getDayOfWeek": {
     "prefix": [
+      "ci:time:getDayOfWeek",
       "$time->getDayOfWeek",
       "time getDayOfWeek"
     ],
@@ -177,6 +199,7 @@
   },
   "time getDayOfYear": {
     "prefix": [
+      "ci:time:getDayOfYear",
       "$time->getDayOfYear",
       "time getDayOfYear"
     ],
@@ -185,6 +208,7 @@
   },
   "time getWeekOfMonth": {
     "prefix": [
+      "ci:time:getWeekOfMonth",
       "$time->getWeekOfMonth",
       "time getWeekOfMonth"
     ],
@@ -193,6 +217,7 @@
   },
   "time getWeekOfYear": {
     "prefix": [
+      "ci:time:getWeekOfYear",
       "$time->getWeekOfYear",
       "time getWeekOfYear"
     ],
@@ -201,6 +226,7 @@
   },
   "time getAge": {
     "prefix": [
+      "ci:time:getAge",
       "$time->getAge",
       "time getAge"
     ],
@@ -209,6 +235,7 @@
   },
   "time getQuarter": {
     "prefix": [
+      "ci:time:getQuarter",
       "$time->getQuarter",
       "time getQuarter"
     ],
@@ -217,6 +244,7 @@
   },
   "time getDst": {
     "prefix": [
+      "ci:time:getDst",
       "$time->getDst",
       "time getDst"
     ],
@@ -225,6 +253,7 @@
   },
   "time getLocal": {
     "prefix": [
+      "ci:time:getLocal",
       "$time->getLocal",
       "time getLocal"
     ],
@@ -233,6 +262,7 @@
   },
   "time getUtc": {
     "prefix": [
+      "ci:time:getUtc",
       "$time->getUtc",
       "time getUtc"
     ],
@@ -241,6 +271,7 @@
   },
   "time getTimezoneName": {
     "prefix": [
+      "ci:time:getTimezoneName",
       "$time->getTimezoneName",
       "time getTimezoneName"
     ],
@@ -249,6 +280,7 @@
   },
   "time setYear": {
     "prefix": [
+      "ci:time:setYear",
       "$time->setYear",
       "time setYear"
     ],
@@ -257,6 +289,7 @@
   },
   "time setMonth": {
     "prefix": [
+      "ci:time:setMonth",
       "$time->setMonth",
       "time setMonth"
     ],
@@ -265,6 +298,7 @@
   },
   "time setDay": {
     "prefix": [
+      "ci:time:setDay",
       "$time->setDay",
       "time setDay"
     ],
@@ -273,6 +307,7 @@
   },
   "time setHour": {
     "prefix": [
+      "ci:time:setHour",
       "$time->setHour",
       "time setHour"
     ],
@@ -281,6 +316,7 @@
   },
   "time setMinute": {
     "prefix": [
+      "ci:time:setMinute",
       "$time->setMinute",
       "time setMinute"
     ],
@@ -289,6 +325,7 @@
   },
   "time setSecond": {
     "prefix": [
+      "ci:time:setSecond",
       "$time->setSecond",
       "time setSecond"
     ],
@@ -297,6 +334,7 @@
   },
   "time setTimezone": {
     "prefix": [
+      "ci:time:setTimezone",
       "$time->setTimezone",
       "time setTimezone"
     ],
@@ -305,6 +343,7 @@
   },
   "time setTimestamp": {
     "prefix": [
+      "ci:time:setTimestamp",
       "$time->setTimestamp",
       "time setTimestamp"
     ],
@@ -313,6 +352,7 @@
   },
   "time addSeconds": {
     "prefix": [
+      "ci:time:addSeconds",
       "$time->addSeconds",
       "time addSeconds"
     ],
@@ -321,6 +361,7 @@
   },
   "time addMinutes": {
     "prefix": [
+      "ci:time:addMinutes",
       "$time->addMinutes",
       "time addMinutes"
     ],
@@ -329,6 +370,7 @@
   },
   "time addHours": {
     "prefix": [
+      "ci:time:addHours",
       "$time->addHours",
       "time addHours"
     ],
@@ -337,6 +379,7 @@
   },
   "time addDays": {
     "prefix": [
+      "ci:time:addDays",
       "$time->addDays",
       "time addDays"
     ],
@@ -345,6 +388,7 @@
   },
   "time addMonths": {
     "prefix": [
+      "ci:time:addMonths",
       "$time->addMonths",
       "time addMonths"
     ],
@@ -353,6 +397,7 @@
   },
   "time addYears": {
     "prefix": [
+      "ci:time:addYears",
       "$time->addYears",
       "time addYears"
     ],
@@ -361,6 +406,7 @@
   },
   "time subSeconds": {
     "prefix": [
+      "ci:time:subSeconds",
       "$time->subSeconds",
       "time subSeconds"
     ],
@@ -369,6 +415,7 @@
   },
   "time subMinutes": {
     "prefix": [
+      "ci:time:subMinutes",
       "$time->subMinutes",
       "time subMinutes"
     ],
@@ -377,6 +424,7 @@
   },
   "time subHours": {
     "prefix": [
+      "ci:time:subHours",
       "$time->subHours",
       "time subHours"
     ],
@@ -385,6 +433,7 @@
   },
   "time subDays": {
     "prefix": [
+      "ci:time:subDays",
       "$time->subDays",
       "time subDays"
     ],
@@ -393,6 +442,7 @@
   },
   "time subMonths": {
     "prefix": [
+      "ci:time:subMonths",
       "$time->subMonths",
       "time subMonths"
     ],
@@ -401,6 +451,7 @@
   },
   "time subYears": {
     "prefix": [
+      "ci:time:subYears",
       "$time->subYears",
       "time subYears"
     ],
@@ -409,6 +460,7 @@
   },
   "time toDateTimeString": {
     "prefix": [
+      "ci:time:toDateTimeString",
       "$time->toDateTimeString",
       "time toDateTimeString"
     ],
@@ -417,6 +469,7 @@
   },
   "time toDateString": {
     "prefix": [
+      "ci:time:toDateString",
       "$time->toDateString",
       "time toDateString"
     ],
@@ -425,6 +478,7 @@
   },
   "time toFormattedDateString": {
     "prefix": [
+      "ci:time:toFormattedDateString",
       "$time->toFormattedDateString",
       "time toFormattedDateString"
     ],
@@ -433,6 +487,7 @@
   },
   "time toTimeString": {
     "prefix": [
+      "ci:time:toTimeString",
       "$time->toTimeString",
       "time toTimeString"
     ],
@@ -441,6 +496,7 @@
   },
   "time toLocalizedString": {
     "prefix": [
+      "ci:time:toLocalizedString",
       "$time->toLocalizedString",
       "time toLocalizedString"
     ],
@@ -449,6 +505,7 @@
   },
   "time equals": {
     "prefix": [
+      "ci:time:equals",
       "$time->equals",
       "time equals"
     ],
@@ -457,6 +514,7 @@
   },
   "time sameAs": {
     "prefix": [
+      "ci:time:sameAs",
       "$time->sameAs",
       "time sameAs"
     ],
@@ -465,6 +523,7 @@
   },
   "time isBefore": {
     "prefix": [
+      "ci:time:isBefore",
       "$time->isBefore",
       "time isBefore"
     ],
@@ -473,6 +532,7 @@
   },
   "time isAfter": {
     "prefix": [
+      "ci:time:isAfter",
       "$time->isAfter",
       "time isAfter"
     ],
@@ -481,6 +541,7 @@
   },
   "time humanize": {
     "prefix": [
+      "ci:time:humanize",
       "$time->humanize",
       "time humanize"
     ],
@@ -489,14 +550,15 @@
   },
   "time difference": {
     "prefix": [
+      "ci:time:difference",
       "$time->difference",
       "time difference"
     ],
-    "body": "\\$time->difference('${1:testTime}', ''${1:timezone}'');",
-    "description": ""
+    "body": "\\$time->difference('${1:testTime}', ''${1:timezone}'');"
   },
   "time getUTCObject": {
     "prefix": [
+      "ci:time:getUTCObject",
       "$time->getUTCObject",
       "time getUTCObject"
     ],
@@ -505,6 +567,7 @@
   },
   "time getCalendar": {
     "prefix": [
+      "ci:time:getCalendar",
       "$time->getCalendar",
       "time getCalendar"
     ],

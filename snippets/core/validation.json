@@ -1,6 +1,7 @@
 {
   "validation setRule": {
     "prefix": [
+      "ci:validation:setRule",
       "$validation->setRule",
       "validation setRule"
     ],
@@ -9,6 +10,7 @@
   },
   "validation setRules": {
     "prefix": [
+      "ci:validation:setRules",
       "$validation->setRules",
       "validation setRules"
     ],
@@ -21,6 +23,7 @@
   },
   "validation withRequest": {
     "prefix": [
+      "ci:validation:withRequest",
       "$validation->withRequest",
       "validation withRequest"
     ],
@@ -29,6 +32,7 @@
   },
   "validation run": {
     "prefix": [
+      "ci:validation:run",
       "$validation->run",
       "validation run"
     ],
@@ -37,6 +41,7 @@
   },
   "validation reset": {
     "prefix": [
+      "ci:validation:reset",
       "$validation->reset",
       "validation reset"
     ],
@@ -45,6 +50,7 @@
   },
   "validation check": {
     "prefix": [
+      "ci:validation:check",
       "$validation->check",
       "validation check"
     ],
@@ -53,6 +59,7 @@
   },
   "validation getRuleGroup": {
     "prefix": [
+      "ci:validation:getRuleGroup",
       "$validation->getRuleGroup",
       "validation getRuleGroup"
     ],
@@ -61,6 +68,7 @@
   },
   "validation setRuleGroup": {
     "prefix": [
+      "ci:validation:setRuleGroup",
       "$validation->setRuleGroup",
       "validation setRuleGroup"
     ],
@@ -69,6 +77,7 @@
   },
   "validation getError": {
     "prefix": [
+      "ci:validation:getError",
       "$validation->getError",
       "validation getError"
     ],
@@ -77,6 +86,7 @@
   },
   "validation hasError": {
     "prefix": [
+      "ci:validation:hasError",
       "$validation->hasError",
       "validation hasError"
     ],
@@ -85,6 +95,7 @@
   },
   "validation listErrors": {
     "prefix": [
+      "ci:validation:listErrors",
       "$validation->listErrors",
       "validation listErrors"
     ],
@@ -93,6 +104,7 @@
   },
   "validation showError": {
     "prefix": [
+      "ci:validation:showError",
       "$validation->showError",
       "validation showError"
     ],
@@ -101,6 +113,7 @@
   },
   "validation getErrors": {
     "prefix": [
+      "ci:validation:getErrors",
       "$validation->getErrors",
       "validation getErrors"
     ],
@@ -109,6 +122,7 @@
   },
   "validation setError": {
     "prefix": [
+      "ci:validation:setError",
       "$validation->setError",
       "validation setError"
     ],
@@ -117,6 +131,7 @@
   },
   "validation loadRuleGroup": {
     "prefix": [
+      "ci:validation:loadRuleGroup",
       "$validation->loadRuleGroup",
       "validation loadRuleGroup"
     ],
@@ -125,6 +140,7 @@
   },
   "validation getValidated": {
     "prefix": [
+      "ci:validation:getValidated",
       "$validation->getValidated",
       "validation getValidated"
     ],
@@ -132,242 +148,386 @@
     "description": "Returns the actual validated data."
   },
   "validation rule alpha": {
-    "prefix": "alpha",
+    "prefix": [
+      "ci:rule:alpha",
+      "alpha"
+    ],
     "body": "alpha",
     "description": "Fails if field has anything other than alphabetic characters."
   },
   "validation rule alpha_space": {
-    "prefix": "alpha_space",
+    "prefix": [
+      "ci:rule:alpha_space",
+      "alpha_space"
+    ],
     "body": "alpha_space",
     "description": "Fails if field contains anything other than alphabetic characters or spaces."
   },
   "validation rule alpha_dash": {
-    "prefix": "alpha_dash",
+    "prefix": [
+      "ci:rule:alpha_dash",
+      "alpha_dash"
+    ],
     "body": "alpha_dash",
     "description": "Fails if field contains anything other than alphanumeric characters, underscores or dashes."
   },
   "validation rule alpha_numeric": {
-    "prefix": "alpha_numeric",
+    "prefix": [
+      "ci:rule:alpha_numeric",
+      "alpha_numeric"
+    ],
     "body": "alpha_numeric",
     "description": "Fails if field contains anything other than alphanumeric characters."
   },
   "validation rule alpha_numeric_space": {
-    "prefix": "alpha_numeric_space",
+    "prefix": [
+      "ci:rule:alpha_numeric_space",
+      "alpha_numeric_space"
+    ],
     "body": "alpha_numeric_space",
     "description": "Fails if field contains anything other than alphanumeric or space characters."
   },
   "validation rule alpha_numeric_punct": {
-    "prefix": "alpha_numeric_punct",
+    "prefix": [
+      "ci:rule:alpha_numeric_punct",
+      "alpha_numeric_punct"
+    ],
     "body": "alpha_numeric_punct",
     "description": "Fails if field contains anything other than alphanumeric, space, or this limited set of punctuation characters: ~ (tilde), ! (exclamation), # (number), $ (dollar), % (percent), & (ampersand), ``* (asterisk), - (dash), _ (underscore), + (plus), = (equals), | (vertical bar), : (colon), . (period)."
   },
   "validation rule decimal": {
-    "prefix": "decimal",
+    "prefix": [
+      "ci:rule:decimal",
+      "decimal"
+    ],
     "body": "decimal",
     "description": "Fails if field contains anything other than a decimal number. Also accepts a + or - sign for the number."
   },
   "validation rule differs": {
-    "prefix": "differs",
+    "prefix": [
+      "ci:rule:differs",
+      "differs"
+    ],
     "body": "differs[${1:field}]",
     "description": "Fails if field does not differ from the one in the parameter."
   },
   "validation rule exact_length": {
-    "prefix": "exact_length",
+    "prefix": [
+      "ci:rule:exact_length",
+      "exact_length"
+    ],
     "body": "exact_length[${1:values}]",
     "description": "Fails if field is not exactly the parameter value. One or more comma-separated values."
   },
   "validation rule greater_than": {
-    "prefix": "greater_than",
+    "prefix": [
+      "ci:rule:greater_than",
+      "greater_than"
+    ],
     "body": "greater_than[${1:value}]",
     "description": "Fails if field is less than or equal to the parameter value or not numeric."
   },
   "validation rule greater_than_equal_to": {
-    "prefix": "greater_than_equal_to",
+    "prefix": [
+      "ci:rule:greater_than_equal_to",
+      "greater_than_equal_to"
+    ],
     "body": "greater_than_equal_to[${1:value}]",
     "description": "Fails if field is less than the parameter value, or not numeric."
   },
   "validation rule hex": {
-    "prefix": "hex",
+    "prefix": [
+      "ci:rule:hex",
+      "hex"
+    ],
     "body": "hex",
     "description": "Fails if field contains anything other than hexadecimal characters."
   },
   "validation rule if_exist": {
-    "prefix": "if_exist",
+    "prefix": [
+      "ci:rule:if_exist",
+      "if_exist"
+    ],
     "body": "if_exist",
     "description": "If this rule is present, validation will check the field only when the field key exists in the data to validate."
   },
   "validation rule in_list": {
-    "prefix": "in_list",
+    "prefix": [
+      "ci:rule:in_list",
+      "in_list"
+    ],
     "body": "in_list[${1:values}]",
     "description": "Fails if field is not within a predetermined list."
   },
   "validation rule integer": {
-    "prefix": "integer",
+    "prefix": [
+      "ci:rule:integer",
+      "integer"
+    ],
     "body": "integer",
     "description": "Fails if field contains anything other than an integer."
   },
   "validation rule is_natural": {
-    "prefix": "is_natural",
+    "prefix": [
+      "ci:rule:is_natural",
+      "is_natural"
+    ],
     "body": "is_natural",
     "description": "Fails if field contains anything other than a natural number: 0, 1, 2, 3, etc."
   },
   "validation rule is_natural_no_zero": {
-    "prefix": "is_natural_no_zero",
+    "prefix": [
+      "ci:rule:is_natural_no_zero",
+      "is_natural_no_zero"
+    ],
     "body": "is_natural_no_zero",
     "description": "Fails if field contains anything other than a natural number, except zero: 1, 2, 3, etc."
   },
   "validation rule is_not_unique": {
-    "prefix": "is_not_unique",
+    "prefix": [
+      "ci:rule:is_not_unique",
+      "is_not_unique"
+    ],
     "body": "is_not_unique[${1:field}, ${2:where_field}, ${3:where_value}]",
     "description": "Checks the database to see if the given value exist. Can ignore records by field/value to filter (currently accept only one filter)."
   },
   "validation rule is_unique": {
-    "prefix": "is_unique",
+    "prefix": [
+      "ci:rule:is_unique",
+      "is_unique"
+    ],
     "body": "is_unique[${1:field}, ${2:ignore_field}, ${3:ignore_value}]",
     "description": "Checks if this field value exists in the database. Optionally set a column and value to ignore, useful when updating records to ignore itself."
   },
   "validation rule less_than": {
-    "prefix": "less_than",
+    "prefix": [
+      "ci:rule:less_than",
+      "less_than"
+    ],
     "body": "less_than[${1:value}]",
     "description": "Fails if field is greater than or equal to the parameter value or not numeric."
   },
   "validation rule less_than_equal_to": {
-    "prefix": "less_than_equal_to",
+    "prefix": [
+      "ci:rule:less_than_equal_to",
+      "less_than_equal_to"
+    ],
     "body": "less_than_equal_to[${1:value}]",
     "description": "Fails if field is greater than the parameter value or not numeric."
   },
   "validation rule matches": {
-    "prefix": "matches",
+    "prefix": [
+      "ci:rule:matches",
+      "matches"
+    ],
     "body": "matches[${1:field}]",
     "description": "The value must match the value of the field in the parameter."
   },
   "validation rule max_length": {
-    "prefix": "max_length",
+    "prefix": [
+      "ci:rule:max_length",
+      "max_length"
+    ],
     "body": "max_length[${1:field}]",
     "description": "Fails if field is longer than the parameter value."
   },
   "validation rule min_length": {
-    "prefix": "min_length",
+    "prefix": [
+      "ci:rule:min_length",
+      "min_length"
+    ],
     "body": "min_length[${1:field}]",
     "description": "Fails if field is shorter than the parameter value."
   },
   "validation rule not_in_list": {
-    "prefix": "not_in_list",
+    "prefix": [
+      "ci:rule:not_in_list",
+      "not_in_list"
+    ],
     "body": "not_in_list[${1:values}]",
     "description": "Fails if field is within a predetermined list."
   },
   "validation rule numeric": {
-    "prefix": "numeric",
+    "prefix": [
+      "ci:rule:numeric",
+      "numeric"
+    ],
     "body": "numeric",
     "description": "Fails if field contains anything other than numeric characters."
   },
   "validation rule regex_match": {
-    "prefix": "regex_match",
+    "prefix": [
+      "ci:rule:regex_match",
+      "regex_match"
+    ],
     "body": "regex_match[/${1:regex}/]",
     "description": "Fails if field does not match the regular expression."
   },
   "validation rule permit_empty": {
-    "prefix": "permit_empty",
+    "prefix": [
+      "ci:rule:permit_empty",
+      "permit_empty"
+    ],
     "body": "permit_empty",
     "description": "Allows the field to receive an empty array, empty string, null or false."
   },
   "validation rule required": {
-    "prefix": "required",
+    "prefix": [
+      "ci:rule:required",
+      "required"
+    ],
     "body": "required",
     "description": "Fails if the field is an empty array, empty string, null or false."
   },
   "validation rule required_with": {
-    "prefix": "required_with",
+    "prefix": [
+      "ci:rule:required_with",
+      "required_with"
+    ],
     "body": "required_with[${1:fields}]",
     "description": "The field is required when any of the other fields is not empty() in the data."
   },
   "validation rule required_without": {
-    "prefix": "required_without",
+    "prefix": [
+      "ci:rule:required_without",
+      "required_without"
+    ],
     "body": "required_without[${1:fields}]",
     "description": "The field is required when any of the other fields is empty() in the data."
   },
   "validation rule string": {
-    "prefix": "string",
+    "prefix": [
+      "ci:rule:string",
+      "string"
+    ],
     "body": "string",
     "description": "A generic alternative to the alpha\\* rules that confirms the element is a string."
   },
   "validation rule timezone": {
-    "prefix": "timezone",
+    "prefix": [
+      "ci:rule:timezone",
+      "timezone"
+    ],
     "body": "timezone",
     "description": "Fails if field does match a timezone per timezone_identifiers_list()"
   },
   "validation rule valid_base64": {
-    "prefix": "valid_base64",
+    "prefix": [
+      "ci:rule:valid_base64",
+      "valid_base64"
+    ],
     "body": "valid_base64",
     "description": "Fails if field contains anything other than valid Base64 characters."
   },
   "validation rule valid_json": {
-    "prefix": "valid_json",
+    "prefix": [
+      "ci:rule:valid_json",
+      "valid_json"
+    ],
     "body": "valid_json",
     "description": "Fails if field does not contain a valid JSON string."
   },
   "validation rule valid_email": {
-    "prefix": "valid_email",
+    "prefix": [
+      "ci:rule:valid_email",
+      "valid_email"
+    ],
     "body": "valid_email",
     "description": "Fails if field does not contain a valid email address."
   },
   "validation rule valid_emails": {
-    "prefix": "valid_emails",
+    "prefix": [
+      "ci:rule:valid_emails",
+      "valid_emails"
+    ],
     "body": "valid_emails",
     "description": "Fails if any value provided in a comma separated list is not a valid email."
   },
   "validation rule valid_ip": {
-    "prefix": "valid_ip",
+    "prefix": [
+      "ci:rule:valid_ip",
+      "valid_ip"
+    ],
     "body": "valid_ip[${1:protocol}]",
     "description": "Fails if the supplied IP is not valid. Accepts an optional parameter of ipv4 or ipv6 to specify an IP format."
   },
   "validation rule valid_url": {
-    "prefix": "valid_url",
+    "prefix": [
+      "ci:rule:valid_url",
+      "valid_url"
+    ],
     "body": "valid_url",
     "description": "Fails if field does not contain (loosely) a URL. Includes simple strings that could be hostnames, like \"codeigniter\". Normally, valid_url_strict should be used."
   },
   "validation rule valid_url_strict": {
-    "prefix": "valid_url_strict",
+    "prefix": [
+      "ci:rule:valid_url_strict",
+      "valid_url_strict"
+    ],
     "body": "valid_url_strict[${1:schemas}]",
     "description": "Fails if field does not contain a valid URL. You can optionally specify a list of valid schemas. If not specified, http,https are valid. This rule uses PHP's FILTER_VALIDATE_URL."
   },
   "validation rule valid_date": {
-    "prefix": "valid_date",
+    "prefix": [
+      "ci:rule:valid_date",
+      "valid_date"
+    ],
     "body": "valid_date[${1:format}]",
     "description": "Fails if field does not contain a valid date. Any string that strtotime() accepts is valid if you don't specify an optional parameter to matches a date format. So it is usually necessary to specify the parameter."
   },
   "validation rule valid_cc_number": {
-    "prefix": "valid_cc_number",
+    "prefix": [
+      "ci:rule:valid_cc_number",
+      "valid_cc_number"
+    ],
     "body": "valid_cc_number[${1:provider}]",
     "description": "Verifies that the credit card number matches the format used by the specified provider. Current supported providers are: American Express (amex), China Unionpay (unionpay), Diners Club CarteBlance (carteblanche), Diners Club (dinersclub), Discover Card (discover), Interpayment (interpayment), JCB (jcb), Maestro (maestro), Dankort (dankort), NSPK MIR (mir), Troy (troy), MasterCard (mastercard), Visa (visa), UATP (uatp), Verve (verve), CIBC Convenience Card (cibc), Royal Bank of Canada Client Card (rbc), TD Canada Trust Access Card (tdtrust), Scotiabank Scotia Card (scotia), BMO ABM Card (bmoabm), HSBC Canada Card (hsbc)"
   },
   "validation rule uploaded": {
-    "prefix": "uploaded",
+    "prefix": [
+      "ci:rule:uploaded",
+      "uploaded"
+    ],
     "body": "uploaded[${1:field}]",
     "description": "Fails if the name of the parameter does not match the name of any uploaded files."
   },
   "validation rule max_size": {
-    "prefix": "max_size",
+    "prefix": [
+      "ci:rule:max_size",
+      "max_size"
+    ],
     "body": "max_size[${1:field}, ${2:size}]",
     "description": "Fails if the uploaded file named in the parameter is larger than the second parameter in kilobytes (kb). Or if the file is larger than allowed maximum size declared in php.ini config file - upload_max_filesize directive."
   },
   "validation rule max_dims": {
-    "prefix": "max_dims",
+    "prefix": [
+      "ci:rule:max_dims",
+      "max_dims"
+    ],
     "body": "max_dims[${1:field}, ${2:width}, ${3:height}]",
     "description": "Fails if the maximum width and height of an uploaded image exceed values. The first parameter is the field name. The second is the width, and the third is the height. Will also fail if the file cannot be determined to be an image."
   },
   "validation rule mime_in": {
-    "prefix": "mime_in",
+    "prefix": [
+      "ci:rule:mime_in",
+      "mime_in"
+    ],
     "body": "mime_in[${1:field}, ${2:mime_type}]",
     "description": "Fails if the file's mime type is not one listed in the parameters."
   },
   "validation rule ext_in": {
-    "prefix": "ext_in",
+    "prefix": [
+      "ci:rule:ext_in",
+      "ext_in"
+    ],
     "body": "ext_in[${1:field}, ${2:extensions}]",
     "description": "Fails if the file's extension is not one listed in the parameters."
   },
   "validation rule is_image": {
-    "prefix": "is_image",
+    "prefix": [
+      "ci:rule:is_image",
+      "is_image"
+    ],
     "body": "is_image[${1:field}]",
     "description": "Fails if the file cannot be determined to be an image based on the mime type."
   }

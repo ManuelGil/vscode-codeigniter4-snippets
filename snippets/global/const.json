@@ -1,76 +1,121 @@
 {
   "CI_VERSION": {
-    "prefix": "CI_VERSION",
+    "prefix": [
+      "ci:CI_VERSION",
+      "CI_VERSION"
+    ],
     "body": "CodeIgniter\\CodeIgniter::CI_VERSION",
     "description": "The current version of CodeIgniter Framework."
   },
   "ENVIRONMENT": {
-    "prefix": "ENVIRONMENT",
+    "prefix": [
+      "ci:ENVIRONMENT",
+      "ENVIRONMENT"
+    ],
     "body": "ENVIRONMENT",
     "description": "This can be set to anything, but default usage is: development, testing, production."
   },
   "APPPATH": {
-    "prefix": "APPPATH",
+    "prefix": [
+      "ci:APPPATH",
+      "APPPATH"
+    ],
     "body": "APPPATH",
     "description": "The path to the app directory."
   },
   "ROOTPATH": {
-    "prefix": "ROOTPATH",
+    "prefix": [
+      "ci:ROOTPATH",
+      "ROOTPATH"
+    ],
     "body": "ROOTPATH",
     "description": "The path to the project root directory. Just above APPPATH."
   },
   "SYSTEMPATH": {
-    "prefix": "SYSTEMPATH",
+    "prefix": [
+      "ci:SYSTEMPATH",
+      "SYSTEMPATH"
+    ],
     "body": "SYSTEMPATH",
     "description": "The path to the system directory."
   },
   "FCPATH": {
-    "prefix": "FCPATH",
+    "prefix": [
+      "ci:FCPATH",
+      "FCPATH"
+    ],
     "body": "FCPATH",
     "description": "The path to the directory that holds the front controller."
   },
   "WRITEPATH": {
-    "prefix": "WRITEPATH",
+    "prefix": [
+      "ci:WRITEPATH",
+      "WRITEPATH"
+    ],
     "body": "WRITEPATH",
     "description": "The path to the writable directory."
   },
   "SECOND": {
-    "prefix": "SECOND",
+    "prefix": [
+      "ci:SECOND",
+      "SECOND"
+    ],
     "body": "SECOND",
     "description": "Equals 1."
   },
   "MINUTE": {
-    "prefix": "MINUTE",
+    "prefix": [
+      "ci:MINUTE",
+      "MINUTE"
+    ],
     "body": "MINUTE",
     "description": "Equals 60."
   },
   "HOUR": {
-    "prefix": "HOUR",
+    "prefix": [
+      "ci:HOUR",
+      "HOUR"
+    ],
     "body": "HOUR",
     "description": "Equals 3600."
   },
   "DAY": {
-    "prefix": "DAY",
+    "prefix": [
+      "ci:DAY",
+      "DAY"
+    ],
     "body": "DAY",
     "description": "Equals 86400."
   },
   "WEEK": {
-    "prefix": "WEEK",
+    "prefix": [
+      "ci:WEEK",
+      "WEEK"
+    ],
     "body": "WEEK",
     "description": "Equals 604800."
   },
   "MONTH": {
-    "prefix": "MONTH",
+    "prefix": [
+      "ci:MONTH",
+      "MONTH"
+    ],
     "body": "MONTH",
     "description": "Equals 2592000."
   },
   "YEAR": {
-    "prefix": "YEAR",
+    "prefix": [
+      "ci:YEAR",
+      "YEAR"
+    ],
     "body": "YEAR",
     "description": "Equals 31536000."
   },
   "DECADE": {
-    "prefix": "DECADE",
+    "prefix": [
+      "ci:DECADE",
+      "DECADE"
+    ],
     "body": "DECADE",
     "description": "Equals 315360000."
   }

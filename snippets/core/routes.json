@@ -1,6 +1,7 @@
 {
   "routes get": {
     "prefix": [
+      "ci:routes:get",
       "$routes->get",
       "routes get"
     ],
@@ -9,6 +10,7 @@
   },
   "routes post": {
     "prefix": [
+      "ci:routes:post",
       "$routes->post",
       "routes post"
     ],
@@ -17,6 +19,7 @@
   },
   "routes put": {
     "prefix": [
+      "ci:routes:put",
       "$routes->put",
       "routes put"
     ],
@@ -25,6 +28,7 @@
   },
   "routes delete": {
     "prefix": [
+      "ci:routes:delete",
       "$routes->delete",
       "routes delete"
     ],
@@ -33,6 +37,7 @@
   },
   "routes head": {
     "prefix": [
+      "ci:routes:head",
       "$routes->head",
       "routes head"
     ],
@@ -41,6 +46,7 @@
   },
   "routes patch": {
     "prefix": [
+      "ci:routes:patch",
       "$routes->patch",
       "routes patch"
     ],
@@ -49,6 +55,7 @@
   },
   "routes options": {
     "prefix": [
+      "ci:routes:options",
       "$routes->options",
       "routes options"
     ],
@@ -57,6 +64,7 @@
   },
   "routes cli": {
     "prefix": [
+      "ci:routes:cli",
       "$routes->cli",
       "routes cli"
     ],
@@ -65,6 +73,7 @@
   },
   "routes add": {
     "prefix": [
+      "ci:routes:add",
       "$routes->add",
       "routes add"
     ],
@@ -73,6 +82,7 @@
   },
   "routes view": {
     "prefix": [
+      "ci:routes:view",
       "$routes->view",
       "routes view"
     ],
@@ -81,6 +91,7 @@
   },
   "routes addPlaceholder": {
     "prefix": [
+      "ci:routes:addPlaceholder",
       "$routes->addPlaceholder",
       "routes addPlaceholder"
     ],
@@ -89,6 +100,7 @@
   },
   "routes presenter": {
     "prefix": [
+      "ci:routes:presenter",
       "$routes->presenter",
       "routes presenter"
     ],
@@ -97,6 +109,7 @@
   },
   "routes resource": {
     "prefix": [
+      "ci:routes:resource",
       "$routes->resource",
       "routes resource"
     ],
@@ -105,6 +118,7 @@
   },
   "routes match": {
     "prefix": [
+      "ci:routes:match",
       "$routes->match",
       "routes match"
     ],
@@ -113,6 +127,7 @@
   },
   "routes addRedirect": {
     "prefix": [
+      "ci:routes:addRedirect",
       "$routes->addRedirect",
       "routes addRedirect"
     ],
@@ -121,6 +136,7 @@
   },
   "routes map": {
     "prefix": [
+      "ci:routes:map",
       "$routes->map",
       "routes map"
     ],
@@ -129,6 +145,7 @@
   },
   "routes setPrioritize": {
     "prefix": [
+      "ci:routes:setPrioritize",
       "$routes->setPrioritize",
       "routes setPrioritize"
     ],
@@ -137,6 +154,7 @@
   },
   "routes setTranslateURIDashes": {
     "prefix": [
+      "ci:routes:setTranslateURIDashes",
       "$routes->setTranslateURIDashes",
       "routes setTranslateURIDashes"
     ],
@@ -145,6 +163,7 @@
   },
   "routes setAutoRoute": {
     "prefix": [
+      "ci:routes:setAutoRoute",
       "$routes->setAutoRoute",
       "routes setAutoRoute"
     ],
@@ -153,6 +172,7 @@
   },
   "routes setDefaultNamespace": {
     "prefix": [
+      "ci:routes:setDefaultNamespace",
       "$routes->setDefaultNamespace",
       "routes setDefaultNamespace"
     ],
@@ -161,6 +181,7 @@
   },
   "routes setDefaultController": {
     "prefix": [
+      "ci:routes:setDefaultController",
       "$routes->setDefaultController",
       "routes setDefaultController"
     ],
@@ -169,6 +190,7 @@
   },
   "routes setDefaultMethod": {
     "prefix": [
+      "ci:routes:setDefaultMethod",
       "$routes->setDefaultMethod",
       "routes setDefaultMethod"
     ],
@@ -177,6 +199,7 @@
   },
   "routes environment": {
     "prefix": [
+      "ci:routes:environment",
       "$routes->environment",
       "routes environment"
     ],
@@ -190,6 +213,7 @@
   },
   "routes group": {
     "prefix": [
+      "ci:routes:group",
       "$routes->group",
       "routes group"
     ],
@@ -202,6 +226,7 @@
   },
   "routes loadRoutes": {
     "prefix": [
+      "ci:routes:loadRoutes",
       "$routes->loadRoutes",
       "routes loadRoutes"
     ],
@@ -210,6 +235,7 @@
   },
   "routes getPlaceholders": {
     "prefix": [
+      "ci:routes:getPlaceholders",
       "$routes->getPlaceholders",
       "routes getPlaceholders"
     ],
@@ -218,6 +244,7 @@
   },
   "routes set404Override": {
     "prefix": [
+      "ci:routes:set404Override",
       "$routes->set404Override",
       "routes set404Override"
     ],
@@ -226,6 +253,7 @@
   },
   "routes get404Override": {
     "prefix": [
+      "ci:routes:get404Override",
       "$routes->get404Override",
       "routes get404Override"
     ],
@@ -234,6 +262,7 @@
   },
   "routes setDefaultConstraint": {
     "prefix": [
+      "ci:routes:setDefaultConstraint",
       "$routes->setDefaultConstraint",
       "routes setDefaultConstraint"
     ],
@@ -242,6 +271,7 @@
   },
   "routes getDefaultController": {
     "prefix": [
+      "ci:routes:getDefaultController",
       "$routes->getDefaultController",
       "routes getDefaultController"
     ],
@@ -250,6 +280,7 @@
   },
   "routes getDefaultMethod": {
     "prefix": [
+      "ci:routes:getDefaultMethod",
       "$routes->getDefaultMethod",
       "routes getDefaultMethod"
     ],
@@ -258,6 +289,7 @@
   },
   "routes getDefaultNamespace": {
     "prefix": [
+      "ci:routes:getDefaultNamespace",
       "$routes->getDefaultNamespace",
       "routes getDefaultNamespace"
     ],
@@ -266,6 +298,7 @@
   },
   "routes shouldTranslateURIDashes": {
     "prefix": [
+      "ci:routes:shouldTranslateURIDashes",
       "$routes->shouldTranslateURIDashes",
       "routes shouldTranslateURIDashes"
     ],
@@ -274,6 +307,7 @@
   },
   "routes shouldAutoRoute": {
     "prefix": [
+      "ci:routes:shouldAutoRoute",
       "$routes->shouldAutoRoute",
       "routes shouldAutoRoute"
     ],
@@ -282,6 +316,7 @@
   },
   "routes getRoutes": {
     "prefix": [
+      "ci:routes:getRoutes",
       "$routes->getRoutes",
       "routes getRoutes"
     ],
@@ -290,6 +325,7 @@
   },
   "routes getRoutesOptions": {
     "prefix": [
+      "ci:routes:getRoutesOptions",
       "$routes->getRoutesOptions",
       "routes getRoutesOptions"
     ],
@@ -298,6 +334,7 @@
   },
   "routes getHTTPVerb": {
     "prefix": [
+      "ci:routes:getHTTPVerb",
       "$routes->getHTTPVerb",
       "routes getHTTPVerb"
     ],
@@ -306,6 +343,7 @@
   },
   "routes setHTTPVerb": {
     "prefix": [
+      "ci:routes:setHTTPVerb",
       "$routes->setHTTPVerb",
       "routes setHTTPVerb"
     ],
@@ -314,6 +352,7 @@
   },
   "routes isRedirect": {
     "prefix": [
+      "ci:routes:isRedirect",
       "$routes->isRedirect",
       "routes isRedirect"
     ],
@@ -322,6 +361,7 @@
   },
   "routes getRedirectCode": {
     "prefix": [
+      "ci:routes:getRedirectCode",
       "$routes->getRedirectCode",
       "routes getRedirectCode"
     ],
@@ -330,6 +370,7 @@
   },
   "routes reverseRoute": {
     "prefix": [
+      "ci:routes:reverseRoute",
       "$routes->reverseRoute",
       "routes reverseRoute"
     ],
@@ -338,6 +379,7 @@
   },
   "routes isFiltered": {
     "prefix": [
+      "ci:routes:isFiltered",
       "$routes->isFiltered",
       "routes isFiltered"
     ],
@@ -346,6 +388,7 @@
   },
   "routes getFilterForRoute": {
     "prefix": [
+      "ci:routes:getFilterForRoute",
       "$routes->getFilterForRoute",
       "routes getFilterForRoute"
     ],
@@ -354,6 +397,7 @@
   },
   "routes getFiltersForRoute": {
     "prefix": [
+      "ci:routes:getFiltersForRoute",
       "$routes->getFiltersForRoute",
       "routes getFiltersForRoute"
     ],
@@ -362,6 +406,7 @@
   },
   "routes resetRoutes": {
     "prefix": [
+      "ci:routes:resetRoutes",
       "$routes->resetRoutes",
       "routes resetRoutes"
     ],
@@ -370,6 +415,7 @@
   },
   "routes getRegisteredControllers": {
     "prefix": [
+      "ci:routes:getRegisteredControllers",
       "$routes->getRegisteredControllers",
       "routes getRegisteredControllers"
     ],
@@ -378,6 +424,7 @@
   },
   "routes useSupportedLocalesOnly": {
     "prefix": [
+      "ci:routes:useSupportedLocalesOnly",
       "$routes->useSupportedLocalesOnly",
       "routes useSupportedLocalesOnly"
     ],
@@ -386,6 +433,7 @@
   },
   "routes shouldUseSupportedLocalesOnly": {
     "prefix": [
+      "ci:routes:shouldUseSupportedLocalesOnly",
       "$routes->shouldUseSupportedLocalesOnly",
       "routes shouldUseSupportedLocalesOnly"
     ],

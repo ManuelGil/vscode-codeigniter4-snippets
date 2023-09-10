@@ -1,6 +1,7 @@
 {
   "response getStatusCode": {
     "prefix": [
+      "ci:response:getStatusCode",
       "response->getStatusCode",
       "response getStatusCode"
     ],
@@ -9,6 +10,7 @@
   },
   "response setStatusCode": {
     "prefix": [
+      "ci:response:setStatusCode",
       "response->setStatusCode",
       "response setStatusCode"
     ],
@@ -17,6 +19,7 @@
   },
   "response getReason": {
     "prefix": [
+      "ci:response:getReason",
       "response->getReason",
       "response getReason"
     ],
@@ -25,6 +28,7 @@
   },
   "response getReasonPhrase": {
     "prefix": [
+      "ci:response:getReasonPhrase",
       "response->getReasonPhrase",
       "response getReasonPhrase"
     ],
@@ -33,6 +37,7 @@
   },
   "response setDate": {
     "prefix": [
+      "ci:response:setDate",
       "response->setDate",
       "response setDate"
     ],
@@ -41,6 +46,7 @@
   },
   "response setLastModified": {
     "prefix": [
+      "ci:response:setLastModified",
       "response->setLastModified",
       "response setLastModified"
     ],
@@ -49,6 +55,7 @@
   },
   "response setLink": {
     "prefix": [
+      "ci:response:setLink",
       "response->setLink",
       "response setLink"
     ],
@@ -57,6 +64,7 @@
   },
   "response setContentType": {
     "prefix": [
+      "ci:response:setContentType",
       "response->setContentType",
       "response setContentType"
     ],
@@ -65,6 +73,7 @@
   },
   "response setJSON": {
     "prefix": [
+      "ci:response:setJSON",
       "response->setJSON",
       "response setJSON"
     ],
@@ -73,6 +82,7 @@
   },
   "response getJSON": {
     "prefix": [
+      "ci:response:getJSON",
       "response->getJSON",
       "response getJSON"
     ],
@@ -81,6 +91,7 @@
   },
   "response setXML": {
     "prefix": [
+      "ci:response:setXML",
       "response->setXML",
       "response setXML"
     ],
@@ -89,6 +100,7 @@
   },
   "response noCache": {
     "prefix": [
+      "ci:response:noCache",
       "response->noCache",
       "response noCache"
     ],
@@ -97,6 +109,7 @@
   },
   "response setCache": {
     "prefix": [
+      "ci:response:setCache",
       "response->setCache",
       "response setCache"
     ],
@@ -105,6 +118,7 @@
   },
   "response send": {
     "prefix": [
+      "ci:response:send",
       "response->send",
       "response send"
     ],
@@ -113,6 +127,7 @@
   },
   "response sendHeaders": {
     "prefix": [
+      "ci:response:sendHeaders",
       "response->sendHeaders",
       "response sendHeaders"
     ],
@@ -121,6 +136,7 @@
   },
   "response sendBody": {
     "prefix": [
+      "ci:response:sendBody",
       "response->sendBody",
       "response sendBody"
     ],
@@ -129,6 +145,7 @@
   },
   "response setCookie": {
     "prefix": [
+      "ci:response:setCookie",
       "response->setCookie",
       "response setCookie"
     ],
@@ -149,6 +166,7 @@
   },
   "response hasCookie": {
     "prefix": [
+      "ci:response:hasCookie",
       "response->hasCookie",
       "response hasCookie"
     ],
@@ -157,6 +175,7 @@
   },
   "response getCookie": {
     "prefix": [
+      "ci:response:getCookie",
       "response->getCookie",
       "response getCookie"
     ],
@@ -165,6 +184,7 @@
   },
   "response deleteCookie": {
     "prefix": [
+      "ci:response:deleteCookie",
       "response->deleteCookie",
       "response deleteCookie"
     ],
@@ -173,6 +193,7 @@
   },
   "response getCookies": {
     "prefix": [
+      "ci:response:getCookies",
       "response->getCookies",
       "response getCookies"
     ],
@@ -181,6 +202,7 @@
   },
   "response getCookieStore": {
     "prefix": [
+      "ci:response:getCookieStore",
       "response->getCookieStore",
       "response getCookieStore"
     ],
@@ -189,6 +211,7 @@
   },
   "response redirect": {
     "prefix": [
+      "ci:response:redirect",
       "response->redirect",
       "response redirect"
     ],
@@ -197,6 +220,7 @@
   },
   "response download": {
     "prefix": [
+      "ci:response:download",
       "response->download",
       "response download"
     ],
@@ -205,6 +229,7 @@
   },
   "response getCSP": {
     "prefix": [
+      "ci:response:getCSP",
       "response->getCSP",
       "response getCSP"
     ],
@@ -213,6 +238,7 @@
   },
   "response respond": {
     "prefix": [
+      "ci:response:respond",
       "$this->respond",
       "response respond"
     ],
@@ -221,6 +247,7 @@
   },
   "response fail": {
     "prefix": [
+      "ci:response:fail",
       "$this->fail",
       "response fail"
     ],
@@ -229,6 +256,7 @@
   },
   "response respondCreated": {
     "prefix": [
+      "ci:response:respondCreated",
       "$this->respondCreated",
       "response respondCreated"
     ],
@@ -237,6 +265,7 @@
   },
   "response respondDeleted": {
     "prefix": [
+      "ci:response:respondDeleted",
       "$this->respondDeleted",
       "response respondDeleted"
     ],
@@ -245,6 +274,7 @@
   },
   "response respondUpdated": {
     "prefix": [
+      "ci:response:respondUpdated",
       "$this->respondUpdated",
       "response respondUpdated"
     ],
@@ -253,6 +283,7 @@
   },
   "response respondNoContent": {
     "prefix": [
+      "ci:response:respondNoContent",
       "$this->respondNoContent",
       "response respondNoContent"
     ],
@@ -261,6 +292,7 @@
   },
   "response failUnauthorized": {
     "prefix": [
+      "ci:response:failUnauthorized",
       "$this->failUnauthorized",
       "response failUnauthorized"
     ],
@@ -269,6 +301,7 @@
   },
   "response failForbidden": {
     "prefix": [
+      "ci:response:failForbidden",
       "$this->failForbidden",
       "response failForbidden"
     ],
@@ -277,6 +310,7 @@
   },
   "response failNotFound": {
     "prefix": [
+      "ci:response:failNotFound",
       "$this->failNotFound",
       "response failNotFound"
     ],
@@ -285,6 +319,7 @@
   },
   "response failValidationError": {
     "prefix": [
+      "ci:response:failValidationError",
       "$this->failValidationError",
       "response failValidationError"
     ],
@@ -293,6 +328,7 @@
   },
   "response failValidationErrors": {
     "prefix": [
+      "ci:response:failValidationErrors",
       "$this->failValidationErrors",
       "response failValidationErrors"
     ],
@@ -301,6 +337,7 @@
   },
   "response failResourceExists": {
     "prefix": [
+      "ci:response:failResourceExists",
       "$this->failResourceExists",
       "response failResourceExists"
     ],
@@ -309,6 +346,7 @@
   },
   "response failResourceGone": {
     "prefix": [
+      "ci:response:failResourceGone",
       "$this->failResourceGone",
       "response failResourceGone"
     ],
@@ -317,6 +355,7 @@
   },
   "response failTooManyRequests": {
     "prefix": [
+      "ci:response:failTooManyRequests",
       "$this->failTooManyRequests",
       "response failTooManyRequests"
     ],
@@ -325,6 +364,7 @@
   },
   "response failServerError": {
     "prefix": [
+      "ci:response:failServerError",
       "$this->failServerError",
       "response failServerError"
     ],
@@ -333,6 +373,7 @@
   },
   "response setResponseFormat": {
     "prefix": [
+      "ci:response:setResponseFormat",
       "$this->setResponseFormat",
       "response setResponseFormat"
     ],

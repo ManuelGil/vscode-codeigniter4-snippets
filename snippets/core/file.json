@@ -1,6 +1,7 @@
 {
   "file getSize": {
     "prefix": [
+      "ci:file:getSize",
       "$file->getSize",
       "file getSize"
     ],
@@ -9,6 +10,7 @@
   },
   "file getSizeByUnit": {
     "prefix": [
+      "ci:file:getSizeByUnit",
       "$file->getSizeByUnit",
       "file getSizeByUnit"
     ],
@@ -17,6 +19,7 @@
   },
   "file guessExtension": {
     "prefix": [
+      "ci:file:guessExtension",
       "$file->guessExtension",
       "file guessExtension"
     ],
@@ -25,6 +28,7 @@
   },
   "file getMimeType": {
     "prefix": [
+      "ci:file:getMimeType",
       "$file->getMimeType",
       "file getMimeType"
     ],
@@ -33,6 +37,7 @@
   },
   "file getRandomName": {
     "prefix": [
+      "ci:file:getRandomName",
       "$file->getRandomName",
       "file getRandomName"
     ],
@@ -41,6 +46,7 @@
   },
   "file move": {
     "prefix": [
+      "ci:file:move",
       "$file->move",
       "file move"
     ],
@@ -49,6 +55,7 @@
   },
   "file getDestination": {
     "prefix": [
+      "ci:file:getDestination",
       "$file->getDestination",
       "file getDestination"
     ],
@@ -57,6 +64,7 @@
   },
   "file hasMoved": {
     "prefix": [
+      "ci:file:hasMoved",
       "$file->hasMoved",
       "file hasMoved"
     ],
@@ -65,6 +73,7 @@
   },
   "file getError": {
     "prefix": [
+      "ci:file:getError",
       "$file->getError",
       "file getError"
     ],
@@ -73,6 +82,7 @@
   },
   "file getErrorString": {
     "prefix": [
+      "ci:file:getErrorString",
       "$file->getErrorString",
       "file getErrorString"
     ],
@@ -81,6 +91,7 @@
   },
   "file getClientMimeType": {
     "prefix": [
+      "ci:file:getClientMimeType",
       "$file->getClientMimeType",
       "file getClientMimeType"
     ],
@@ -89,6 +100,7 @@
   },
   "file getName": {
     "prefix": [
+      "ci:file:getName",
       "$file->getName",
       "file getName"
     ],
@@ -97,6 +109,7 @@
   },
   "file getClientName": {
     "prefix": [
+      "ci:file:getClientName",
       "$file->getClientName",
       "file getClientName"
     ],
@@ -105,6 +118,7 @@
   },
   "file getTempName": {
     "prefix": [
+      "ci:file:getTempName",
       "$file->getTempName",
       "file getTempName"
     ],
@@ -113,6 +127,7 @@
   },
   "file getExtension": {
     "prefix": [
+      "ci:file:getExtension",
       "$file->getExtension",
       "file getExtension"
     ],
@@ -121,6 +136,7 @@
   },
   "file getClientExtension": {
     "prefix": [
+      "ci:file:getClientExtension",
       "$file->getClientExtension",
       "file getClientExtension"
     ],
@@ -129,6 +145,7 @@
   },
   "file isValid": {
     "prefix": [
+      "ci:file:isValid",
       "$file->isValid",
       "file isValid"
     ],
@@ -137,6 +154,7 @@
   },
   "file store": {
     "prefix": [
+      "ci:file:store",
       "$file->store",
       "file store"
     ],
@@ -145,6 +163,7 @@
   },
   "files get": {
     "prefix": [
+      "ci:files:get",
       "$files->get",
       "files get"
     ],
@@ -153,6 +172,7 @@
   },
   "files set": {
     "prefix": [
+      "ci:files:set",
       "$files->set",
       "files set"
     ],
@@ -161,6 +181,7 @@
   },
   "files add": {
     "prefix": [
+      "ci:files:add",
       "$files->add",
       "files add"
     ],
@@ -169,6 +190,7 @@
   },
   "files addFiles": {
     "prefix": [
+      "ci:files:addFiles",
       "$files->addFiles",
       "files addFiles"
     ],
@@ -177,6 +199,7 @@
   },
   "files addFile": {
     "prefix": [
+      "ci:files:addFile",
       "$files->addFile",
       "files addFile"
     ],
@@ -185,6 +208,7 @@
   },
   "files removeFiles": {
     "prefix": [
+      "ci:files:removeFiles",
       "$files->removeFiles",
       "files removeFiles"
     ],
@@ -193,6 +217,7 @@
   },
   "files removeFile": {
     "prefix": [
+      "ci:files:removeFile",
       "$files->removeFile",
       "files removeFile"
     ],
@@ -201,6 +226,7 @@
   },
   "files addDirectories": {
     "prefix": [
+      "ci:files:addDirectories",
       "$files->addDirectories",
       "files addDirectories"
     ],
@@ -209,6 +235,7 @@
   },
   "files addDirectory": {
     "prefix": [
+      "ci:files:addDirectory",
       "$files->addDirectory",
       "files addDirectory"
     ],
@@ -217,6 +244,7 @@
   },
   "files removePattern": {
     "prefix": [
+      "ci:files:removePattern",
       "$files->removePattern",
       "files removePattern"
     ],
@@ -225,6 +253,7 @@
   },
   "files retainPattern": {
     "prefix": [
+      "ci:files:retainPattern",
       "$files->retainPattern",
       "files retainPattern"
     ],
@@ -233,6 +262,7 @@
   },
   "files count": {
     "prefix": [
+      "ci:files:count",
       "$files->count",
       "files count"
     ],
@@ -241,6 +271,7 @@
   },
   "files getIterator": {
     "prefix": [
+      "ci:files:getIterator",
       "$files->getIterator",
       "files getIterator"
     ],

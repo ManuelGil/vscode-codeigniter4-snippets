@@ -1,6 +1,9 @@
 {
   "make config": {
-    "prefix": "class config",
+    "prefix": [
+      "ci:class:config",
+      "class config"
+    ],
     "body": [
       "namespace Config;",
       "",
@@ -15,7 +18,10 @@
     "description": "Generates a new config."
   },
   "make controller": {
-    "prefix": "class controller",
+    "prefix": [
+      "ci:class:controller",
+      "class controller"
+    ],
     "body": [
       "namespace App\\Controllers",
       "",
@@ -33,7 +39,10 @@
     "description": "Generates a new controller."
   },
   "make entity": {
-    "prefix": "class entity",
+    "prefix": [
+      "ci:class:entity",
+      "class entity"
+    ],
     "body": [
       "namespace App\\Entities;",
       "",
@@ -50,7 +59,10 @@
     "description": "Generates a new entity."
   },
   "make filter": {
-    "prefix": "class filter",
+    "prefix": [
+      "ci:class:filter",
+      "class filter"
+    ],
     "body": [
       "namespace App\\Filters;",
       "",
@@ -102,7 +114,10 @@
     "description": "Generates a new filter."
   },
   "make migration": {
-    "prefix": "class migration",
+    "prefix": [
+      "ci:class:migration",
+      "class migration"
+    ],
     "body": [
       "namespace App\\Database\\Migrations;",
       "",
@@ -125,7 +140,10 @@
     "description": "Generates a new migration."
   },
   "make model": {
-    "prefix": "class model",
+    "prefix": [
+      "ci:class:model",
+      "class model"
+    ],
     "body": [
       "namespace App\\Models;",
       "",
@@ -171,7 +189,10 @@
     "description": "Generates a new model."
   },
   "make seeder": {
-    "prefix": "class seeder",
+    "prefix": [
+      "ci:class:seeder",
+      "class seeder"
+    ],
     "body": [
       "namespace App\\Database\\Seeds;",
       "",
@@ -189,7 +210,10 @@
     "description": "Generates a new seeder."
   },
   "make validation": {
-    "prefix": "class validation",
+    "prefix": [
+      "ci:class:validation",
+      "class validation"
+    ],
     "body": [
       "namespace App\\Validation;",
       "",

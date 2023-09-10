@@ -1,0 +1,334 @@
+{
+  "cookie setDefaults": {
+    "prefix": [
+      "ci:cookie:setDefaults",
+      "Cookie::setDefaults",
+      "cookie setDefaults"
+    ],
+    "body": "Cookie::setDefaults([${1:config}]);",
+    "description": "Set the default attributes to a Cookie instance by injecting the values from the `CookieConfig` config or an array."
+  },
+  "cookie fromHeaderString": {
+    "prefix": [
+      "ci:cookie:fromHeaderString",
+      "Cookie::fromHeaderString",
+      "cookie fromHeaderString"
+    ],
+    "body": "Cookie::fromHeaderString('${1:cookie}', ${2:boolean});",
+    "description": "Create a new Cookie instance from a `Set-Cookie` header."
+  },
+  "cookie getId": {
+    "prefix": [
+      "ci:cookie:getId",
+      "$cookie->getId",
+      "cookie getId"
+    ],
+    "body": "\\$cookie->getId();",
+    "description": "The ID used in indexing in the cookie collection."
+  },
+  "cookie getPrefix": {
+    "prefix": [
+      "ci:cookie:getPrefix",
+      "$cookie->getPrefix",
+      "cookie getPrefix"
+    ],
+    "body": "\\$cookie->getPrefix()"
+  },
+  "cookie getName": {
+    "prefix": [
+      "ci:cookie:getName",
+      "$cookie->getName",
+      "cookie getName"
+    ],
+    "body": "\\$cookie->getName()"
+  },
+  "cookie getPrefixedName": {
+    "prefix": [
+      "ci:cookie:getPrefixedName",
+      "$cookie->getPrefixedName",
+      "cookie getPrefixedName"
+    ],
+    "body": "\\$cookie->getPrefixedName()"
+  },
+  "cookie getValue": {
+    "prefix": [
+      "ci:cookie:getValue",
+      "$cookie->getValue",
+      "cookie getValue"
+    ],
+    "body": "\\$cookie->getValue()"
+  },
+  "cookie getExpiresTimestamp": {
+    "prefix": [
+      "ci:cookie:getExpiresTimestamp",
+      "$cookie->getExpiresTimestamp",
+      "cookie getExpiresTimestamp"
+    ],
+    "body": "\\$cookie->getExpiresTimestamp()"
+  },
+  "cookie getExpiresString": {
+    "prefix": [
+      "ci:cookie:getExpiresString",
+      "$cookie->getExpiresString",
+      "cookie getExpiresString"
+    ],
+    "body": "\\$cookie->getExpiresString()"
+  },
+  "cookie isExpired": {
+    "prefix": [
+      "ci:cookie:isExpired",
+      "$cookie->isExpired",
+      "cookie isExpired"
+    ],
+    "body": "\\$cookie->isExpired()"
+  },
+  "cookie getMaxAge": {
+    "prefix": [
+      "ci:cookie:getMaxAge",
+      "$cookie->getMaxAge",
+      "cookie getMaxAge"
+    ],
+    "body": "\\$cookie->getMaxAge()"
+  },
+  "cookie getPath": {
+    "prefix": [
+      "ci:cookie:getPath",
+      "$cookie->getPath",
+      "cookie getPath"
+    ],
+    "body": "\\$cookie->getPath()"
+  },
+  "cookie getDomain": {
+    "prefix": [
+      "ci:cookie:getDomain",
+      "$cookie->getDomain",
+      "cookie getDomain"
+    ],
+    "body": "\\$cookie->getDomain()"
+  },
+  "cookie isSecure": {
+    "prefix": [
+      "ci:cookie:isSecure",
+      "$cookie->isSecure",
+      "cookie isSecure"
+    ],
+    "body": "\\$cookie->isSecure()"
+  },
+  "cookie isHTTPOnly": {
+    "prefix": [
+      "ci:cookie:isHTTPOnly",
+      "$cookie->isHTTPOnly",
+      "cookie isHTTPOnly"
+    ],
+    "body": "\\$cookie->isHTTPOnly()"
+  },
+  "cookie getSameSite": {
+    "prefix": [
+      "ci:cookie:getSameSite",
+      "$cookie->getSameSite",
+      "cookie getSameSite"
+    ],
+    "body": "\\$cookie->getSameSite()"
+  },
+  "cookie isRaw": {
+    "prefix": [
+      "ci:cookie:isRaw",
+      "$cookie->isRaw",
+      "cookie isRaw"
+    ],
+    "body": "\\$cookie->isRaw()"
+  },
+  "cookie getOptions": {
+    "prefix": [
+      "ci:cookie:getOptions",
+      "$cookie->getOptions",
+      "cookie getOptions"
+    ],
+    "body": "\\$cookie->getOptions()"
+  },
+  "cookie withPrefix": {
+    "prefix": [
+      "ci:cookie:withPrefix",
+      "$cookie->withPrefix",
+      "cookie withPrefix"
+    ],
+    "body": "\\$cookie->withPrefix('${1:prefix}');",
+    "description": "Creates a new Cookie with new prefix."
+  },
+  "cookie withName": {
+    "prefix": [
+      "ci:cookie:withName",
+      "$cookie->withName",
+      "cookie withName"
+    ],
+    "body": "\\$cookie->withName('${1:name}');",
+    "description": "Creates a new Cookie with new name."
+  },
+  "cookie withValue": {
+    "prefix": [
+      "ci:cookie:withValue",
+      "$cookie->withValue",
+      "cookie withValue"
+    ],
+    "body": "\\$cookie->withValue('${1:value}');",
+    "description": "Creates a new Cookie with new value."
+  },
+  "cookie withExpires": {
+    "prefix": [
+      "ci:cookie:withExpires",
+      "$cookie->withExpires",
+      "cookie withExpires"
+    ],
+    "body": "\\$cookie->withExpires(${1:expires});",
+    "description": "Creates a new Cookie with new cookie expires time."
+  },
+  "cookie withExpired": {
+    "prefix": [
+      "ci:cookie:withExpired",
+      "$cookie->withExpired",
+      "cookie withExpired"
+    ],
+    "body": "\\$cookie->withExpired();",
+    "description": "Creates a new Cookie that will expire from the browser."
+  },
+  "cookie withPath": {
+    "prefix": [
+      "ci:cookie:withPath",
+      "$cookie->withPath",
+      "cookie withPath"
+    ],
+    "body": "\\$cookie->withPath('${1:path}');",
+    "description": "Creates a new Cookie with new path."
+  },
+  "cookie withDomain": {
+    "prefix": [
+      "ci:cookie:withDomain",
+      "$cookie->withDomain",
+      "cookie withDomain"
+    ],
+    "body": "\\$cookie->withDomain('${1:domain}');",
+    "description": "Creates a new Cookie with new domain."
+  },
+  "cookie withSecure": {
+    "prefix": [
+      "ci:cookie:withSecure",
+      "$cookie->withSecure",
+      "cookie withSecure"
+    ],
+    "body": "\\$cookie->withSecure(${1:boolean});",
+    "description": "Creates a new Cookie with new “Secure” attribute."
+  },
+  "cookie withHTTPOnly": {
+    "prefix": [
+      "ci:cookie:withHTTPOnly",
+      "$cookie->withHTTPOnly",
+      "cookie withHTTPOnly"
+    ],
+    "body": "\\$cookie->withHTTPOnly(${1:boolean});",
+    "description": "Creates a new Cookie with new \"HttpOnly\" attribute."
+  },
+  "cookie withSameSite": {
+    "prefix": [
+      "ci:cookie:withSameSite",
+      "$cookie->withSameSite",
+      "cookie withSameSite"
+    ],
+    "body": "\\$cookie->withSameSite('${1:samesite}');",
+    "description": "Creates a new Cookie with new \"SameSite\" attribute."
+  },
+  "cookie withRaw": {
+    "prefix": [
+      "ci:cookie:withRaw",
+      "$cookie->withRaw",
+      "cookie withRaw"
+    ],
+    "body": "\\$cookie->withRaw(${1:boolean});",
+    "description": "Creates a new Cookie with URL encoding option updated."
+  },
+  "cookie offsetExists": {
+    "prefix": [
+      "ci:cookie:offsetExists",
+      "$cookie->offsetExists",
+      "cookie offsetExists"
+    ],
+    "body": "\\$cookie->offsetExists(${1:offset})"
+  },
+  "cookie offsetGet": {
+    "prefix": [
+      "ci:cookie:offsetGet",
+      "$cookie->offsetGet",
+      "cookie offsetGet"
+    ],
+    "body": "\\$cookie->offsetGet(${1:offset})"
+  },
+  "cookie offsetSet": {
+    "prefix": [
+      "ci:cookie:offsetSet",
+      "$cookie->offsetSet",
+      "cookie offsetSet"
+    ],
+    "body": "\\$cookie->offsetSet(${1:offset}, ${2:value})"
+  },
+  "cookie offsetUnset": {
+    "prefix": [
+      "ci:cookie:offsetUnset",
+      "$cookie->offsetUnset",
+      "cookie offsetUnset"
+    ],
+    "body": "\\$cookie->offsetUnset(${1:offset})"
+  },
+  "cookie toHeaderString": {
+    "prefix": [
+      "ci:cookie:toHeaderString",
+      "$cookie->toHeaderString",
+      "cookie toHeaderString"
+    ],
+    "body": "\\$cookie->toHeaderString();",
+    "description": "Returns the string representation that can be passed as a header string."
+  },
+  "cookie toArray": {
+    "prefix": [
+      "ci:cookie:toArray",
+      "$cookie->toArray",
+      "cookie toArray"
+    ],
+    "body": "\\$cookie->toArray();",
+    "description": "Returns the array representation of the Cookie instance."
+  },
+  "cookie set_cookie": {
+    "prefix": [
+      "ci:cookie:set_cookie",
+      "set_cookie",
+      "cookie set_cookie"
+    ],
+    "body": "set_cookie(${1:name}, '${2:value}', '${3:expire}', '${4:domain}', '${5:path}', '${6:prefix}', ${7:boolean}, ${8:boolean}, '${9:sameSite}');",
+    "description": "Set cookie."
+  },
+  "cookie get_cookie": {
+    "prefix": [
+      "ci:cookie:get_cookie",
+      "get_cookie",
+      "cookie get_cookie"
+    ],
+    "body": "get_cookie(${1:index}, ${2:boolean}, '${3:prefix}');",
+    "description": "Fetch an item from the $_COOKIE array."
+  },
+  "cookie delete_cookie": {
+    "prefix": [
+      "ci:cookie:delete_cookie",
+      "delete_cookie",
+      "cookie delete_cookie"
+    ],
+    "body": "delete_cookie(${1:name}, '${2:domain}', '${3:path}', '${4:prefix}');",
+    "description": "Delete a cookie"
+  },
+  "cookie has_cookie": {
+    "prefix": [
+      "ci:cookie:has_cookie",
+      "has_cookie",
+      "cookie has_cookie"
+    ],
+    "body": "has_cookie('${1:name}', '${2:value}', '${3:prefix}');",
+    "description": "Checks if a cookie exists by name."
+  }
+}

@@ -1,6 +1,7 @@
 {
   "session get": {
     "prefix": [
+      "ci:session:get",
       "$session->get",
       "session get"
     ],
@@ -9,6 +10,7 @@
   },
   "session set": {
     "prefix": [
+      "ci:session:set",
       "$session->set",
       "session set"
     ],
@@ -17,6 +19,7 @@
   },
   "session has": {
     "prefix": [
+      "ci:session:has",
       "$session->has",
       "session has"
     ],
@@ -25,6 +28,7 @@
   },
   "session push": {
     "prefix": [
+      "ci:session:push",
       "$session->push",
       "session push"
     ],
@@ -33,6 +37,7 @@
   },
   "session remove": {
     "prefix": [
+      "ci:session:remove",
       "$session->remove",
       "session remove"
     ],
@@ -41,6 +46,7 @@
   },
   "session markAsFlashdata": {
     "prefix": [
+      "ci:session:markAsFlashdata",
       "$session->markAsFlashdata",
       "session markAsFlashdata"
     ],
@@ -49,6 +55,7 @@
   },
   "session unmarkFlashdata": {
     "prefix": [
+      "ci:session:unmarkFlashdata",
       "$session->unmarkFlashdata",
       "session unmarkFlashdata"
     ],
@@ -57,6 +64,7 @@
   },
   "session getFlashKeys": {
     "prefix": [
+      "ci:session:getFlashKeys",
       "$session->getFlashKeys",
       "session getFlashKeys"
     ],
@@ -65,6 +73,7 @@
   },
   "session setFlashdata": {
     "prefix": [
+      "ci:session:setFlashdata",
       "$session->setFlashdata",
       "session setFlashdata"
     ],
@@ -73,6 +82,7 @@
   },
   "session getFlashdata": {
     "prefix": [
+      "ci:session:getFlashdata",
       "$session->getFlashdata",
       "session getFlashdata"
     ],
@@ -81,6 +91,7 @@
   },
   "session keepFlashdata": {
     "prefix": [
+      "ci:session:keepFlashdata",
       "$session->keepFlashdata",
       "session keepFlashdata"
     ],
@@ -89,6 +100,7 @@
   },
   "session markAsTempdata": {
     "prefix": [
+      "ci:session:markAsTempdata",
       "$session->markAsTempdata",
       "session markAsTempdata"
     ],
@@ -97,6 +109,7 @@
   },
   "session unmarkTempdata": {
     "prefix": [
+      "ci:session:unmarkTempdata",
       "$session->unmarkTempdata",
       "session unmarkTempdata"
     ],
@@ -105,6 +118,7 @@
   },
   "session setTempdata": {
     "prefix": [
+      "ci:session:setTempdata",
       "$session->setTempdata",
       "session setTempdata"
     ],
@@ -113,6 +127,7 @@
   },
   "session getTempdata": {
     "prefix": [
+      "ci:session:getTempdata",
       "$session->getTempdata",
       "session getTempdata"
     ],
@@ -121,6 +136,7 @@
   },
   "session removeTempdata": {
     "prefix": [
+      "ci:session:removeTempdata",
       "$session->removeTempdata",
       "session removeTempdata"
     ],
@@ -129,6 +145,7 @@
   },
   "session getTempKeys": {
     "prefix": [
+      "ci:session:getTempKeys",
       "$session->getTempKeys",
       "session getTempKeys"
     ],
@@ -137,6 +154,7 @@
   },
   "session setSaveHandler": {
     "prefix": [
+      "ci:session:setSaveHandler",
       "$session->setSaveHandler",
       "session setSaveHandler"
     ],
@@ -145,6 +163,7 @@
   },
   "session startSession": {
     "prefix": [
+      "ci:session:startSession",
       "$session->startSession",
       "session startSession"
     ],
@@ -153,6 +172,7 @@
   },
   "session setCookie": {
     "prefix": [
+      "ci:session:setCookie",
       "$session->setCookie",
       "session setCookie"
     ],
@@ -161,6 +181,7 @@
   },
   "session start": {
     "prefix": [
+      "ci:session:start",
       "$session->start",
       "session start"
     ],
@@ -169,6 +190,7 @@
   },
   "session stop": {
     "prefix": [
+      "ci:session:stop",
       "$session->stop",
       "session stop"
     ],
@@ -177,6 +199,7 @@
   },
   "session regenerate": {
     "prefix": [
+      "ci:session:regenerate",
       "$session->regenerate",
       "session regenerate"
     ],
@@ -185,6 +208,7 @@
   },
   "session destroy": {
     "prefix": [
+      "ci:session:destroy",
       "$session->destroy",
       "session destroy"
     ],
