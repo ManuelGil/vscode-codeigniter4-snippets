@@ -1,0 +1,164 @@
+{
+  "links": {
+    "prefix": [
+      "ci:pagination:links",
+      "$pager->links",
+      "pager links"
+    ],
+    "body": "\\$pager->links('${1:group}', '${2:template}')",
+    "description": "Handles creating and displaying the links."
+  },
+  "simpleLinks": {
+    "prefix": [
+      "ci:pagination:simpleLinks",
+      "$pager->simpleLinks",
+      "pager simpleLinks"
+    ],
+    "body": "\\$pager->simpleLinks('${1:group}', '${2:template}')",
+    "description": "Creates simple Next/Previous links, instead of full pagination."
+  },
+  "makeLinks": {
+    "prefix": [
+      "ci:pagination:makeLinks",
+      "$pager->makeLinks",
+      "pager makeLinks"
+    ],
+    "body": "\\$pager->makeLinks(${1:page}, ${2:perPage}, ${3:total}, '${4:template}', ${5:segment}, '${6:group}')",
+    "description": "Allows for a simple, manual, form of pagination where all of the data is provided by the user. The URL is the current URI."
+  },
+  "store": {
+    "prefix": [
+      "ci:pagination:store",
+      "$pager->store",
+      "pager store"
+    ],
+    "body": "\\$pager->store('${1:group}', ${2:page}, ${3:perPage}, ${4:total}, ${5:segment})",
+    "description": "Stores a set of pagination data for later display. Most commonly used by the model to automate the process."
+  },
+  "setSegment": {
+    "prefix": [
+      "ci:pagination:setSegment",
+      "$pager->setSegment",
+      "pager setSegment"
+    ],
+    "body": "\\$pager->setSegment(${1:number}, '${2:group}')",
+    "description": "Sets segment for a group."
+  },
+  "setPath": {
+    "prefix": [
+      "ci:pagination:setPath",
+      "$pager->setPath",
+      "pager setPath"
+    ],
+    "body": "\\$pager->setPath('${1:path}', '${2:group}')",
+    "description": "Sets the path that an aliased group of links will use."
+  },
+  "getTotal": {
+    "prefix": [
+      "ci:pagination:getTotal",
+      "$pager->getTotal",
+      "pager getTotal"
+    ],
+    "body": "\\$pager->getTotal('${1:group}')",
+    "description": "Returns the total number of items in data store."
+  },
+  "getPageCount": {
+    "prefix": [
+      "ci:pagination:getPageCount",
+      "$pager->getPageCount",
+      "pager getPageCount"
+    ],
+    "body": "\\$pager->getPageCount('${1:group}')",
+    "description": "Returns the total number of pages."
+  },
+  "getCurrentPage": {
+    "prefix": [
+      "ci:pagination:getCurrentPage",
+      "$pager->getCurrentPage",
+      "pager getCurrentPage"
+    ],
+    "body": "\\$pager->getCurrentPage('${1:group}')",
+    "description": "Returns the number of the current page of results."
+  },
+  "hasMore": {
+    "prefix": [
+      "ci:pagination:hasMore",
+      "$pager->hasMore",
+      "pager hasMore"
+    ],
+    "body": "\\$pager->hasMore('${1:group}')",
+    "description": "Tells whether this group of results has any more pages of results."
+  },
+  "getLastPage": {
+    "prefix": [
+      "ci:pagination:getLastPage",
+      "$pager->getLastPage",
+      "pager getLastPage"
+    ],
+    "body": "\\$pager->getLastPage('${1:group}')",
+    "description": "Returns the last page, if we have a total that we can calculate with."
+  },
+  "getFirstPage": {
+    "prefix": [
+      "ci:pagination:getFirstPage",
+      "$pager->getFirstPage",
+      "pager getFirstPage"
+    ],
+    "body": "\\$pager->getFirstPage('${1:group}')",
+    "description": "Determines the first page # that should be shown."
+  },
+  "getPageURI": {
+    "prefix": [
+      "ci:pagination:getPageURI",
+      "$pager->getPageURI",
+      "pager getPageURI"
+    ],
+    "body": "\\$pager->getPageURI(${1:page}, '${2:group}', ${3:boolean})",
+    "description": "Returns the URI for a specific page for the specified group."
+  },
+  "getNextPageURI": {
+    "prefix": [
+      "ci:pagination:getNextPageURI",
+      "$pager->getNextPageURI",
+      "pager getNextPageURI"
+    ],
+    "body": "\\$pager->getNextPageURI('${1:group}', ${2:boolean})",
+    "description": "Returns the full URI to the next page of results, or null."
+  },
+  "getPreviousPageURI": {
+    "prefix": [
+      "ci:pagination:getPreviousPageURI",
+      "$pager->getPreviousPageURI",
+      "pager getPreviousPageURI"
+    ],
+    "body": "\\$pager->getPreviousPageURI('${1:group}', ${2:boolean})",
+    "description": "Returns the full URL to the previous page of results, or null."
+  },
+  "getPerPage": {
+    "prefix": [
+      "ci:pagination:getPerPage",
+      "$pager->getPerPage",
+      "pager getPerPage"
+    ],
+    "body": "\\$pager->getPerPage('${1:group}')",
+    "description": "Returns the number of results per page that should be shown."
+  },
+  "getDetails": {
+    "prefix": [
+      "ci:pagination:getDetails",
+      "$pager->getDetails",
+      "pager getDetails"
+    ],
+    "body": "\\$pager->getDetails('${1:group}')",
+    "description": "Returns an array of details about the specified group."
+  },
+  "only": {
+    "prefix": [
+      "ci:pagination:only",
+      "$pager->only",
+      "pager only"
+    ],
+    "body": "\\$pager->only([${1:queries}])",
+    "description": "Sets only allowed queries on pagination links."
+  }
+}

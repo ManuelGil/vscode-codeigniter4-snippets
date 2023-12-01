@@ -204,7 +204,7 @@
       "routes environment"
     ],
     "body": [
-      "\\$routes->environment('${1:development}',  static function (\\$routes)",
+      "\\$routes->environment('${1:development}', static function (\\$routes)",
       "{",
       "\t\\$routes->add('${2:builder}', '${3:Tools\\\\Builder}::${4:function}');",
       "});"
@@ -218,7 +218,7 @@
       "routes group"
     ],
     "body": [
-      "\\$routes->group('${1:url}', ['namespace' => '${2:namespace}', 'filter' => '${3:filter}'],  static function (\\$routes) {",
+      "\\$routes->group('${1:url}', ['namespace' => '${2:namespace}', 'filter' => '${3:filter}'], static function (\\$routes) {",
       "\t//",
       "});"
     ],

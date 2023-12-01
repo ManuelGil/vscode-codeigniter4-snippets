@@ -12,32 +12,6 @@ CodeIgniter 4 - snippets & autocomplete for VSCode editor.
 - CodeIgniter 4.3.0 or later
 - VSCode 1.46.0 or later
 
-## Features
-
-### Global
-
-- [Spark](./snippets/global/spark.json)
-- [Functions](./snippets/global/common.json)
-- [Constants](./snippets/global/const.json)
-
-### Core
-
-- [Query Builder](./snippets/core/builder.json)
-- [Cookie](./snippets/core/cookie.json)
-- [Database](./snippets/core/database.json)
-- [Email](./snippets/core/email.json)
-- [Encryptation](./snippets/core/encrypter.json)
-- [File](./snippets/core/file.json)
-- [Image](./snippets/core/image.json)
-- [Redirect](./snippets/core/redirect.json)
-- [Request](./snippets/core/request.json)
-- [Response](./snippets/core/response.json)
-- [Routes](./snippets/core/routes.json)
-- [Session](./snippets/core/session.json)
-- [Time](./snippets/core/time.json)
-- [Validation](./snippets/core/validation.json)
-- [View](./snippets/core/view.json)
-
 ## Usage
 
 ### Spark
@@ -439,6 +413,29 @@ CodeIgniter 4 - snippets & autocomplete for VSCode editor.
 | ci:image:getWidth | $image->getWidth |
 | ci:image:getHeight | $image->getHeight |
 
+### Pagination
+
+| Snippet | Purpose |
+| --- | --- |
+| ci:pagination:links | $pager->links |
+| ci:pagination:simpleLinks | $pager->simpleLinks |
+| ci:pagination:makeLinks | $pager->makeLinks |
+| ci:pagination:store | $pager->store |
+| ci:pagination:setSegment | $pager->setSegment |
+| ci:pagination:setPath | $pager->setPath |
+| ci:pagination:getTotal | $pager->getTotal |
+| ci:pagination:getPageCount | $pager->getPageCount |
+| ci:pagination:getCurrentPage | $pager->getCurrentPage |
+| ci:pagination:hasMore | $pager->hasMore |
+| ci:pagination:getLastPage | $pager->getLastPage |
+| ci:pagination:getFirstPage | $pager->getFirstPage |
+| ci:pagination:getPageURI | $pager->getPageURI |
+| ci:pagination:getNextPageURI | $pager->getNextPageURI |
+| ci:pagination:getPreviousPageURI | $pager->getPreviousPageURI |
+| ci:pagination:getPerPage | $pager->getPerPage |
+| ci:pagination:getDetails | $pager->getDetails |
+| ci:pagination:only | $pager->only |
+
 ### Redirect
 
 | Snippet | Purpose |
@@ -549,54 +546,54 @@ CodeIgniter 4 - snippets & autocomplete for VSCode editor.
 
 | Snippet | Purpose |
 | --- | --- |
-ci:routes:get | $routes->get |
-ci:routes:post | $routes->post |
-ci:routes:put | $routes->put |
-ci:routes:delete | $routes->delete |
-ci:routes:head | $routes->head |
-ci:routes:patch | $routes->patch |
-ci:routes:options | $routes->options |
-ci:routes:cli | $routes->cli |
-ci:routes:add | $routes->add |
-ci:routes:view | $routes->view |
-ci:routes:addPlaceholder | $routes->addPlaceholder |
-ci:routes:presenter | $routes->presenter |
-ci:routes:resource | $routes->resource |
-ci:routes:match | $routes->match |
-ci:routes:addRedirect | $routes->addRedirect |
-ci:routes:map | $routes->map |
-ci:routes:setPrioritize | $routes->setPrioritize |
-ci:routes:setTranslateURIDashes | $routes->setTranslateURIDashes |
-ci:routes:setAutoRoute | $routes->setAutoRoute |
-ci:routes:setDefaultNamespace | $routes->setDefaultNamespace |
-ci:routes:setDefaultController | $routes->setDefaultController |
-ci:routes:setDefaultMethod | $routes->setDefaultMethod |
-ci:routes:environment | $routes->environment |
-ci:routes:group | $routes->group |
-ci:routes:loadRoutes | $routes->loadRoutes |
-ci:routes:getPlaceholders | $routes->getPlaceholders |
-ci:routes:set404Override | $routes->set404Override |
-ci:routes:get404Override | $routes->get404Override |
-ci:routes:setDefaultConstraint | $routes->setDefaultConstraint |
-ci:routes:getDefaultController | $routes->getDefaultController |
-ci:routes:getDefaultMethod | $routes->getDefaultMethod |
-ci:routes:getDefaultNamespace | $routes->getDefaultNamespace |
-ci:routes:shouldTranslateURIDashes | $routes->shouldTranslateURIDashes |
-ci:routes:shouldAutoRoute | $routes->shouldAutoRoute |
-ci:routes:getRoutes | $routes->getRoutes |
-ci:routes:getRoutesOptions | $routes->getRoutesOptions |
-ci:routes:getHTTPVerb | $routes->getHTTPVerb |
-ci:routes:setHTTPVerb | $routes->setHTTPVerb |
-ci:routes:isRedirect | $routes->isRedirect |
-ci:routes:getRedirectCode | $routes->getRedirectCode |
-ci:routes:reverseRoute | $routes->reverseRoute |
-ci:routes:isFiltered | $routes->isFiltered |
-ci:routes:getFilterForRoute | $routes->getFilterForRoute |
-ci:routes:getFiltersForRoute | $routes->getFiltersForRoute |
-ci:routes:resetRoutes | $routes->resetRoutes |
-ci:routes:getRegisteredControllers | $routes->getRegisteredControllers |
-ci:routes:useSupportedLocalesOnly | $routes->useSupportedLocalesOnly |
-ci:routes:shouldUseSupportedLocalesOnly | $routes->shouldUseSupportedLocalesOnly |
+| ci:routes:get | $routes->get |
+| ci:routes:post | $routes->post |
+| ci:routes:put | $routes->put |
+| ci:routes:delete | $routes->delete |
+| ci:routes:head | $routes->head |
+| ci:routes:patch | $routes->patch |
+| ci:routes:options | $routes->options |
+| ci:routes:cli | $routes->cli |
+| ci:routes:add | $routes->add |
+| ci:routes:view | $routes->view |
+| ci:routes:addPlaceholder | $routes->addPlaceholder |
+| ci:routes:presenter | $routes->presenter |
+| ci:routes:resource | $routes->resource |
+| ci:routes:match | $routes->match |
+| ci:routes:addRedirect | $routes->addRedirect |
+| ci:routes:map | $routes->map |
+| ci:routes:setPrioritize | $routes->setPrioritize |
+| ci:routes:setTranslateURIDashes | $routes->setTranslateURIDashes |
+| ci:routes:setAutoRoute | $routes->setAutoRoute |
+| ci:routes:setDefaultNamespace | $routes->setDefaultNamespace |
+| ci:routes:setDefaultController | $routes->setDefaultController |
+| ci:routes:setDefaultMethod | $routes->setDefaultMethod |
+| ci:routes:environment | $routes->environment |
+| ci:routes:group | $routes->group |
+| ci:routes:loadRoutes | $routes->loadRoutes |
+| ci:routes:getPlaceholders | $routes->getPlaceholders |
+| ci:routes:set404Override | $routes->set404Override |
+| ci:routes:get404Override | $routes->get404Override |
+| ci:routes:setDefaultConstraint | $routes->setDefaultConstraint |
+| ci:routes:getDefaultController | $routes->getDefaultController |
+| ci:routes:getDefaultMethod | $routes->getDefaultMethod |
+| ci:routes:getDefaultNamespace | $routes->getDefaultNamespace |
+| ci:routes:shouldTranslateURIDashes | $routes->shouldTranslateURIDashes |
+| ci:routes:shouldAutoRoute | $routes->shouldAutoRoute |
+| ci:routes:getRoutes | $routes->getRoutes |
+| ci:routes:getRoutesOptions | $routes->getRoutesOptions |
+| ci:routes:getHTTPVerb | $routes->getHTTPVerb |
+| ci:routes:setHTTPVerb | $routes->setHTTPVerb |
+| ci:routes:isRedirect | $routes->isRedirect |
+| ci:routes:getRedirectCode | $routes->getRedirectCode |
+| ci:routes:reverseRoute | $routes->reverseRoute |
+| ci:routes:isFiltered | $routes->isFiltered |
+| ci:routes:getFilterForRoute | $routes->getFilterForRoute |
+| ci:routes:getFiltersForRoute | $routes->getFiltersForRoute |
+| ci:routes:resetRoutes | $routes->resetRoutes |
+| ci:routes:getRegisteredControllers | $routes->getRegisteredControllers |
+| ci:routes:useSupportedLocalesOnly | $routes->useSupportedLocalesOnly |
+| ci:routes:shouldUseSupportedLocalesOnly | $routes->shouldUseSupportedLocalesOnly |
 
 ### Session
 
@@ -786,7 +783,12 @@ ci:routes:shouldUseSupportedLocalesOnly | $routes->shouldUseSupportedLocalesOnly
 ## Other Repositories
 
 - [CodeIgniter 4 Snippets for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-codeigniter4-snippets)
+- [CodeIgniter 4 Shield Snippets for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-codeigniter4-shield-snippets)
 - [CodeIgniter 4 Spark for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-codeigniter4-spark)
+- [CodeIgniter 4 Essential Extension Pack for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-codeigniter4-pack)
+- [NestJS Snippets for VSCode Editor](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-nestjs-snippets-extension)
+- [Moodle Pack](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-moodle-snippets)
+- [Mustache Template Engine - Snippets & Autocomplete](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-mustache-snippets)
 
 ## Community
 
