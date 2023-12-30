@@ -1,8 +1,8 @@
 {
   "name": "vscode-codeigniter4-snippets",
   "displayName": "CodeIgniter 4 Snippets",
-  "description": "CodeIgniter 4 Snippets for Visual Studio Code",
-  "version": "1.10.0",
+  "description": "This extension for Visual Studio Code adds snippets for CodeIgniter 4 Framework. With this extension, you can easily write CodeIgniter 4 Framework code.",
+  "version": "1.10.1",
   "icon": "icon.png",
   "license": "MIT",
   "publisher": "imgildev",
