@@ -1,7 +1,11 @@
+![icon](https://raw.githubusercontent.com/ManuelGil/vscode-codeigniter4-snippets/main/icon.png)
+
 # CodeIgniter 4 Snippets for VSCode
 
 [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/imgildev.vscode-codeigniter4-snippets?style=for-the-badge&label=VS%20Marketplace&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-codeigniter4-snippets)
 [![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/imgildev.vscode-codeigniter4-snippets?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-codeigniter4-snippets)
+[![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/imgildev.vscode-codeigniter4-snippets?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-codeigniter4-snippets)
+[![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/imgildev.vscode-codeigniter4-snippets?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-codeigniter4-snippets&ssr=false#review-details)
 [![GitHub Repo stars](https://img.shields.io/github/stars/ManuelGil/vscode-codeigniter4-snippets?style=for-the-badge&logo=github)](https://github.com/ManuelGil/vscode-codeigniter4-snippets)
 [![GitHub license](https://img.shields.io/github/license/ManuelGil/vscode-codeigniter4-snippets?style=for-the-badge&logo=github)](https://github.com/ManuelGil/vscode-codeigniter4-snippets/blob/main/LICENSE)
 
@@ -798,10 +802,6 @@ This extension for Visual Studio Code adds snippets for CodeIgniter 4 Framework.
 - [CodeIgniter 4 Spark](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-codeigniter4-spark)
 - [Moodle Pack](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-moodle-snippets)
 - [Mustache Template Engine - Snippets & Autocomplete](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-mustache-snippets)
-
-## Community
-
-- CodeIgniter Hispano [CiHispano](https://www.cihispano.org/)
 
 ## Changelog
 
